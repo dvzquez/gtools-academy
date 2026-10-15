@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GTools Academy | Cursos de herramientas de Google</title>
+  <meta name="description" content="Cursos prácticos sobre las herramientas de Google: las populares y las que casi nadie conoce.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="#">GTools Academy</a>
+    <nav aria-label="Principal"><a href="#cursos">Cursos</a><a href="#acerca">Sobre el proyecto</a></nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Aprende las herramientas de Google, incluso las que nadie te enseñó</h1>
+      <p>Cursos cortos y prácticos, desde Gmail hasta Apps Script.</p>
+    </section>
+
+    <section id="cursos" aria-labelledby="t-cursos">
+      <h2 id="t-cursos" class="sr">Catálogo de cursos</h2>
+      <div class="filters">
+        <input id="q" type="search" placeholder="Busca una herramienta o tema" aria-label="Buscar cursos">
+        <div class="chips" role="group" aria-label="Categoría">
+          <button class="chip" data-cat="all" aria-pressed="true">Todos</button>
+          <button class="chip" data-cat="populares" aria-pressed="false">Populares</button>
+          <button class="chip" data-cat="poco-conocidas" aria-pressed="false">Poco conocidas</button>
+        </div>
+        <select id="level" aria-label="Nivel">
+          <option value="all">Todos los niveles</option>
+          <option value="basico">Básico</option>
+          <option value="intermedio">Intermedio</option>
+          <option value="avanzado">Avanzado</option>
+        </select>
+      </div>
+      <p id="count" aria-live="polite"></p>
+      <div id="courses" class="grid"></div>
+      <p id="empty" class="empty" hidden>No hay cursos con esos filtros. Prueba con otra palabra o elige "Todos".</p>
+    </section>
+
+    <section id="acerca" class="about">
+      <h2>Sobre el proyecto</h2>
+      <p>Proyecto universitario construido por fases: HTML, CSS y JavaScript primero; después PHP, TypeScript y React. El código está en GitHub.</p>
+    </section>
+  </main>
+
+  <footer class="top"><small>GTools Academy. Proyecto educativo, sin afiliación con Google.</small></footer>
+</body>
+</html>
