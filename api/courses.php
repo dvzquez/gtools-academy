@@ -1,12 +1,28 @@
 <?php
-// Fase 2: API mínima en PHP. Devuelve los cursos en JSON, con filtro opcional ?category=populares
+// API JSON de cursos
+// Filtros opcionales: ?category=populares&level=basico&audience=maestros
 declare(strict_types=1);
+require __DIR__ . '/../includes/data.php';
+
 header('Content-Type: application/json; charset=utf-8');
 
-$courses = json_decode(file_get_contents(__DIR__ . '/../data/courses.json'), true);
-$category = $_GET['category'] ?? null;
-
-if ($category) {
-    $courses = array_values(array_filter($courses, fn($c) => $c['category'] === $category));
+try {
+    $courses = load_courses();
+} catch (RuntimeException $e) {
+    http_response_code(500);
+    echo json_encode(['error' => $e->getMessage()], JSON_UNESCAPED_UNICODE);
+    exit;
 }
-echo json_encode($courses, JSON_UNESCAPED_UNICODE);
+
+foreach (['category', 'level'] as $field) {
+    $value = param($field);
+    if ($value !== '') {
+        $courses = array_filter($courses, fn(array $c): bool => $c[$field] === $value);
+    }
+}
+$audience = param('audience');
+if ($audience !== '') {
+    $courses = array_filter($courses, fn(array $c): bool => in_array($audience, $c['audience'], true));
+}
+
+echo json_encode(array_values($courses), JSON_UNESCAPED_UNICODE);

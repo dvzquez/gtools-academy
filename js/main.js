@@ -1,12 +1,14 @@
-const DATA_URL = 'data/courses.json'; // Fase 2: 'api/courses.php'
+// Fase 2: API en PHP; si no hay PHP usa el JSON estático
+const SOURCES = [['php', 'api/courses.php'], ['json', 'data/courses.json']];
+let source = '';
 // Etapas de la ruta de aprendizaje (ids de cursos, en orden)
-const ROAD = [['drive', 'docs-slides', 'gmail'], ['sheets', 'looker-studio'], ['apps-script', 'colab', 'notebooklm']];
+const ROAD = [['drive', 'docs-slides', 'gmail', 'calendar-meet', 'classroom'], ['forms', 'sheets', 'looker-studio', 'scholar-trends'], ['apps-script', 'colab', 'notebooklm']];
 // En courses.json los textos son pares [español, inglés]
 const I18N = {
   es: {
     nav_courses: 'Cursos', nav_roadmap: 'Ruta de aprendizaje', nav_award: 'Reconocimiento', search: 'Buscar un curso',
     login: 'Iniciar sesión', register: 'Registrarse', register_title: 'Crear cuenta', logout: 'Salir', hi: 'Hola, {name}',
-    to_elegant: 'Tema elegante', to_dark: 'Tema oscuro', hero_sub: 'Aprende las herramientas de Google, incluso las que nadie te enseñó.',
+    to_light: 'Tema claro', to_dark: 'Tema oscuro', hero_sub: 'Pensado para maestros y alumnos: aprende las herramientas de Google, incluso las que nadie te enseñó.',
     cta: 'Ver cursos', video_ph: 'Aquí va tu video de bienvenida', sound: 'Sonido', cat_all: 'Todos', cat_pop: 'Populares', cat_rare: 'Poco conocidas',
     lvl_all: 'Todos los niveles', lvl_basico: 'Básico', lvl_intermedio: 'Intermedio', lvl_avanzado: 'Avanzado', count: 'Resultados: {n}',
     empty: 'No hay cursos con esos filtros.', load_error: 'No se pudieron cargar los cursos. Abre el proyecto con un servidor local (mira el README).',
@@ -16,11 +18,17 @@ const I18N = {
     award_text: 'Al terminar un curso recibes un reconocimiento con tu nombre y la fecha. Es un reconocimiento del proyecto, no una certificación oficial de Google ni de ninguna institución.',
     name_label: 'Tu nombre', google: 'Continuar con Google', auth_note: 'Modo demostración: el inicio de sesión real con Google llega en la Fase 5.',
     close: 'Cerrar', footer: 'Proyecto educativo, sin afiliación con Google.',
+    aud_all: 'Para todos', aud_maestros: 'Maestros', aud_alumnos: 'Alumnos', aud_general: 'Público general', for: 'Ideal para',
+    open_page: 'Abrir página del curso', get_award: 'Ver o guardar en PDF', src: 'Datos',
+    nav_contact: 'Contacto', contact_sub: '¿Tienes dudas o quieres proponer un curso? Escríbenos.', email_label: 'Correo', role_label: 'Soy',
+    role_maestro: 'Maestro/a', role_alumno: 'Alumno/a', role_otro: 'Otro', msg_label: 'Mensaje', send: 'Enviar mensaje',
+    form_sending: 'Enviando...', form_ok: '¡Gracias! Recibimos tu mensaje.', form_invalid: 'Revisa los campos e inténtalo de nuevo.',
+    form_error: 'No se pudo enviar. Inténtalo más tarde.', form_nophp: 'El formulario necesita PHP; en la versión estática no se puede enviar.',
   },
   en: {
     nav_courses: 'Courses', nav_roadmap: 'Learning path', nav_award: 'Recognition', search: 'Search a course',
     login: 'Log in', register: 'Sign up', register_title: 'Create account', logout: 'Log out', hi: 'Hi, {name}',
-    to_elegant: 'Elegant theme', to_dark: 'Dark theme', hero_sub: 'Learn Google tools, even the ones nobody taught you.',
+    to_light: 'Light theme', to_dark: 'Dark theme', hero_sub: 'Made for teachers and students: learn Google tools, even the ones nobody taught you.',
     cta: 'Browse courses', video_ph: 'Your welcome video goes here', sound: 'Sound', cat_all: 'All', cat_pop: 'Popular', cat_rare: 'Lesser-known',
     lvl_all: 'All levels', lvl_basico: 'Beginner', lvl_intermedio: 'Intermediate', lvl_avanzado: 'Advanced', count: 'Results: {n}',
     empty: 'No courses match those filters.', load_error: 'Courses could not be loaded. Open the project with a local server (see README).',
@@ -30,6 +38,12 @@ const I18N = {
     award_text: 'When you finish a course you get a recognition with your name and the date. It is a project recognition, not an official certification from Google or any institution.',
     name_label: 'Your name', google: 'Continue with Google', auth_note: 'Demo mode: real Google sign-in arrives in Phase 5.',
     close: 'Close', footer: 'Educational project, not affiliated with Google.',
+    aud_all: 'For everyone', aud_maestros: 'Teachers', aud_alumnos: 'Students', aud_general: 'General public', for: 'Great for',
+    open_page: 'Open course page', get_award: 'View or save as PDF', src: 'Data',
+    nav_contact: 'Contact', contact_sub: 'Have a question or want to suggest a course? Write to us.', email_label: 'Email', role_label: 'I am',
+    role_maestro: 'Teacher', role_alumno: 'Student', role_otro: 'Other', msg_label: 'Message', send: 'Send message',
+    form_sending: 'Sending...', form_ok: 'Thank you! We received your message.', form_invalid: 'Please check the fields and try again.',
+    form_error: 'Could not send. Please try again later.', form_nophp: 'The form needs PHP; it cannot be sent in the static version.',
   },
 };
 
@@ -39,7 +53,7 @@ const save = (k, v) => { try { localStorage.setItem(k, JSON.stringify(v)); } cat
 const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const norm = (s) => s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
 
-let courses = [], failed = false, fCat = 'all', fLevel = 'all', fQuery = '';
+let courses = [], failed = false, fCat = 'all', fLevel = 'all', fAud = 'all', fQuery = '';
 let lang = load('lang', navigator.language?.startsWith('en') ? 'en' : 'es');
 let theme = load('theme', 'dark');
 let user = load('user', null);
@@ -51,7 +65,7 @@ const fmt = (iso) => new Date(iso).toLocaleDateString(lang);
 
 function applyTheme() {
   document.documentElement.dataset.theme = theme;
-  $('#theme').textContent = t(theme === 'dark' ? 'to_elegant' : 'to_dark');
+  $('#theme').textContent = t(theme === 'dark' ? 'to_light' : 'to_dark');
 }
 
 function applyI18n() {
@@ -63,12 +77,15 @@ function applyI18n() {
   });
   $('#lang').textContent = lang === 'es' ? 'EN' : 'ES';
   $('#sound').setAttribute('aria-label', t('sound'));
+  $('#source').textContent = source ? `${t('src')}: ${source === 'php' ? 'PHP' : 'JSON'}` : '';
+  $('#contact-form button').disabled = source !== 'php';
+  $('#form-status').textContent = source === 'php' ? '' : t('form_nophp');
   applyTheme(); renderAuth(); render();
 }
 
 function matches(c) {
   const text = norm([pick(c.title), pick(c.desc), ...pick(c.topics)].join(' '));
-  return (fCat === 'all' || c.category === fCat) && (fLevel === 'all' || c.level === fLevel) && text.includes(norm(fQuery));
+  return (fCat === 'all' || c.category === fCat) && (fLevel === 'all' || c.level === fLevel) && (fAud === 'all' || c.audience.includes(fAud)) && text.includes(norm(fQuery));
 }
 
 function card(c) {
@@ -76,6 +93,7 @@ function card(c) {
     <span class="icon" aria-hidden="true">${esc(c.icon)}</span>
     <h3>${esc(pick(c.title))}${done[c.id] ? ' ✓' : ''}</h3>
     <p>${esc(pick(c.desc))}</p>
+    <p class="note">${t('for')}: ${c.audience.map((a) => t('aud_' + a)).join(', ')}</p>
     <div class="meta">
       <span class="badge">${t('lvl_' + c.level)}</span><span class="badge">${esc(c.hours)} h</span>
       <button class="ghost" data-open="${esc(c.id)}">${t('details')}</button>
@@ -112,13 +130,17 @@ function openAuth(mode) {
 function openCourse(id) {
   const c = courses.find((x) => x.id === id);
   const d = done[id];
+  const page = source === 'php' ? `<p><a href="curso.php?id=${esc(id)}&amp;lang=${lang}">${t('open_page')}</a></p>` : '';
+  const pdf = d && source === 'php'
+    ? `<p><a class="solid" target="_blank" rel="noopener" href="reconocimiento.php?id=${esc(id)}&amp;name=${encodeURIComponent(user?.name ?? '')}&amp;date=${new Date(d).toLocaleDateString('en-CA')}&amp;lang=${lang}">${t('get_award')}</a></p>` : '';
   $('#course-body').innerHTML = `
     <h2>${esc(c.icon)} ${esc(pick(c.title))}</h2>
     <p><strong>${t('goal')}:</strong> ${esc(pick(c.goal))}</p>
     <p><strong>${t('topics')}:</strong></p>
     <ul>${pick(c.topics).map((x) => `<li>${esc(x)}</li>`).join('')}</ul>
     <p class="note">${t('lvl_' + c.level)}, ${esc(c.hours)} h</p>
-    ${d ? `<div class="award"><p>${esc(t('award_line', { name: user?.name ?? '', course: pick(c.title), date: fmt(d) }))}</p><small>${t('award_note')}</small></div>`
+    ${page}
+    ${d ? `<div class="award"><p>${esc(t('award_line', { name: user?.name ?? '', course: pick(c.title), date: fmt(d) }))}</p><small>${t('award_note')}</small>${pdf}</div>`
         : `<button class="solid" id="finish" data-id="${esc(id)}">${t('done_btn')}</button>`}
     <button class="ghost" id="course-close">${t('close')}</button>`;
   const dlg = $('#dlg-course');
@@ -140,6 +162,7 @@ document.addEventListener('click', (e) => {
 
 $('#q').addEventListener('input', (e) => { fQuery = e.target.value; render(); if (fQuery) $('#cursos').scrollIntoView(); });
 $('#level').addEventListener('change', (e) => { fLevel = e.target.value; render(); });
+$('#aud').addEventListener('change', (e) => { fAud = e.target.value; render(); });
 document.querySelectorAll('.chip').forEach((b) => b.addEventListener('click', () => {
   fCat = b.dataset.cat;
   document.querySelectorAll('.chip').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
@@ -147,7 +170,7 @@ document.querySelectorAll('.chip').forEach((b) => b.addEventListener('click', ()
 }));
 
 $('#lang').onclick = () => { lang = lang === 'es' ? 'en' : 'es'; save('lang', lang); applyI18n(); };
-$('#theme').onclick = () => { theme = theme === 'dark' ? 'elegant' : 'dark'; save('theme', theme); applyTheme(); };
+$('#theme').onclick = () => { theme = theme === 'dark' ? 'light' : 'dark'; save('theme', theme); applyTheme(); };
 $('#login').onclick = () => { if (!user) openAuth('login'); };
 $('#register').onclick = () => {
   if (user) { user = null; save('user', null); renderAuth(); } else openAuth('register');
@@ -160,19 +183,41 @@ $('#auth-form').addEventListener('submit', (e) => {
   renderAuth();
 });
 
+// Formulario de contacto (necesita PHP: api/contact.php)
+$('#contact-form').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const form = e.target;
+  const data = new FormData(form);
+  data.set('lang', lang);
+  $('#form-status').textContent = t('form_sending');
+  try {
+    const res = await fetch('api/contact.php', { method: 'POST', body: data });
+    if (res.status === 201) form.reset();
+    $('#form-status').textContent = t(res.status === 201 ? 'form_ok' : res.status === 422 ? 'form_invalid' : 'form_error');
+  } catch (err) {
+    $('#form-status').textContent = t('form_error');
+  }
+});
+
 // Video de bienvenida: muestra el recuadro hasta que el archivo cargue
 const video = $('#welcome');
 video.addEventListener('loadeddata', () => { $('#arch').classList.add('has-video'); $('#sound').hidden = false; });
 $('#sound').onclick = () => { video.muted = !video.muted; $('#sound').textContent = video.muted ? '🔇' : '🔊'; };
 
 (async function init() {
-  try {
-    const res = await fetch(DATA_URL);
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    courses = await res.json();
-  } catch (err) {
-    failed = true;
-    console.error(err);
+  for (const [kind, url] of SOURCES) {
+    try {
+      const res = await fetch(url);
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const data = await res.json();
+      if (!Array.isArray(data)) throw new Error('Formato inesperado');
+      courses = data;
+      source = kind;
+      break;
+    } catch (err) {
+      console.warn(`Fuente "${kind}" no disponible:`, err.message);
+    }
   }
+  failed = !source;
   applyI18n();
 })();
