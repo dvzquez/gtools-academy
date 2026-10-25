@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-//Lee data/courses.json y devuelve la lista de cursos.
+/** Aquí leo data/courses.json y devuelvo la lista que uso para dibujar el catálogo. */
 function load_courses(): array
 {
     $raw = @file_get_contents(__DIR__ . '/../data/courses.json');
@@ -22,7 +22,7 @@ function find_course(string $id): ?array
     return null;
 }
 
-//Parámetro GET como texto (ignora arrays como ?x[]=1).
+/** Aquí acepto parámetros GET de texto y descarto arrays para evitar valores inesperados. */
 function param(string $key): string
 {
     $value = $_GET[$key] ?? '';
@@ -34,7 +34,7 @@ function current_lang(): string
     return param('lang') === 'en' ? 'en' : 'es';
 }
 
-//Escapa texto para HTML (evita XSS).
+/** Aquí escapo el texto antes de insertarlo en HTML para evitar que se interprete como código. */
 function h(string $text): string
 {
     return htmlspecialchars($text, ENT_QUOTES, 'UTF-8');

@@ -1,91 +1,464 @@
-:root, [data-theme="dark"] {
-  --bg: #2c3531; --surface: #35423c; --ink: #d1e8e2; --muted: #9fb8b0; --line: #4a5a53;
-  --brand: #116466; --on-brand: #d1e8e2; --accent: #ffcb9a; --on-accent: #2c3531; --arch: #116466;
-  --head: "Space Grotesk", system-ui, sans-serif; color-scheme: dark;
+/* Aquí organizo los estilos globales y concentro la paleta de la versión 4.0 en variables para poder ajustarla desde un solo lugar. */
+:root,
+[data-theme="dark"] {
+  --bg: #0a1b35;
+  --surface: #102747;
+  --surface-raised: #15345e;
+  --ink: #f3f6f8;
+  --muted: #b4cbe0;
+  --line: rgba(175, 206, 227, .24);
+  --brand: #215EBB;
+  --on-brand: #ffffff;
+  --accent: #CE6C37;
+  --on-accent: #ffffff;
+  --arch: #215EBB;
+  --p1: #215EBB;
+  --p2: #C3B692;
+  --p3: #AFCEE3;
+  --foot: #07162c;
+  --foot-ink: #edf3f8;
+  --c-maestros: #215EBB;
+  --c-alumnos: #CE6C37;
+  --c-general: #AFCEE3;
+  --head: "Faculty Glyphic", "Trebuchet MS", sans-serif;
+  --shadow: 0 22px 60px rgba(0, 0, 0, .19);
+  color-scheme: dark;
+  font-family: "Faculty Glyphic", "Trebuchet MS", sans-serif;
 }
+
+/* Aquí mantengo el mismo lenguaje visual cuando alguien cambia al tema claro. */
 [data-theme="light"] {
-  --bg: #f4f5f8; --surface: #fff; --ink: #14213d; --muted: #5a6478; --line: #dce0ea;
-  --brand: #14213d; --on-brand: #f1dfae; --accent: #8a6a2b; --on-accent: #fff; --arch: #d9dff0;
-  --head: "Fraunces", Georgia, serif; color-scheme: light;
+  --bg: #f2f3f5;
+  --surface: #ffffff;
+  --surface-raised: #e9f0f8;
+  --ink: #0E2859;
+  --muted: #52677d;
+  --line: rgba(14, 40, 89, .17);
+  --brand: #215EBB;
+  --on-brand: #ffffff;
+  --accent: #CE6C37;
+  --on-accent: #ffffff;
+  --arch: #AFCEE3;
+  --p1: #215EBB;
+  --p2: #C3B692;
+  --p3: #AFCEE3;
+  --foot: #0E2859;
+  --foot-ink: #f4f6f9;
+  --c-maestros: #215EBB;
+  --c-alumnos: #CE6C37;
+  --c-general: #6396b5;
+  --shadow: 0 20px 55px rgba(14, 40, 89, .10);
+  color-scheme: light;
 }
-:root { --blue: #4285f4; --red: #ea4335; --yellow: #fbbc04; --green: #34a853; font-family: "Space Grotesk", system-ui, sans-serif; }
+
+/* Aquí aplico el fondo con ondas suaves que se inspira en la referencia y no compite con el contenido. */
 * { box-sizing: border-box; }
-body { margin: 0; background: var(--bg); color: var(--ink); line-height: 1.55; }
-h1, h2, h3, .brand { font-family: var(--head); }
-button, input, select { font: inherit; color: inherit; }
-:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
-main, .top, .foot { max-width: 1080px; margin: 0 auto; padding: 0 20px; }
-section { padding: 40px 0; }
-.note { color: var(--muted); font-size: 0.9rem; }
+html { scroll-behavior: smooth; }
+body {
+  position: relative;
+  isolation: isolate;
+  min-height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+  background:
+    radial-gradient(ellipse at 8% 4%, color-mix(in srgb, var(--brand) 19%, transparent), transparent 36rem),
+    radial-gradient(ellipse at 93% 31%, color-mix(in srgb, var(--p3) 8%, transparent), transparent 34rem),
+    var(--bg);
+  color: var(--ink);
+  font-size: 16px;
+  line-height: 1.65;
+}
+body::before {
+  position: fixed;
+  z-index: -1;
+  inset: 0;
+  background: repeating-radial-gradient(ellipse at 18% 65%, transparent 0 37px, color-mix(in srgb, var(--p3) 11%, transparent) 38px 39px, transparent 40px 58px);
+  opacity: .5;
+  content: "";
+  pointer-events: none;
+  mask-image: linear-gradient(180deg, transparent 0%, #000 28%, #000 80%, transparent 100%);
+}
+h1, h2, h3, .brand, button, input, select, textarea { font-family: var(--head); }
+h1, h2, h3, p { overflow-wrap: anywhere; }
+h1, h2, h3 { line-height: 1.2; }
+h2 { font-size: clamp(1.6rem, 3vw, 2.3rem); letter-spacing: -.025em; }
+p { margin-block: .65em; }
+a { color: var(--p3); text-underline-offset: 4px; text-decoration-thickness: 1px; }
+a:hover { color: var(--accent); }
+button, input, select, textarea { font-size: 1rem; color: inherit; }
+button, select { cursor: pointer; }
+:focus-visible { outline: 3px solid var(--p2); outline-offset: 3px; }
+main, .top { width: min(1240px, 100%); margin: 0 auto; padding-inline: 28px; }
+section { padding: 44px 0; }
+.note { color: var(--muted); font-size: .93rem; }
+.lead { max-width: 62ch; color: var(--muted); font-size: clamp(1.05rem, 1.6vw, 1.2rem); }
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin: 0 0 14px;
+  color: var(--p2);
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+.eyebrow::before { width: 27px; height: 2px; background: currentColor; content: ""; }
 
-.top { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; padding-block: 14px; }
-.brand { font-weight: 700; font-size: 1.2rem; color: inherit; text-decoration: none; margin-right: auto; }
-.top nav { display: flex; gap: 18px; }
-.top nav a { color: var(--muted); text-decoration: none; }
-.top nav a:hover { color: var(--accent); }
-.tools { display: flex; flex-wrap: wrap; gap: 8px; }
-#q { flex: 1 1 180px; max-width: 260px; }
-@media (max-width: 640px) { .top nav { order: 5; width: 100%; } #q { max-width: none; } }
+/* Aquí dejo el espacio reservado para el icono de marca y agrupo navegación, idioma y tema en una sola barra adaptable. */
+.top {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px 26px;
+  padding-block: 22px;
+  border-bottom: 1px solid var(--line);
+}
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-right: auto;
+  color: var(--ink);
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -.035em;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.brand-icon-slot {
+  display: inline-block;
+  flex: 0 0 36px;
+  width: 36px;
+  height: 36px;
+  border: 1px dashed color-mix(in srgb, var(--p3) 62%, var(--line));
+  border-radius: 12px;
+  background: linear-gradient(135deg, color-mix(in srgb, var(--brand) 30%, transparent), color-mix(in srgb, var(--p3) 12%, transparent));
+}
+.top nav { display: flex; align-items: center; flex-wrap: wrap; gap: 8px 20px; }
+.top nav a {
+  padding: 7px 0;
+  color: var(--muted);
+  text-decoration: none;
+  transition: color .2s ease;
+}
+.top nav a:hover, .top nav a[aria-current="page"] { color: var(--ink); }
+.top nav a[aria-current="page"] { box-shadow: 0 2px 0 var(--accent); }
+.tools { display: flex; align-items: center; flex-wrap: wrap; gap: 9px; }
+.language-select {
+  width: auto;
+  min-width: 120px;
+  padding: 9px 34px 9px 13px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--ink);
+}
 
-.solid, .ghost, .chip { display: inline-block; border: 1px solid var(--line); border-radius: 999px; padding: 8px 16px; background: transparent; cursor: pointer; text-decoration: none; }
-.solid { background: var(--brand); border-color: var(--brand); color: var(--on-brand); }
-.ghost:hover, .chip:hover { border-color: var(--accent); }
-.chip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
-input, select { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 9px 14px; }
+/* Aquí unifico la apariencia de enlaces de acción y botones, con una variante principal y otra discreta. */
+.solid, .ghost, .chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 42px;
+  padding: 9px 17px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--surface) 78%, transparent);
+  color: var(--ink);
+  font: inherit;
+  line-height: 1.25;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform .2s ease, border-color .2s ease, background .2s ease, box-shadow .2s ease;
+}
+.solid { border-color: var(--brand); background: var(--brand); color: var(--on-brand); box-shadow: 0 8px 22px color-mix(in srgb, var(--brand) 24%, transparent); }
+.solid:hover { transform: translateY(-2px); box-shadow: 0 12px 28px color-mix(in srgb, var(--brand) 34%, transparent); }
+.ghost:hover, .chip:hover { transform: translateY(-1px); border-color: var(--p3); background: color-mix(in srgb, var(--p3) 10%, var(--surface)); }
+.chip[aria-pressed="true"] { border-color: var(--brand); background: var(--brand); color: #fff; }
+input, select, textarea {
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: 13px;
+  background: var(--surface);
+  padding: 12px 15px;
+  font: inherit;
+  transition: border-color .2s ease, box-shadow .2s ease, background .2s ease;
+}
+input::placeholder, textarea::placeholder { color: var(--muted); opacity: .8; }
+input:focus, select:focus, textarea:focus { border-color: var(--p3); outline: 0; box-shadow: 0 0 0 3px color-mix(in srgb, var(--p3) 17%, transparent); }
 
-.hero { text-align: center; padding-top: 24px; }
-.arch { position: relative; width: min(300px, 78vw); aspect-ratio: 3 / 4; margin: 0 auto; border-radius: 999px 999px 0 0; background: linear-gradient(180deg, var(--arch), transparent); }
-.arch video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: bottom; border-radius: inherit; }
-.ph { position: absolute; inset: 0; display: grid; place-items: center; padding: 24px; color: var(--muted); font-size: 0.9rem; }
+/* Aquí convierto la bienvenida en un hero editorial de dos columnas con una capa de ondas y un marco visual para el video. */
+.hero {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(300px, .95fr);
+  align-items: center;
+  gap: clamp(30px, 6vw, 84px);
+  min-height: 490px;
+  padding: 72px 0 86px;
+}
+.hero::before {
+  position: absolute;
+  z-index: -1;
+  top: 9%;
+  right: -16%;
+  bottom: 5%;
+  left: -12%;
+  background: repeating-radial-gradient(ellipse at 54% 50%, transparent 0 29px, color-mix(in srgb, var(--p3) 13%, transparent) 30px 31px, transparent 32px 49px);
+  content: "";
+  opacity: .55;
+  transform: rotate(-7deg);
+  mask-image: linear-gradient(90deg, transparent, #000 24%, #000 80%, transparent);
+}
+.hero-copy { position: relative; z-index: 1; }
+.hero h1 { max-width: 720px; margin: 0 0 20px; font-size: clamp(3rem, 7.5vw, 6.2rem); letter-spacing: -.065em; line-height: .98; }
+.hero h1 span { display: block; color: var(--p3); }
+.hero p:not(.eyebrow) { max-width: 53ch; margin: 0 0 24px; color: var(--muted); font-size: clamp(1.05rem, 1.6vw, 1.22rem); }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.hero-visual { position: relative; min-width: 0; }
+.arch {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1.15;
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, var(--p3) 40%, transparent);
+  border-radius: 30px;
+  background: linear-gradient(145deg, color-mix(in srgb, var(--brand) 45%, var(--surface)), var(--surface) 55%, color-mix(in srgb, var(--p3) 22%, var(--surface)));
+  box-shadow: var(--shadow);
+}
+.arch::after { position: absolute; inset: 0; border-radius: inherit; background: linear-gradient(135deg, transparent 45%, color-mix(in srgb, var(--p3) 12%, transparent)); content: ""; pointer-events: none; }
+.arch video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; border-radius: inherit; }
+.ph { position: absolute; inset: 0; display: grid; place-items: center; padding: 32px; color: var(--ink); font-size: 1rem; text-align: center; }
 .arch.has-video .ph { display: none; }
-.swirl { position: absolute; left: -15%; bottom: 16%; width: 130%; fill: none; stroke: var(--accent); stroke-width: 2; pointer-events: none; }
-#sound { position: absolute; right: 8px; bottom: 8px; width: 38px; height: 38px; border-radius: 50%; border: 1px solid var(--line); background: var(--surface); cursor: pointer; }
-.hero h1 { position: relative; margin: -0.5em 0 8px; font-size: clamp(2.4rem, 9vw, 4.8rem); line-height: 1; letter-spacing: -0.02em; }
-.hero p { max-width: 44ch; margin: 0 auto 20px; color: var(--muted); font-size: 1.1rem; }
+.swirl { position: absolute; z-index: 1; left: -8%; bottom: 10%; width: 116%; fill: none; stroke: var(--p2); stroke-width: 1.5; opacity: .8; pointer-events: none; }
+#sound { position: absolute; z-index: 2; right: 14px; bottom: 14px; width: 42px; height: 42px; border: 1px solid var(--line); border-radius: 50%; background: var(--surface); cursor: pointer; }
+.hero-actions .ghost { border-color: color-mix(in srgb, var(--p3) 36%, var(--line)); }
+.about { max-width: 880px; padding-top: 26px; }
+.about h2 { margin-bottom: 10px; }
+.about .lead { max-width: 72ch; }
 
-.filters { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+/* Aquí preparo las tarjetas de público, cursos y contenido para que respiren más y tengan un brillo sutil al pasar el cursor. */
+.grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; align-items: stretch; }
+.card {
+  --c: var(--p1);
+  position: relative;
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 12px;
+  overflow: hidden;
+  padding: 25px;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  background: linear-gradient(155deg, color-mix(in srgb, var(--surface) 95%, var(--c) 5%), var(--surface) 66%);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, .06);
+  transition: transform .23s ease, border-color .23s ease, box-shadow .23s ease, background .23s ease;
+}
+.card::before { position: absolute; top: 0; right: 0; left: 0; height: 4px; background: linear-gradient(90deg, var(--c), color-mix(in srgb, var(--c) 10%, transparent)); content: ""; }
+.card::after { position: absolute; top: -80px; right: -90px; width: 180px; height: 180px; border-radius: 50%; background: color-mix(in srgb, var(--c) 9%, transparent); content: ""; filter: blur(5px); pointer-events: none; }
+.card:hover { transform: translateY(-5px); border-color: color-mix(in srgb, var(--c) 58%, var(--line)); box-shadow: 0 22px 48px color-mix(in srgb, var(--c) 13%, transparent); }
+.card[data-color="red"], .card[data-color="blue"] { --c: var(--p1); }
+.card[data-color="yellow"] { --c: var(--p2); }
+.card[data-color="green"] { --c: var(--p3); }
+.card h3 { position: relative; z-index: 1; margin: 0; font-size: 1.22rem; letter-spacing: -.02em; }
+.card p { position: relative; z-index: 1; margin: 0; color: var(--muted); }
+.icon { position: relative; z-index: 1; display: inline-grid; place-items: center; width: 52px; height: 52px; border: 1px solid color-mix(in srgb, var(--c, var(--p3)) 27%, var(--line)); border-radius: 16px; background: linear-gradient(145deg, color-mix(in srgb, var(--c, var(--p3)) 20%, transparent), color-mix(in srgb, var(--surface) 70%, transparent)); font-size: 1.75rem; }
+.card.aud { --c: var(--ac); min-height: 240px; color: inherit; text-decoration: none; }
+.card.aud h3 { margin-top: 4px; }
+.card.aud:not(.on):not(a) { opacity: .65; }
+.topics { position: relative; z-index: 1; margin: 0; padding-left: 1.1em; color: var(--muted); font-size: .94rem; }
+.topics li { margin: 3px 0; }
+.aud-row { position: relative; z-index: 1; display: flex; flex-wrap: wrap; gap: 7px; margin: 0; }
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 29px;
+  padding: 4px 10px;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  background: color-mix(in srgb, var(--surface-raised) 45%, transparent);
+  font-size: .84rem;
+  line-height: 1.25;
+}
+.badge[data-aud] { border-color: color-mix(in srgb, var(--ac) 47%, transparent); background: linear-gradient(120deg, color-mix(in srgb, var(--ac) 18%, transparent), color-mix(in srgb, var(--surface) 80%, transparent)); transition: border-color .2s ease, background .2s ease, transform .2s ease; }
+.badge[data-aud]::before { width: 7px; height: 7px; flex: 0 0 7px; border-radius: 50%; background: var(--ac); content: ""; }
+.badge[data-aud]:hover { transform: translateY(-1px); border-color: var(--ac); background: color-mix(in srgb, var(--ac) 25%, var(--surface)); }
+[data-aud="maestros"] { --ac: var(--c-maestros); }
+[data-aud="alumnos"] { --ac: var(--c-alumnos); }
+[data-aud="general"] { --ac: var(--c-general); }
+.meta { position: relative; z-index: 1; display: flex; align-items: center; flex-wrap: wrap; gap: 8px; margin-top: auto; padding-top: 12px; }
+.meta .ghost { margin-left: auto; min-height: 38px; padding: 7px 13px; font-size: .9rem; }
+.card[hidden] { display: none !important; }
+.empty { padding: 24px 0; color: var(--muted); }
+.filters {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 8px 0 28px;
+  padding: 15px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: color-mix(in srgb, var(--surface) 76%, transparent);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, .05);
+}
+.filters #q { flex: 1 1 230px; max-width: 340px; }
 .chips { display: flex; flex-wrap: wrap; gap: 8px; }
-.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 16px; }
-.card { --c: var(--blue); display: flex; flex-direction: column; gap: 8px; padding: 18px; background: var(--surface); border: 1px solid var(--line); border-top: 6px solid var(--c); border-radius: 14px; }
-.card[data-color="red"] { --c: var(--red); }
-.card[data-color="yellow"] { --c: var(--yellow); }
-.card[data-color="green"] { --c: var(--green); }
-.card h3 { margin: 0; font-size: 1.15rem; }
-.card p { margin: 0; color: var(--muted); }
-.icon { font-size: 1.8rem; }
-.meta { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: auto; padding-top: 8px; font-size: 0.85rem; }
-.badge { border: 1px solid var(--line); border-radius: 6px; padding: 2px 8px; }
-.meta .ghost { margin-left: auto; padding: 5px 12px; }
-.empty { color: var(--muted); padding: 24px 0; }
+.course-count { display: inline-flex; align-items: center; gap: 7px; margin: 0 0 18px; padding: 6px 12px; border: 1px solid color-mix(in srgb, var(--p3) 35%, var(--line)); border-radius: 999px; background: color-mix(in srgb, var(--p3) 9%, var(--surface)); color: var(--ink); font-size: .9rem; }
+.course-count strong { color: var(--p3); font-size: 1rem; }
+.banner { display: grid; gap: clamp(24px, 5vw, 68px); align-items: center; grid-template-columns: minmax(0, 1fr) minmax(250px, .75fr); padding-top: 48px; }
+.banner h1 { margin: 0; font-size: clamp(2.5rem, 5.5vw, 4.7rem); letter-spacing: -.06em; }
+.banner img { width: 100%; max-height: 300px; object-fit: contain; filter: drop-shadow(0 20px 30px rgba(0, 0, 0, .12)); }
 
-.road { list-style: none; margin: 24px 0 0; padding: 0; display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); counter-reset: s; }
-.road > li { counter-increment: s; border-left: 3px solid var(--accent); padding-left: 16px; }
-.road > li::before { content: counter(s); font: 700 2rem var(--head); color: var(--accent); }
-.road h3 { margin: 0 0 8px; }
-.road ol { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
-.step { width: 100%; text-align: left; padding: 8px 12px; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; cursor: pointer; }
-.step.done::after { content: " ✓"; color: var(--accent); }
-#awards { padding-left: 1.2em; }
+/* Aquí diseño las rutas como paneles propios y mantengo las etiquetas de público solamente en las tarjetas de cursos. */
+.road { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; margin: 26px 0 0; padding: 0; list-style: none; counter-reset: route; }
+.road > li { counter-increment: route; min-width: 0; padding: 24px; border: 1px solid var(--line); border-radius: 21px; background: linear-gradient(145deg, color-mix(in srgb, var(--surface) 92%, var(--brand) 8%), var(--surface)); }
+.road > li::before { display: inline-grid; place-items: center; width: 43px; height: 43px; margin-bottom: 12px; border: 1px solid color-mix(in srgb, var(--accent) 45%, var(--line)); border-radius: 14px; background: color-mix(in srgb, var(--accent) 14%, var(--surface)); color: var(--p2); content: "0" counter(route); font-size: 1.05rem; font-weight: 700; }
+.road h3 { margin: 0 0 8px; font-size: 1.25rem; }
+.road > li > .note { min-height: 3em; }
+.road ol { display: grid; gap: 8px; margin: 17px 0 0; padding: 0; list-style: none; }
+.step { display: block; width: 100%; padding: 10px 13px; border: 1px solid color-mix(in srgb, var(--p3) 18%, var(--line)); border-radius: 12px; background: linear-gradient(110deg, color-mix(in srgb, var(--p3) 8%, transparent), color-mix(in srgb, var(--surface) 94%, transparent)); color: var(--ink); text-align: left; text-decoration: none; transition: border-color .2s ease, transform .2s ease, background .2s ease; }
+.step:hover { transform: translateX(3px); border-color: var(--p3); background: color-mix(in srgb, var(--p3) 13%, var(--surface)); }
+.step.done::after { content: " ✓"; color: var(--p3); }
 
-dialog { max-width: min(520px, 92vw); padding: 24px; background: var(--surface); color: var(--ink); border: 1px solid var(--line); border-radius: 16px; }
-dialog::backdrop { background: #0009; }
-dialog h2 { margin-top: 0; }
-dialog label { display: grid; gap: 4px; margin: 12px 0; }
-dialog .solid, dialog .ghost { margin: 6px 6px 0 0; }
-.award { margin-top: 12px; padding: 12px; border: 2px solid var(--accent); border-radius: 12px; font-family: var(--head); }
-.foot { padding-block: 32px; color: var(--muted); }
+/* Aquí preparo los formularios generales para que mantengan la misma jerarquía visual que el resto de las páginas. */
+.form { display: grid; align-content: start; gap: 15px; width: 100%; max-width: none; margin-top: 0; }
+.form label { display: grid; gap: 7px; color: var(--ink); font-size: .95rem; }
+.form label > span { color: var(--muted); }
+.form input, .form select, .form textarea { width: 100%; }
+.form textarea { resize: vertical; }
+.form .solid { justify-self: start; min-width: 145px; margin-top: 4px; }
+.form .solid:disabled { opacity: .5; cursor: not-allowed; }
+textarea { font: inherit; color: inherit; background: var(--surface); border: 1px solid var(--line); border-radius: 13px; padding: 12px 15px; }
+.hp { position: absolute; left: -9999px; }
+.cols { display: grid; gap: 28px; align-items: start; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); margin-top: 24px; }
+.flash { padding: 12px 16px; border: 1px solid var(--p3); border-radius: 12px; background: color-mix(in srgb, var(--p3) 11%, var(--surface)); }
+.flash.err { border-color: var(--accent); background: color-mix(in srgb, var(--accent) 12%, var(--surface)); }
 
-a { color: var(--accent); }
-.ghost { color: var(--ink); }
-.course-page .icon { font-size: 3rem; }
-.course-page h1 { margin: 0.2em 0; font-size: clamp(2rem, 6vw, 3rem); }
+/* Aquí le doy al contacto un formato de centro de ayuda: formulario claro a la izquierda y datos de contacto agrupados a la derecha. */
+.contact-layout { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(270px, .8fr); gap: 28px; align-items: stretch; margin-top: 28px; }
+.contact-form-card, .contact-aside, .access-form-card { min-width: 0; padding: clamp(22px, 3vw, 34px); border: 1px solid var(--line); border-radius: 24px; background: color-mix(in srgb, var(--surface) 92%, transparent); box-shadow: var(--shadow); }
+.contact-form-card h2, .access-form-card h2 { margin: 0 0 7px; }
+.contact-form-card .form { margin-top: 22px; }
+.contact-aside { position: relative; display: flex; flex-direction: column; gap: 24px; overflow: hidden; background: linear-gradient(150deg, color-mix(in srgb, var(--brand) 24%, var(--surface)), var(--surface) 62%); }
+.contact-aside::after { position: absolute; top: -80px; right: -80px; width: 230px; height: 230px; border: 1px solid color-mix(in srgb, var(--p3) 30%, transparent); border-radius: 50%; box-shadow: 0 0 0 22px color-mix(in srgb, var(--p3) 4%, transparent), 0 0 0 48px color-mix(in srgb, var(--p3) 3%, transparent); content: ""; pointer-events: none; }
+.contact-aside > * { position: relative; z-index: 1; }
+.contact-aside h2 { margin: 0; }
+.contact-aside .info { display: grid; gap: 16px; }
+.info dl { display: grid; gap: 5px 20px; margin: 0; }
+.info dt { margin-top: 7px; color: var(--p3); font-size: .78rem; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; }
+.info dd { margin: 0; color: var(--ink); overflow-wrap: anywhere; }
+.contact-socials { display: flex; flex-wrap: wrap; gap: 9px; }
+.contact-socials a { text-decoration: none; }
+.contact-mark { display: grid; place-items: center; width: 48px; height: 48px; border: 1px solid color-mix(in srgb, var(--p3) 38%, var(--line)); border-radius: 16px; background: color-mix(in srgb, var(--p3) 12%, transparent); font-size: 1.4rem; }
+
+/* Aquí separo el registro y el inicio de sesión en paneles independientes, con una introducción visual que acompaña la referencia. */
+.access-intro { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) minmax(170px, .45fr); gap: 20px; align-items: center; overflow: hidden; margin-top: 12px; padding: clamp(24px, 4vw, 42px); border: 1px solid var(--line); border-radius: 26px; background: linear-gradient(115deg, color-mix(in srgb, var(--brand) 26%, var(--surface)), color-mix(in srgb, var(--surface) 91%, transparent)); }
+.access-intro h1 { max-width: 700px; margin: 0 0 10px; font-size: clamp(2.1rem, 4.5vw, 3.6rem); letter-spacing: -.055em; }
+.access-intro p:not(.eyebrow) { max-width: 58ch; margin: 0; color: var(--muted); }
+.access-art { position: relative; min-height: 135px; }
+.access-art::before, .access-art::after { position: absolute; right: 8%; bottom: 4%; width: 150px; height: 110px; border: 1px solid color-mix(in srgb, var(--p3) 42%, transparent); border-radius: 65% 35% 45% 55%; background: linear-gradient(135deg, color-mix(in srgb, var(--p3) 24%, transparent), color-mix(in srgb, var(--brand) 18%, transparent)); content: ""; transform: rotate(-19deg); }
+.access-art::after { right: 27%; bottom: 24%; width: 74px; height: 74px; border-radius: 50%; background: color-mix(in srgb, var(--accent) 65%, transparent); }
+.access-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; margin-top: 28px; }
+.access-form-card .form { margin-top: 22px; }
+.access-form-card .form h2 { font-size: 1.4rem; }
+.access-form-card .eyebrow { margin-bottom: 8px; }
+.profile-card { max-width: 820px; margin-top: 24px; }
+.profile-card ul { padding-left: 1.2rem; }
+
+/* Aquí doy formato a la ficha individual de cada curso y a su resumen, manteniendo el botón de inscripción visible. */
+.course-page { max-width: 980px; margin: 0 auto; }
+.course-page > .note { display: inline-flex; margin-bottom: 22px; text-decoration: none; }
+.course-page .icon { width: 68px; height: 68px; font-size: 2.2rem; }
+.course-page h1 { margin: .25em 0; font-size: clamp(2.1rem, 5vw, 3.8rem); letter-spacing: -.05em; }
 .course-page .lead { color: var(--muted); font-size: 1.15rem; }
 .course-page .meta { margin: 12px 0; padding: 0; }
-.course-page li { margin: 4px 0; }
+.course-page li { margin: 5px 0; }
+.course-head { padding: 26px 0 22px; }
+.enroll { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; margin-top: 20px; }
+.solid.big { min-height: 50px; padding: 14px 26px; font-size: 1rem; font-weight: 700; letter-spacing: .02em; }
+.badge.ok { border-color: var(--p3); color: var(--ink); }
+.overview dl { display: grid; grid-template-columns: max-content 1fr; gap: 10px 24px; }
+.overview dt { color: var(--muted); }
+.overview dd { margin: 0; }
+.overview h2, .award h2 { letter-spacing: -.03em; }
 
-.form { display: grid; gap: 12px; max-width: 520px; margin-top: 16px; }
-.form label { display: grid; gap: 4px; }
-.form .solid { justify-self: start; }
-.form .solid:disabled { opacity: 0.5; cursor: not-allowed; }
-textarea { font: inherit; color: inherit; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 9px 14px; resize: vertical; }
-.hp { position: absolute; left: -9999px; }
+/* Aquí hago que el reconocimiento destaque sin parecer una certificación oficial. */
+.award { margin-top: 26px; padding: clamp(30px, 5vw, 60px); border: 1px solid color-mix(in srgb, var(--p2) 50%, var(--line)); border-radius: 24px; background: linear-gradient(135deg, color-mix(in srgb, var(--p2) 11%, var(--surface)), var(--surface)); text-align: center; }
+.award .lead { margin: 0 auto; }
+.cert-name { max-width: 480px; margin: 22px auto; padding-bottom: 8px; border-bottom: 2px solid var(--accent); font: 700 clamp(1.4rem, 4vw, 2.3rem) var(--head); }
+
+/* Aquí doy más aire al pie de página, reparto sus columnas y quito el subrayado permanente para una lectura más limpia. */
+.foot { margin-top: 72px; padding: 58px 28px 24px; background: var(--foot); color: var(--foot-ink); }
+.foot-grid { display: grid; grid-template-columns: 1.1fr .75fr 1.15fr .7fr; gap: clamp(25px, 4vw, 56px); max-width: 1240px; margin: 0 auto; }
+.foot-grid > div { min-width: 0; }
+.foot h3 { margin: 0 0 19px; color: var(--p3); font-size: .92rem; letter-spacing: .12em; text-transform: uppercase; }
+.foot p { color: color-mix(in srgb, var(--foot-ink) 78%, transparent); }
+.foot .brand { margin: 0 0 14px; font-size: 1.55rem; }
+.foot ul { display: grid; justify-items: start; gap: 11px; margin: 0; padding: 0; list-style: none; }
+.foot li { color: color-mix(in srgb, var(--foot-ink) 84%, transparent); overflow-wrap: anywhere; }
+.foot a { color: inherit; text-decoration: none; text-underline-offset: 4px; transition: color .2s ease, opacity .2s ease; }
+.foot a:hover { color: var(--p3); text-decoration: underline; }
+.share ul { gap: 10px; }
+.share a, .share button { display: inline-flex; align-items: center; justify-content: center; min-height: 40px; padding: 7px 14px; border: 1px solid color-mix(in srgb, var(--p3) 55%, transparent); border-radius: 999px; background: transparent; color: inherit; font: inherit; text-decoration: none; cursor: pointer; transition: background .2s ease, border-color .2s ease, transform .2s ease; }
+.share a:hover, .share button:hover { transform: translateY(-2px); border-color: var(--p3); background: color-mix(in srgb, var(--p3) 12%, transparent); text-decoration: none; }
+.legal { max-width: 1240px; margin: 42px auto 0; padding: 20px 0 0; border-top: 1px solid color-mix(in srgb, var(--foot-ink) 20%, transparent); color: color-mix(in srgb, var(--foot-ink) 72%, transparent); font-size: .85rem; }
+
+/* Aquí adapto el diseño a tablet y móvil para que las tarjetas, los formularios y el menú no queden apretados. */
+@media (max-width: 980px) {
+  .top { gap: 14px 20px; }
+  .top nav { order: 3; width: 100%; }
+  .tools { margin-left: auto; }
+  .hero { gap: 30px; }
+  .grid, .road { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .foot-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .contact-layout { grid-template-columns: minmax(0, 1fr) minmax(240px, .8fr); }
+}
+@media (max-width: 700px) {
+  main, .top { padding-inline: 20px; }
+  .top { padding-block: 16px; }
+  .brand { font-size: 1.08rem; }
+  .brand-icon-slot { flex-basis: 30px; width: 30px; height: 30px; border-radius: 10px; }
+  .top nav { gap: 8px 16px; }
+  .tools { width: 100%; margin: 0; }
+  .hero { grid-template-columns: 1fr; min-height: 0; padding: 52px 0 56px; }
+  .hero h1 { font-size: clamp(3rem, 13vw, 5rem); }
+  .hero-visual { max-width: 560px; }
+  .arch { aspect-ratio: 1.25; }
+  section { padding: 32px 0; }
+  .banner { grid-template-columns: 1fr; padding-top: 35px; }
+  .banner img { max-width: 370px; justify-self: center; }
+  .grid, .road, .access-grid { grid-template-columns: 1fr; gap: 18px; }
+  .card { padding: 22px; border-radius: 19px; }
+  .filters { align-items: stretch; }
+  .filters #q { max-width: none; flex-basis: 100%; }
+  .chips { flex: 1 1 100%; }
+  .filters select { width: 100%; }
+  .meta .ghost { margin-left: 0; }
+  .road > li > .note { min-height: 0; }
+  .contact-layout { grid-template-columns: 1fr; }
+  .access-intro { grid-template-columns: 1fr; }
+  .access-art { display: none; }
+  .foot { margin-top: 48px; padding: 42px 20px 20px; }
+  .foot-grid { grid-template-columns: 1fr 1fr; gap: 30px 20px; }
+  .foot-grid > div:first-child { grid-column: 1 / -1; }
+  .legal { margin-top: 30px; }
+}
+@media (max-width: 430px) {
+  .foot-grid { grid-template-columns: 1fr; }
+  .foot-grid > div:first-child { grid-column: auto; }
+  .tools .language-select { flex: 1; }
+  .hero-actions { align-items: stretch; flex-direction: column; }
+  .hero-actions a { width: 100%; }
+  .overview dl { grid-template-columns: 1fr; gap: 3px; }
+  .overview dd { margin-bottom: 9px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; }
+}
