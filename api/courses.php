@@ -1,12 +1,12 @@
 <?php
-// Aquí expongo los cursos como JSON y permito filtrar por categoría, nivel o público sin cambiar el catálogo original.
+// Se exponen los cursos como JSON y permite filtrar por categoría, nivel o público sin cambiar el catálogo original.
 declare(strict_types=1);
 require __DIR__ . '/../includes/data.php';
 
 header('Content-Type: application/json; charset=utf-8');
 
 try {
-    // Aquí leo el catálogo desde el mismo archivo que utiliza la página de cursos.
+    // Lee el catálogo desde el mismo archivo que utiliza la página de cursos.
     $courses = load_courses();
 } catch (RuntimeException $e) {
     http_response_code(500);
@@ -14,14 +14,14 @@ try {
     exit;
 }
 
-// Aquí aplico los filtros opcionales de categoría y nivel cuando vienen en la URL.
+// Aplica los filtros opcionales de categoría y nivel cuando vienen en la URL.
 foreach (['category', 'level'] as $field) {
     $value = param($field);
     if ($value !== '') {
         $courses = array_filter($courses, fn(array $c): bool => $c[$field] === $value);
     }
 }
-// Aquí dejo solo los cursos que se dirigen al público solicitado, si se indicó uno.
+// Aparecen solo los cursos que se dirigen al público solicitado, si se indicó uno.
 $audience = param('audience');
 if ($audience !== '') {
     $courses = array_filter($courses, fn(array $c): bool => in_array($audience, $c['audience'], true));
