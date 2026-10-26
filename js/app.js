@@ -1,4 +1,4 @@
-// Aquí conecto el selector de tema con las preferencias guardadas para que se conserve al navegar.
+// Se conecta el selector de tema con las preferencias guardadas para que se conserve al navegar.
 const root = document.documentElement;
 const themeBtn = document.querySelector('#theme');
 const paintTheme = () => {
@@ -14,7 +14,7 @@ if (themeBtn) {
   paintTheme();
 }
 
-// Aquí cambio el idioma usando el único selector del menú; cada opción conserva la página y sus filtros actuales.
+// Cambio de idioma usando el único selector del menú; cada opción conserva la página y sus filtros actuales.
 const languageSelect = document.querySelector('#language');
 languageSelect?.addEventListener('change', () => {
   if (languageSelect.value) window.location.assign(languageSelect.value);
@@ -26,7 +26,7 @@ copyBtn?.addEventListener('click', async () => {
   try { await navigator.clipboard.writeText(location.href); copyBtn.textContent = copyBtn.dataset.done; } catch (e) { /* sin permiso */ }
 });
 
-// Aquí combino la búsqueda, el nivel y el público elegido; además actualizo el contador de cursos visibles.
+// Combinación de la búsqueda, el nivel y el público elegido; además se actualiza el contador de cursos visibles.
 const grid = document.querySelector('#grid');
 if (grid) {
   const q = document.querySelector('#q');
@@ -58,7 +58,7 @@ if (grid) {
   apply();
 }
 
-// Aquí oculto el texto provisional cuando el video carga y dejo alternar el sonido desde su botón.
+// Se oculta el texto provisional cuando el video carga y se deja alternar el sonido desde su botón.
 const video = document.querySelector('#welcome');
 if (video) {
   const sound = document.querySelector('#sound');

@@ -1,7 +1,7 @@
 <?php
 require __DIR__ . '/includes/app.php';
 
-// Aquí recojo los datos del formulario y conservo sus valores cuando debo mostrar un error.
+// Recolección de datos del formulario y conservación de sus valores cuando se debe mostrar un error.
 $err = '';
 $f = ['name' => '', 'email' => '', 'topic' => 'duda', 'message' => ''];
 // Aquí verifico el token, el campo trampa y los datos antes de guardar el mensaje con una consulta preparada.
@@ -24,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 page_start(t('nav_contact'), 'contacto');
 ?>
-<!-- Aquí presento el formulario y los datos de contacto en una composición de centro de ayuda. -->
+<!-- Presentación del formulario y los datos de contacto en una composición de centro de ayuda. -->
 <section class="contact-page">
   <p class="eyebrow"><?= h(t('contact_eyebrow')) ?></p>
   <h1><?= h(t('nav_contact')) ?></h1>

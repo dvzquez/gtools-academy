@@ -25,7 +25,7 @@ $dateText = LANG === 'en' ? $date->format('F j, Y') : $date->format('d/m/Y');
   <!-- Aquí reutilizo la fuente principal de la academia también en el reconocimiento imprimible. -->
   <link href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap" rel="stylesheet">
   <style>
-    /* Aquí mantengo el diseño del reconocimiento dentro de la identidad visual de la versión 4.0. */
+    /* Diseño del reconocimiento dentro de la identidad visual de la versión 4.0. */
     * { box-sizing: border-box; }
     @page { size: A4 landscape; margin: 0; }
     body { margin: 0; min-height: 100vh; display: grid; place-items: center; gap: 12px; padding: 16px; background: #0a1b35; color: #f3f6f8; font-family: "Faculty Glyphic", system-ui, sans-serif; }
@@ -47,7 +47,7 @@ $dateText = LANG === 'en' ? $date->format('F j, Y') : $date->format('d/m/Y');
   </style>
 </head>
 <body>
-<!-- Aquí muestro el nombre de quien completó el curso, el curso y la fecha; el texto aclara que no es una certificación oficial. -->
+<!-- Muestra el nombre de quien completó el curso, el curso y la fecha; el texto aclara que no es una certificación oficial. -->
 <main class="cert">
   <p>GTools Academy</p>
   <h1><?= h(t('cert_title')) ?></h1>

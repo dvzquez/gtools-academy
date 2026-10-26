@@ -22,7 +22,7 @@ function t(string $key): string
     return $TEXT[$key][LI] ?? $key;
 }
 
-/** Aquí abro una sola conexión PDO y creo las tablas necesarias si todavía no existen. */
+/** Sola conexión PDO y creación de las tablas necesarias si todavía no existen. */
 function db(): PDO
 {
     static $pdo = null;
@@ -37,7 +37,7 @@ function db(): PDO
     return $pdo;
 }
 
-/** Aquí busco a la persona autenticada y guardo el resultado durante esta petición. */
+/** Busco a la persona autenticada y guardo el resultado durante esta petición. */
 function user(): ?array
 {
     static $user = false;
@@ -52,7 +52,7 @@ function user(): ?array
     return $user;
 }
 
-/** Aquí recupero las inscripciones de la sesión y las organizo por identificador del curso. */
+/** Recupero las inscripciones de la sesión y las organizo por identificador del curso. */
 function my_enrollments(): array
 {
     $u = user();
@@ -131,14 +131,14 @@ function page_start(string $title, string $page): void
   <meta name="description" content="<?= h(t('tagline')) ?>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- Aquí cargo Faculty Glyphic, una fuente legible que uso en los títulos y controles de toda la interfaz. -->
+  <!-- Se carga Faculty Glyphic, una fuente legible que se usó en los títulos y controles de toda la interfaz. -->
   <link href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
   <script>try { document.documentElement.dataset.theme = localStorage.getItem('gt-theme') || 'dark'; } catch (e) {}</script>
   <script src="js/app.js" defer></script>
 </head>
 <body>
-<!-- Aquí dejo un espacio reservado para colocar el icono definitivo de GTools Academy delante del nombre. -->
+<!-- Espacio reservado para colocar el icono definitivo de GTools Academy delante del nombre. -->
 <header class="top">
   <a class="brand" href="index.php"><span class="brand-icon-slot" aria-hidden="true"></span><span>GTools Academy</span></a>
   <nav aria-label="Menu">

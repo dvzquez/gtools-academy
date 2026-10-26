@@ -1,5 +1,5 @@
 <?php
-// Textos de la interfaz: 'clave' => [español, inglés, francés]. Edita aquí para cambiar cualquier texto.
+// Textos de la interfaz: 'clave' => [español, inglés, francés]. Se edita aquí para cambiar cualquier texto.
 return [
     'nav_home' => ["Inicio", "Home", "Accueil"],
     'nav_courses' => ["Cursos", "Courses", "Cours"],

@@ -2,12 +2,12 @@
 // Página de un curso: curso.php?id=forms
 require __DIR__ . '/includes/app.php';
 
-// Aquí busco el curso solicitado y recupero el progreso de la persona que inició sesión.
+// Bpusqueda del curso solicitado y recuperación del progreso de la persona que inició sesión.
 $course = find_course(param('id'));
 $u = user();
 $mine = $course ? (my_enrollments()[$course['id']] ?? null) : null;
 
-// Aquí registro la inscripción o la finalización solo después de comprobar el token del formulario.
+// Registro de la inscripción o la finalización solo después de comprobar el token del formulario.
 if ($course && $_SERVER['REQUEST_METHOD'] === 'POST' && csrf_ok()) {
     if (!$u) {
         go('acceso.php?next=' . rawurlencode('curso.php?id=' . $course['id']));

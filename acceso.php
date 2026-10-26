@@ -10,7 +10,7 @@ if (!preg_match('/^[a-z-]+\.php(\?[\w=&%.-]*)?$/i', $next)) {
 $err = '';
 $f = array_fill_keys(['first_name', 'last_name', 'phone', 'role', 'email', 'level'], '');
 
-// Aquí separo cerrar sesión, crear una cuenta e iniciar sesión según la acción enviada por el formulario.
+// Separación de 'cerrar sesión', crear una cuenta e iniciar sesión según la acción enviada por el formulario.
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && csrf_ok()) {
     $action = post('action');
     if ($action === 'logout') {

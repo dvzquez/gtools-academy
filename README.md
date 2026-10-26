@@ -1,6 +1,6 @@
 # GTools Academy
 
-Sitio de cursos sobre herramientas de Google (populares y poco conocidas), pensado para maestros, alumnos y, después, cualquier persona que quiera aprender. Proyecto universitario y de portafolio.
+Sitio de cursos sobre herramientas de Google (populares y poco conocidas), pensado para maestros, alumnos y, después, cualquier persona que quiera aprender. Proyecto personal.
 
 **Stack de la presentación:** HTML, CSS, JavaScript, PHP y SQL (SQLite). TypeScript, React, Node.js y Python se agregan cuando se indique.
 

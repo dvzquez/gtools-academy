@@ -2,7 +2,7 @@
 require __DIR__ . '/includes/app.php';
 page_start(t('nav_home'), 'index');
 ?>
-<!-- Aquí presento la academia con un mensaje principal y una zona visual para el video de bienvenida. -->
+<!-- Presentación de la academia con un mensaje principal y una zona visual para el video de bienvenida. -->
 <section class="hero">
   <div class="hero-copy">
     <p class="eyebrow"><?= h(t('home_eyebrow')) ?></p>
@@ -26,13 +26,13 @@ page_start(t('nav_home'), 'index');
   </div>
 </section>
 
-<!-- Aquí explico el objetivo del proyecto y a quién le sirve. -->
+<!-- Explicación del objetivo del proyecto y a quién le sirve. -->
 <section class="about">
   <h2><?= h(t('about_title')) ?></h2>
   <p class="lead"><?= h(t('about_text')) ?></p>
 </section>
 
-<!-- Aquí muestro los tres públicos y enlazo cada tarjeta con el filtro correspondiente del catálogo. -->
+<!-- Muestra de los tres públicos y enlace de cada tarjeta con el filtro correspondiente del catálogo. -->
 <section>
   <h2><?= h(t('aud_title')) ?></h2>
   <div class="grid">

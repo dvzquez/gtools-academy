@@ -1,5 +1,5 @@
 <?php
-// Aquí preparo el catálogo, la información de cada curso y el progreso personal para renderizar los filtros y las rutas.
+// Preparación del catálogo, la información de cada curso y el progreso personal para renderizar los filtros y las rutas.
 require __DIR__ . '/includes/app.php';
 
 $courses = load_courses();
@@ -67,7 +67,7 @@ page_start(t('nav_courses'), 'cursos');
   <p id="empty" class="empty" hidden><?= h(t('empty')) ?></p>
 </section>
 
-<!-- Aquí presento las tres rutas usando sus nombres como títulos y sin repetir las etiquetas de público. -->
+<!-- Presentación de las tres rutas usando sus nombres como títulos y sin repetir las etiquetas de público. -->
 <section id="rutas">
   <h2><?= h(t('paths_title')) ?></h2>
   <p class="note"><?= h(t('paths_sub')) ?></p>
@@ -86,7 +86,7 @@ page_start(t('nav_courses'), 'cursos');
   </ol>
 </section>
 
-<!-- Aquí explico el reconocimiento que se desbloquea al completar un curso. -->
+<!-- Explicación del reconocimiento que se desbloquea al completar un curso. -->
 <section class="award">
   <h2><?= h(t('award_title')) ?></h2>
   <p class="lead"><?= h(t('award_text')) ?> <?= h(t('not_official')) ?></p>
