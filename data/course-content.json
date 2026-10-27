@@ -1,0 +1,4678 @@
+{
+  "drive": {
+    "image": "assets/img/course-drive.svg",
+    "imageAlt": [
+      "Ilustración de carpetas organizadas, archivos y colaboración en equipo.",
+      "Illustration of organized folders, files and team collaboration.",
+      "Illustration de dossiers organisés, de fichiers et de collaboration en équipe."
+    ],
+    "fullDescription": [
+      "Este curso enseña a utilizar Google Drive como centro de organización y colaboración. Se aprende a crear una estructura clara de carpetas, subir y organizar archivos, compartirlos con los permisos adecuados (lector, comentarista y editor) y colaborar sin perder el control de los documentos. Está dirigido a maestros que comparten materiales, alumnos que entregan trabajos y personas que necesitan mantener sus archivos ordenados y accesibles desde cualquier dispositivo.",
+      "This course teaches how to use Google Drive as a hub for organization and collaboration. Learners create a clear folder structure, upload and organize files, share them with the right permissions (viewer, commenter and editor), and collaborate without losing control of documents. It is designed for teachers sharing materials, students submitting work, and anyone who wants files organized and accessible from any device.",
+      "Ce cours apprend à utiliser Google Drive comme centre d'organisation et de collaboration. Les participants créent une structure claire de dossiers, importent et organisent des fichiers, les partagent avec les autorisations adéquates (lecteur, commentateur et éditeur) et collaborent tout en gardant le contrôle des documents. Il s'adresse aux enseignants qui partagent des ressources, aux élèves qui remettent des travaux et à toute personne souhaitant garder ses fichiers organisés et accessibles depuis n'importe quel appareil."
+    ],
+    "modality": [
+      "Práctica guiada",
+      "Guided practice",
+      "Pratique guidée"
+    ],
+    "prerequisites": [
+      [
+        "Cuenta de Google activa, personal o de Google Workspace / Classroom.",
+        "Acceso desde un ordenador recomendado o desde un dispositivo móvil.",
+        "Conocimientos básicos de navegación por internet y manejo de archivos."
+      ],
+      [
+        "An active Google account, personal or through Google Workspace / Classroom.",
+        "Computer access is recommended; a mobile device can also be used.",
+        "Basic web navigation and file-management skills."
+      ],
+      [
+        "Compte Google actif, personnel ou Google Workspace / Classroom.",
+        "Un ordinateur est recommandé, mais un appareil mobile convient aussi.",
+        "Connaissances de base en navigation web et en gestion de fichiers."
+      ]
+    ],
+    "objectives": [
+      [
+        "Crear y organizar una estructura de carpetas lógica y fácil de mantener.",
+        "Subir, mover, copiar, renombrar y eliminar archivos y carpetas con seguridad.",
+        "Compartir archivos y carpetas eligiendo el permiso adecuado: lector, comentarista o editor.",
+        "Gestionar enlaces restringidos, de la organización o públicos.",
+        "Usar Compartido conmigo, favoritos, colores de carpetas y búsqueda avanzada.",
+        "Aplicar buenas prácticas de colaboración y seguridad según quién deba ver o editar cada recurso.",
+        "Adaptar la organización a materiales de clase, entregas escolares o necesidades personales."
+      ],
+      [
+        "Create and maintain a logical folder structure.",
+        "Upload, move, copy, rename and delete files and folders safely.",
+        "Share files and folders with the right role: viewer, commenter or editor.",
+        "Manage restricted, organization-only and public sharing links.",
+        "Use Shared with me, starred items, folder colors and advanced search.",
+        "Apply collaboration and security practices based on who needs to view or edit each resource.",
+        "Adapt the structure to class materials, student submissions or personal needs."
+      ],
+      [
+        "Créer et maintenir une structure de dossiers logique.",
+        "Importer, déplacer, copier, renommer et supprimer des fichiers et dossiers en toute sécurité.",
+        "Partager des fichiers et dossiers avec le rôle adéquat : lecteur, commentateur ou éditeur.",
+        "Gérer les liens restreints, réservés à l'organisation ou publics.",
+        "Utiliser Partagés avec moi, les favoris, les couleurs de dossiers et la recherche avancée.",
+        "Appliquer de bonnes pratiques de collaboration et de sécurité selon les droits nécessaires.",
+        "Adapter l'organisation aux supports de cours, aux devoirs ou aux besoins personnels."
+      ]
+    ],
+    "modules": [
+      {
+        "title": [
+          "Conocer Drive y organizar archivos",
+          "Explore Drive and organize files",
+          "Découvrir Drive et organiser les fichiers"
+        ],
+        "duration": [
+          "40 min",
+          "40 min",
+          "40 min"
+        ],
+        "durationMinutes": 40,
+        "visual": "assets/img/drive-organize.svg",
+        "visualAlt": [
+          "Carpetas y archivos ordenados en una estructura jerárquica.",
+          "Folders and files arranged in a hierarchy.",
+          "Dossiers et fichiers organisés dans une structure hiérarchique."
+        ],
+        "topics": [
+          [
+            "Qué es Google Drive y cómo se relaciona con Docs, Sheets, Slides y Classroom.",
+            "Acceso a drive.google.com y recorrido por Mi unidad, Compartido conmigo, Recientes, Destacados y Papelera.",
+            "Creación de carpetas y subcarpetas con nombres claros y consistentes.",
+            "Carga de archivos y carpetas mediante arrastrar y soltar o el botón Nuevo.",
+            "Mover, copiar, renombrar y eliminar elementos; recuperación desde la Papelera.",
+            "Asignación de colores a las carpetas para facilitar su identificación.",
+            "Uso de vistas de lista o cuadrícula y orden por nombre o fecha de modificación.",
+            "Ejemplos: ciclos, materias y grupos para maestros; materias y entregas para alumnos; trabajo, facturas y proyectos para uso personal."
+          ],
+          [
+            "What Google Drive is and how it connects with Docs, Sheets, Slides and Classroom.",
+            "Access drive.google.com and explore My Drive, Shared with me, Recent, Starred and Trash.",
+            "Create folders and subfolders with clear, consistent names.",
+            "Upload files and folders by drag-and-drop or with the New button.",
+            "Move, copy, rename and delete items; restore them from Trash.",
+            "Assign folder colors for faster visual identification.",
+            "Use list or grid views and sort by name or modification date.",
+            "Examples: terms, subjects and groups for teachers; subjects and submissions for students; work, bills and projects for personal use."
+          ],
+          [
+            "Présentation de Google Drive et de ses liens avec Docs, Sheets, Slides et Classroom.",
+            "Accès à drive.google.com et découverte de Mon Drive, Partagés avec moi, Récents, Favoris et Corbeille.",
+            "Créer des dossiers et sous-dossiers aux noms clairs et cohérents.",
+            "Importer des fichiers et dossiers par glisser-déposer ou avec le bouton Nouveau.",
+            "Déplacer, copier, renommer et supprimer des éléments ; les restaurer depuis la corbeille.",
+            "Attribuer des couleurs aux dossiers pour les repérer plus rapidement.",
+            "Utiliser les vues liste ou grille et trier par nom ou date de modification.",
+            "Exemples : périodes, matières et groupes pour les enseignants ; matières et devoirs pour les élèves ; travail, factures et projets personnels."
+          ]
+        ]
+      },
+      {
+        "title": [
+          "Compartir con los permisos correctos",
+          "Share with the right permissions",
+          "Partager avec les bonnes autorisations"
+        ],
+        "duration": [
+          "45 min",
+          "45 min",
+          "45 min"
+        ],
+        "durationMinutes": 45,
+        "visual": "assets/img/drive-permissions.svg",
+        "visualAlt": [
+          "Documento compartido con diferentes perfiles y un control de acceso.",
+          "A shared document with different people and an access-control lock.",
+          "Document partagé avec plusieurs profils et un verrou de contrôle d'accès."
+        ],
+        "topics": [
+          [
+            "Diferencias entre lector (solo consulta), comentarista (consulta y comentarios) y editor (modifica el contenido).",
+            "Compartir archivos o carpetas con personas específicas mediante su correo.",
+            "Crear enlaces restringidos, para personas de la organización o para cualquier persona con el enlace.",
+            "Elegir una opción de enlace y evaluar los riesgos de una divulgación demasiado amplia.",
+            "Cambiar permisos o dejar de compartir cuando ya no sea necesario.",
+            "Comparar las ventajas y precauciones de compartir una carpeta completa frente a compartir archivos individuales.",
+            "Casos prácticos: material de clase como lector y carpeta de entregas como editor; entrega de un trabajo; documento familiar o de equipo con permisos controlados."
+          ],
+          [
+            "Distinguish viewer (view only), commenter (view and comment) and editor (modify content).",
+            "Share files or folders with specific people by email.",
+            "Create restricted links, organization-only links or links available to anyone with the link.",
+            "Choose link visibility and assess the risks of sharing too broadly.",
+            "Change permissions or stop sharing when access is no longer needed.",
+            "Compare the benefits and risks of sharing an entire folder versus individual files.",
+            "Practice cases: share class material as viewer and a submission folder as editor; submit an assignment; share a family or team document with controlled access."
+          ],
+          [
+            "Distinguer le lecteur (consultation), le commentateur (consultation et commentaires) et l'éditeur (modification du contenu).",
+            "Partager des fichiers ou dossiers avec des personnes précises par e-mail.",
+            "Créer des liens restreints, réservés à l'organisation ou accessibles à toute personne disposant du lien.",
+            "Choisir la visibilité des liens et évaluer les risques d'un partage trop large.",
+            "Modifier les autorisations ou arrêter le partage lorsque l'accès n'est plus nécessaire.",
+            "Comparer les avantages et les précautions du partage d'un dossier complet ou de fichiers individuels.",
+            "Cas pratiques : partager un support de cours en lecture et un dossier de remise en modification ; remettre un devoir ; partager un document familial ou d'équipe avec accès contrôlé."
+          ]
+        ]
+      },
+      {
+        "title": [
+          "Colaborar, buscar y mantener el orden",
+          "Collaborate, search and keep files organized",
+          "Collaborer, rechercher et garder de l'ordre"
+        ],
+        "duration": [
+          "35 min",
+          "35 min",
+          "35 min"
+        ],
+        "durationMinutes": 35,
+        "visual": "assets/img/drive-search.svg",
+        "visualAlt": [
+          "Búsqueda visual de un archivo y seguimiento de actividad.",
+          "Visual file search and activity tracking.",
+          "Recherche visuelle d'un fichier et suivi de l'activité."
+        ],
+        "topics": [
+          [
+            "Encontrar y organizar elementos desde Compartido conmigo.",
+            "Añadir archivos a Destacados y utilizar accesos rápidos.",
+            "Buscar por tipo de archivo, propietario, fecha y palabras del contenido.",
+            "Consultar actividad e historial de versiones y restaurar una versión anterior.",
+            "Configurar notificaciones de cambios y comentarios.",
+            "Buenas prácticas: evitar enlaces públicos por defecto, revisar Gestionar acceso, nombrar archivos con claridad y diseñar carpetas escalables.",
+            "Integración con Classroom, Docs, Sheets y Slides cuando corresponda.",
+            "Cierre práctico: organizar una parte real de Drive y compartir al menos un archivo o carpeta con permisos adecuados."
+          ],
+          [
+            "Find and organize items in Shared with me.",
+            "Star files and use shortcuts.",
+            "Search by file type, owner, date and words in the content.",
+            "Review activity and version history, then restore an earlier version.",
+            "Configure change and comment notifications.",
+            "Best practices: do not make links public by default, review Manage access, name files clearly and design folders that can scale.",
+            "Integrate with Classroom, Docs, Sheets and Slides where appropriate.",
+            "Final practice: organize a real part of Drive and share at least one file or folder with appropriate permissions."
+          ],
+          [
+            "Retrouver et organiser les éléments dans Partagés avec moi.",
+            "Ajouter des fichiers aux favoris et utiliser les raccourcis.",
+            "Rechercher par type de fichier, propriétaire, date et mots du contenu.",
+            "Consulter l'activité et l'historique des versions, puis restaurer une ancienne version.",
+            "Configurer les notifications de modifications et de commentaires.",
+            "Bonnes pratiques : ne pas rendre les liens publics par défaut, revoir Gérer l'accès, nommer clairement les fichiers et prévoir une structure évolutive.",
+            "Intégrer Classroom, Docs, Sheets et Slides lorsque c'est pertinent.",
+            "Pratique finale : organiser une partie réelle de Drive et partager au moins un fichier ou dossier avec les autorisations adéquates."
+          ]
+        ]
+      }
+    ],
+    "methodology": [
+      "Curso 100 % práctico: cada concepto se demuestra en pantalla y se reproduce de inmediato en una cuenta propia. Los ejemplos cubren contextos educativos y personales; al finalizar se deja organizada una parte importante de Drive y se practica el intercambio con permisos correctos.",
+      "A fully practical course: each concept is demonstrated and then reproduced in the learner's own account. Examples cover educational and personal contexts; by the end, a meaningful part of Drive is organized and sharing permissions are practiced.",
+      "Un cours entièrement pratique : chaque notion est démontrée puis reproduite dans le compte du participant. Les exemples couvrent les contextes éducatifs et personnels ; à la fin, une partie importante de Drive est organisée et le partage avec les bonnes autorisations est pratiqué."
+    ],
+    "outcomes": [
+      [
+        "Una estructura de carpetas clara y coloreada, adaptada a las necesidades reales.",
+        "Dominio de los tres niveles de permiso y de los tipos de enlace para compartir.",
+        "Capacidad para localizar archivos rápidamente y mantener el orden.",
+        "Criterios claros para decidir qué compartir, con quién y con qué permiso."
+      ],
+      [
+        "A clear, color-coded folder structure adapted to real needs.",
+        "Confident use of the three permission levels and sharing-link types.",
+        "Ability to find files quickly and maintain organization.",
+        "Clear criteria for deciding what to share, with whom and with which permission."
+      ],
+      [
+        "Une structure de dossiers claire et colorée, adaptée aux besoins réels.",
+        "Maîtrise des trois niveaux d'autorisation et des types de liens de partage.",
+        "Capacité à retrouver rapidement les fichiers et à maintenir l'ordre.",
+        "Critères clairs pour décider quoi partager, avec qui et avec quelle autorisation."
+      ]
+    ],
+    "materials": [
+      [
+        "Temario del curso en PDF.",
+        "Propuesta de estructura de carpetas para maestros, alumnos y uso personal.",
+        "Guía rápida de permisos y tipos de enlace.",
+        "Lista de operadores de búsqueda útiles en Drive."
+      ],
+      [
+        "Course syllabus PDF.",
+        "Suggested folder structures for teachers, students and personal use.",
+        "Quick guide to permissions and link types.",
+        "List of useful Drive search operators."
+      ],
+      [
+        "Programme du cours au format PDF.",
+        "Propositions de structures de dossiers pour les enseignants, les élèves et l'usage personnel.",
+        "Guide rapide des autorisations et des types de liens.",
+        "Liste d'opérateurs de recherche utiles dans Drive."
+      ]
+    ],
+    "referenceTitle": [
+      "Resumen de permisos para compartir",
+      "Sharing-permission reference",
+      "Résumé des autorisations de partage"
+    ],
+    "referenceColumns": [
+      [
+        "Permiso",
+        "Puede ver",
+        "Puede comentar",
+        "Puede editar",
+        "Uso típico"
+      ],
+      [
+        "Role",
+        "Can view",
+        "Can comment",
+        "Can edit",
+        "Typical use"
+      ],
+      [
+        "Rôle",
+        "Peut consulter",
+        "Peut commenter",
+        "Peut modifier",
+        "Usage courant"
+      ]
+    ],
+    "referenceRows": [
+      {
+        "cells": [
+          [
+            "Lector",
+            "Viewer",
+            "Lecteur"
+          ],
+          [
+            "Sí",
+            "Yes",
+            "Oui"
+          ],
+          [
+            "No",
+            "No",
+            "Non"
+          ],
+          [
+            "No",
+            "No",
+            "Non"
+          ],
+          [
+            "Material de consulta y apuntes",
+            "Reference material and notes",
+            "Documents de référence et notes"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          [
+            "Comentarista",
+            "Commenter",
+            "Commentateur"
+          ],
+          [
+            "Sí",
+            "Yes",
+            "Oui"
+          ],
+          [
+            "Sí",
+            "Yes",
+            "Oui"
+          ],
+          [
+            "No",
+            "No",
+            "Non"
+          ],
+          [
+            "Revisión de trabajos y retroalimentación",
+            "Assignment review and feedback",
+            "Révision de travaux et retours"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          [
+            "Editor",
+            "Editor",
+            "Éditeur"
+          ],
+          [
+            "Sí",
+            "Yes",
+            "Oui"
+          ],
+          [
+            "Sí",
+            "Yes",
+            "Oui"
+          ],
+          [
+            "Sí",
+            "Yes",
+            "Oui"
+          ],
+          [
+            "Trabajo en equipo y entregas conjuntas",
+            "Teamwork and shared submissions",
+            "Travail en équipe et livrables communs"
+          ]
+        ]
+      }
+    ]
+  },
+  "gmail": {
+    "image": "assets/img/course-gmail.svg",
+    "imageAlt": [
+      "Ilustración de una bandeja de correo organizada con etiquetas, filtros y controles.",
+      "Illustration of an inbox organized with labels, filters and controls.",
+      "Illustration d'une boîte de réception organisée avec libellés, filtres et commandes."
+    ],
+    "fullDescription": [
+      "Este curso transforma la bandeja de entrada de Gmail en un sistema ordenado y productivo. Se aprende a clasificar mensajes con etiquetas, subetiquetas y colores, automatizar la organización mediante filtros y trabajar con mayor rapidez usando atajos de teclado. Los ejercicios se adaptan a contextos educativos y de uso diario para reducir el tiempo dedicado a buscar correos.",
+      "This course turns a Gmail inbox into an organized and productive system. Learners classify messages with labels, nested labels and colors, automate organization with filters, and work faster with keyboard shortcuts. Exercises are adapted to educational and everyday contexts to reduce the time spent searching for email.",
+      "Ce cours transforme la boîte de réception Gmail en un système organisé et productif. Les participants classent les messages avec des libellés, sous-libellés et couleurs, automatisent l'organisation au moyen de filtres et travaillent plus rapidement grâce aux raccourcis clavier. Les exercices s'adaptent aux contextes éducatifs et quotidiens afin de réduire le temps consacré à la recherche de messages."
+    ],
+    "modality": [
+      "Práctica guiada",
+      "Guided practice",
+      "Pratique guidée"
+    ],
+    "prerequisites": [
+      [
+        "Cuenta de Gmail activa, personal o de Google Workspace / Classroom.",
+        "Acceso desde un ordenador recomendado o tablet con navegador actualizado.",
+        "Conocimientos básicos de correo electrónico: enviar, recibir y adjuntar archivos."
+      ],
+      [
+        "An active Gmail account, personal or through Google Workspace / Classroom.",
+        "A computer is recommended; a tablet with an up-to-date browser also works.",
+        "Basic email skills: sending, receiving and attaching files."
+      ],
+      [
+        "Compte Gmail actif, personnel ou Google Workspace / Classroom.",
+        "Un ordinateur est recommandé ; une tablette avec navigateur à jour convient aussi.",
+        "Connaissances de base de l'e-mail : envoyer, recevoir et joindre des fichiers."
+      ]
+    ],
+    "objectives": [
+      [
+        "Crear, anidar, colorear y gestionar etiquetas de forma profesional.",
+        "Diseñar filtros que clasifiquen, archiven o destaquen correos automáticamente.",
+        "Aplicar filtros también a los correos que ya existen para limpiar la bandeja.",
+        "Activar y dominar atajos para navegar, redactar y gestionar mensajes sin ratón.",
+        "Combinar etiquetas, filtros y atajos para conseguir una bandeja de entrada ordenada.",
+        "Adaptar el sistema a clases, familias, administración, materias, entregas y uso personal."
+      ],
+      [
+        "Create, nest, color-code and manage labels professionally.",
+        "Design filters that automatically classify, archive or highlight messages.",
+        "Apply filters to existing messages to clean up an inbox.",
+        "Enable and use shortcuts to navigate, write and manage messages without a mouse.",
+        "Combine labels, filters and shortcuts to maintain an organized inbox.",
+        "Adapt the system to classes, families, administration, subjects, submissions and personal use."
+      ],
+      [
+        "Créer, imbriquer, colorer et gérer les libellés de manière professionnelle.",
+        "Créer des filtres qui classent, archivent ou mettent automatiquement en évidence les messages.",
+        "Appliquer les filtres aux messages existants pour nettoyer la boîte de réception.",
+        "Activer et maîtriser les raccourcis pour naviguer, rédiger et gérer les messages sans souris.",
+        "Combiner libellés, filtres et raccourcis afin de garder une boîte organisée.",
+        "Adapter le système aux cours, familles, tâches administratives, matières, devoirs et besoins personnels."
+      ]
+    ],
+    "modules": [
+      {
+        "title": [
+          "Introducción y configuración inicial",
+          "Introduction and initial setup",
+          "Introduction et configuration initiale"
+        ],
+        "duration": [
+          "25 min",
+          "25 min",
+          "25 min"
+        ],
+        "durationMinutes": 25,
+        "visual": "assets/img/gmail-settings.svg",
+        "visualAlt": [
+          "Correo electrónico y controles de configuración.",
+          "Email and configuration controls.",
+          "Courriel et commandes de configuration."
+        ],
+        "topics": [
+          [
+            "Diferencia entre carpetas tradicionales y etiquetas de Gmail.",
+            "Recorrido por la bandeja, las categorías, el menú lateral y la barra de búsqueda.",
+            "Activación de atajos desde Configuración → General → Keyboard shortcuts.",
+            "Seguridad básica: verificación en dos pasos y revisión de dispositivos conectados."
+          ],
+          [
+            "Differences between traditional folders and Gmail labels.",
+            "Tour of the inbox, categories, side menu and search bar.",
+            "Enable shortcuts in Settings → General → Keyboard shortcuts.",
+            "Basic security: two-step verification and review of connected devices."
+          ],
+          [
+            "Différences entre les dossiers traditionnels et les libellés Gmail.",
+            "Présentation de la boîte de réception, des catégories, du menu latéral et de la recherche.",
+            "Activer les raccourcis dans Paramètres → Général → Keyboard shortcuts.",
+            "Sécurité de base : validation en deux étapes et vérification des appareils connectés."
+          ]
+        ]
+      },
+      {
+        "title": [
+          "Etiquetas: el centro de la organización",
+          "Labels: the core of organization",
+          "Libellés : le cœur de l'organisation"
+        ],
+        "duration": [
+          "45 min",
+          "45 min",
+          "45 min"
+        ],
+        "durationMinutes": 45,
+        "visual": "assets/img/gmail-labels.svg",
+        "visualAlt": [
+          "Etiquetas visuales que clasifican mensajes por categoría.",
+          "Visual labels that classify messages by category.",
+          "Libellés visuels qui classent les messages par catégorie."
+        ],
+        "topics": [
+          [
+            "Crear etiquetas y subetiquetas anidadas.",
+            "Asignar colores estándar o personalizados para reconocer categorías.",
+            "Aplicar varias etiquetas al mismo correo.",
+            "Mostrar u ocultar etiquetas en el menú lateral y en la lista de mensajes.",
+            "Buscar por etiqueta con label:nombre y combinar operadores.",
+            "Ejemplos educativos y personales: Clases, Padres, Administración, Tareas, Profesores, Materias, Entregas, Trabajo, Facturas y Proyectos."
+          ],
+          [
+            "Create labels and nested sublabels.",
+            "Assign standard or custom colors to identify categories.",
+            "Apply several labels to the same message.",
+            "Show or hide labels in the side menu and message list.",
+            "Search by label with label:name and combine search operators.",
+            "Education and personal examples: Classes, Parents, Administration, Tasks, Teachers, Subjects, Submissions, Work, Bills and Projects."
+          ],
+          [
+            "Créer des libellés et sous-libellés imbriqués.",
+            "Attribuer des couleurs standard ou personnalisées pour reconnaître les catégories.",
+            "Appliquer plusieurs libellés à un même message.",
+            "Afficher ou masquer les libellés dans le menu latéral et la liste des messages.",
+            "Rechercher par libellé avec label:nom et combiner les opérateurs.",
+            "Exemples éducatifs et personnels : cours, parents, administration, tâches, enseignants, matières, devoirs, travail, factures et projets."
+          ]
+        ]
+      },
+      {
+        "title": [
+          "Filtros: automatizar y limpiar la bandeja",
+          "Filters: automate and clean the inbox",
+          "Filtres : automatiser et nettoyer la boîte"
+        ],
+        "duration": [
+          "50 min",
+          "50 min",
+          "50 min"
+        ],
+        "durationMinutes": 50,
+        "visual": "assets/img/gmail-filters.svg",
+        "visualAlt": [
+          "Mensajes que pasan por filtros para quedar clasificados automáticamente.",
+          "Messages passing through filters for automatic classification.",
+          "Messages passant par des filtres pour un classement automatique."
+        ],
+        "topics": [
+          [
+            "Estructura de un filtro: condiciones y acciones.",
+            "Condiciones: De, Para, Asunto, Contiene las palabras, Tiene archivos adjuntos y Tamaño.",
+            "Acciones: aplicar etiqueta, archivar, marcar como leído, destacar, eliminar o evitar spam.",
+            "Crear filtros desde la búsqueda avanzada y aplicarlos a mensajes existentes.",
+            "Casos prácticos: mensajes de profesores o dirección; newsletters; notificaciones de Classroom / Drive; facturas con adjuntos.",
+            "Editar, desactivar o eliminar filtros existentes."
+          ],
+          [
+            "Filter structure: conditions and actions.",
+            "Conditions: From, To, Subject, Has the words, Has attachment and Size.",
+            "Actions: apply a label, archive, mark as read, star, delete or never send to spam.",
+            "Create filters from advanced search and apply them to existing messages.",
+            "Practice cases: teacher or administration messages; newsletters; Classroom / Drive notifications; invoices with attachments.",
+            "Edit, disable or delete existing filters."
+          ],
+          [
+            "Structure d'un filtre : conditions et actions.",
+            "Conditions : De, À, Objet, Contient les mots, Avec pièce jointe et Taille.",
+            "Actions : appliquer un libellé, archiver, marquer comme lu, mettre en favori, supprimer ou ne jamais envoyer en spam.",
+            "Créer des filtres depuis la recherche avancée et les appliquer aux messages existants.",
+            "Cas pratiques : messages d'enseignants ou de l'administration ; newsletters ; notifications Classroom / Drive ; factures avec pièces jointes.",
+            "Modifier, désactiver ou supprimer les filtres existants."
+          ]
+        ]
+      },
+      {
+        "title": [
+          "Atajos de teclado para trabajar con rapidez",
+          "Keyboard shortcuts for faster work",
+          "Raccourcis clavier pour travailler plus vite"
+        ],
+        "duration": [
+          "40 min",
+          "40 min",
+          "40 min"
+        ],
+        "durationMinutes": 40,
+        "visual": "assets/img/gmail-shortcuts.svg",
+        "visualAlt": [
+          "Teclado con teclas de acceso rápido resaltadas.",
+          "Keyboard with highlighted shortcut keys.",
+          "Clavier avec raccourcis mis en évidence."
+        ],
+        "topics": [
+          [
+            "Practicar atajos para redactar, responder, reenviar, archivar, eliminar, buscar y etiquetar.",
+            "Navegar entre Recibidos, Enviados, Borradores y Destacados con combinaciones de teclas.",
+            "Seleccionar mensajes, cambiar su estado de lectura y deshacer acciones.",
+            "Activar los atajos en Configuración → General y consultar la lista completa con ?."
+          ],
+          [
+            "Practice shortcuts to compose, reply, forward, archive, delete, search and label messages.",
+            "Navigate among Inbox, Sent, Drafts and Starred using key combinations.",
+            "Select messages, change read status and undo actions.",
+            "Enable shortcuts in Settings → General and view the full list with ?."
+          ],
+          [
+            "Pratiquer les raccourcis pour rédiger, répondre, transférer, archiver, supprimer, rechercher et libeller des messages.",
+            "Naviguer entre Réception, Envoyés, Brouillons et Favoris avec des combinaisons de touches.",
+            "Sélectionner des messages, changer leur état de lecture et annuler des actions.",
+            "Activer les raccourcis dans Paramètres → Général et consulter la liste complète avec ?. "
+          ]
+        ]
+      },
+      {
+        "title": [
+          "Puesta en práctica y sistema personal",
+          "Practice and personal workflow",
+          "Mise en pratique et système personnel"
+        ],
+        "duration": [
+          "20 min",
+          "20 min",
+          "20 min"
+        ],
+        "durationMinutes": 20,
+        "visual": "assets/img/gmail-workflow.svg",
+        "visualAlt": [
+          "Bandeja organizada con un flujo de mensajes clasificados.",
+          "Organized inbox with a flow of classified messages.",
+          "Boîte organisée avec un flux de messages classés."
+        ],
+        "topics": [
+          [
+            "Diseñar el sistema de etiquetas según el perfil de quien participa.",
+            "Crear entre tres y cinco filtros prioritarios durante la práctica.",
+            "Establecer una rutina diaria de cinco minutos para mantener el orden.",
+            "Identificar próximos pasos e integraciones con Classroom, Drive y Calendar."
+          ],
+          [
+            "Design a label system for the learner's profile.",
+            "Create three to five priority filters during practice.",
+            "Establish a five-minute daily routine to maintain the inbox.",
+            "Identify next steps and integrations with Classroom, Drive and Calendar."
+          ],
+          [
+            "Concevoir un système de libellés adapté au profil du participant.",
+            "Créer trois à cinq filtres prioritaires pendant la pratique.",
+            "Établir une routine quotidienne de cinq minutes pour garder la boîte organisée.",
+            "Identifier les prochaines étapes et les intégrations avec Classroom, Drive et Calendar."
+          ]
+        ]
+      }
+    ],
+    "methodology": [
+      "Curso 100 % práctico. Cada concepto se explica brevemente y se reproduce en la propia cuenta de Gmail. Se practican casos del entorno educativo y personal para que el sistema de etiquetas y filtros quede configurado al finalizar.",
+      "A fully practical course. Each concept is briefly explained and reproduced in the learner's own Gmail account. Educational and personal scenarios are practiced so the label and filter system is configured by the end.",
+      "Un cours entièrement pratique. Chaque notion est brièvement expliquée puis reproduite dans le compte Gmail du participant. Des cas éducatifs et personnels sont pratiqués afin que le système de libellés et de filtres soit configuré à la fin."
+    ],
+    "outcomes": [
+      [
+        "Una estructura de etiquetas clara y coloreada.",
+        "Entre cuatro y seis filtros activos para clasificar automáticamente el correo entrante.",
+        "Dominio de los 15–20 atajos de teclado más útiles.",
+        "Capacidad para localizar mensajes en segundos y mantener la bandeja con poco esfuerzo diario."
+      ],
+      [
+        "A clear, color-coded label structure.",
+        "Four to six active filters to classify incoming mail automatically.",
+        "Confidence with the 15–20 most useful keyboard shortcuts.",
+        "Ability to find messages in seconds and maintain the inbox with little daily effort."
+      ],
+      [
+        "Une structure de libellés claire et colorée.",
+        "Quatre à six filtres actifs pour classer automatiquement les messages entrants.",
+        "Maîtrise des 15 à 20 raccourcis clavier les plus utiles.",
+        "Capacité à retrouver les messages en quelques secondes et à garder une boîte organisée avec peu d'effort quotidien."
+      ]
+    ],
+    "materials": [
+      [
+        "Temario del curso en PDF.",
+        "Lista de atajos de teclado en una página.",
+        "Lista de filtros de ejemplo listos para adaptar.",
+        "Guía rápida de operadores de búsqueda de Gmail."
+      ],
+      [
+        "Course syllabus PDF.",
+        "One-page keyboard shortcut cheat sheet.",
+        "Example filters ready to adapt.",
+        "Quick guide to Gmail search operators."
+      ],
+      [
+        "Programme du cours au format PDF.",
+        "Fiche d'une page sur les raccourcis clavier.",
+        "Exemples de filtres prêts à adapter.",
+        "Guide rapide des opérateurs de recherche Gmail."
+      ]
+    ],
+    "referenceTitle": [
+      "Atajos de teclado de referencia",
+      "Keyboard shortcut reference",
+      "Référence des raccourcis clavier"
+    ],
+    "referenceColumns": [
+      [
+        "Acción",
+        "Atajo"
+      ],
+      [
+        "Action",
+        "Shortcut"
+      ],
+      [
+        "Action",
+        "Raccourci"
+      ]
+    ],
+    "referenceNote": [
+      "Los atajos deben activarse desde Configuración → General → Keyboard shortcuts. La tecla ? muestra la lista completa dentro de Gmail.",
+      "Shortcuts must be enabled in Settings → General → Keyboard shortcuts. Press ? to open the full list within Gmail.",
+      "Les raccourcis doivent être activés dans Paramètres → Général → Keyboard shortcuts. Appuyez sur ? pour afficher la liste complète dans Gmail."
+    ],
+    "referenceRows": [
+      {
+        "cells": [
+          [
+            "Redactar correo nuevo",
+            "Compose a new email",
+            "Rédiger un nouveau message"
+          ],
+          [
+            "C",
+            "C",
+            "C"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          [
+            "Archivar",
+            "Archive",
+            "Archiver"
+          ],
+          [
+            "E",
+            "E",
+            "E"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          [
+            "Responder",
+            "Reply",
+            "Répondre"
+          ],
+          [
+            "R",
+            "R",
+            "R"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          [
+            "Eliminar",
+            "Delete",
+            "Supprimer"
+          ],
+          [
+            "#",
+            "#",
+            "#"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          [
+            "Responder a todos",
+            "Reply all",
+            "Répondre à tous"
+          ],
+          [
+            "A",
+            "A",
+            "A"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          [
+            "Marcar como spam",
+            "Mark as spam",
+            "Signaler comme spam"
+          ],
+          [
+            "!",
+            "!",
+            "!"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          [
+            "Reenviar",
+            "Forward",
+            "Transférer"
+          ],
+          [
+            "F",
+            "F",
+            "F"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          [
+            "Deshacer última acción",
+            "Undo last action",
+            "Annuler la dernière action"
+          ],
+          [
+            "Z",
+            "Z",
+            "Z"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          [
+            "Buscar",
+            "Search",
+            "Rechercher"
+          ],
+          [
+            "/",
+            "/",
+            "/"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          [
+            "Etiquetar",
+            "Label",
+            "Attribuer un libellé"
+          ],
+          [
+            "L",
+            "L",
+            "L"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          [
+            "Ir a Recibidos",
+            "Go to Inbox",
+            "Ouvrir la boîte de réception"
+          ],
+          [
+            "G y luego I",
+            "G then I",
+            "G puis I"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          [
+            "Ir a Destacados",
+            "Go to Starred",
+            "Ouvrir les favoris"
+          ],
+          [
+            "G y luego S",
+            "G then S",
+            "G puis S"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          [
+            "Ir a Enviados",
+            "Go to Sent",
+            "Ouvrir les messages envoyés"
+          ],
+          [
+            "G y luego T",
+            "G then T",
+            "G puis T"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          [
+            "Ir a Borradores",
+            "Go to Drafts",
+            "Ouvrir les brouillons"
+          ],
+          [
+            "G y luego D",
+            "G then D",
+            "G puis D"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          [
+            "Siguiente / anterior correo",
+            "Next / previous message",
+            "Message suivant / précédent"
+          ],
+          [
+            "J / K",
+            "J / K",
+            "J / K"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          [
+            "Abrir correo",
+            "Open message",
+            "Ouvrir un message"
+          ],
+          [
+            "O o Enter",
+            "O or Enter",
+            "O ou Entrée"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          [
+            "Marcar como no leído",
+            "Mark as unread",
+            "Marquer comme non lu"
+          ],
+          [
+            "Shift + U",
+            "Shift + U",
+            "Maj + U"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          [
+            "Destacar / quitar estrella",
+            "Star / unstar",
+            "Ajouter / retirer une étoile"
+          ],
+          [
+            "S",
+            "S",
+            "S"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          [
+            "Seleccionar correo",
+            "Select message",
+            "Sélectionner un message"
+          ],
+          [
+            "X",
+            "X",
+            "X"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          [
+            "Ayuda de atajos",
+            "Shortcut help",
+            "Aide sur les raccourcis"
+          ],
+          [
+            "?",
+            "?",
+            "?"
+          ]
+        ]
+      }
+    ]
+  },
+  "sheets": {
+    "image": "assets/img/course-sheets.svg",
+    "imageAlt": [
+      "Ilustración de una hoja de cálculo con fórmulas, celdas y gráficos de datos.",
+      "Illustration of a spreadsheet with formulas, cells and data charts.",
+      "Illustration d'une feuille de calcul avec formules, cellules et graphiques de données."
+    ],
+    "fullDescription": [
+      "Curso intermedio para personas que conocen lo básico de Google Sheets y desean analizar datos de forma más profunda. Parte de funciones esenciales (SUMA, PROMEDIO y SI) y avanza hacia QUERY, FILTER, tablas dinámicas y gráficos. Se utilizan conjuntos de datos del ámbito educativo y personal, como calificaciones, asistencia, presupuestos, encuestas y seguimiento de proyectos, para transformar información desordenada en resultados claros y accionables.",
+      "An intermediate course for learners who know the basics of Google Sheets and want to analyze data in greater depth. It starts with essential functions such as SUM, AVERAGE and IF, then advances to QUERY, FILTER, pivot tables and charts. Educational and personal datasets—grades, attendance, budgets, surveys and project tracking—are used to turn messy information into clear, actionable results.",
+      "Un cours intermédiaire destiné aux personnes qui connaissent les bases de Google Sheets et souhaitent approfondir l'analyse des données. Il commence par les fonctions essentielles (SUM, AVERAGE et IF), puis aborde QUERY, FILTER, les tableaux croisés dynamiques et les graphiques. Des jeux de données éducatifs et personnels — notes, présence, budgets, enquêtes et suivi de projets — servent à transformer des informations désordonnées en résultats clairs et exploitables."
+    ],
+    "modality": [
+      "Práctica con datos reales",
+      "Hands-on practice with real datasets",
+      "Pratique avec des données réelles"
+    ],
+    "prerequisites": [
+      [
+        "Manejo básico de Google Sheets: crear hojas, dar formato a celdas, usar SUMA y PROMEDIO, filtrar y ordenar.",
+        "Cuenta de Google activa y acceso desde un ordenador recomendado.",
+        "Se recomienda haber completado un curso básico de Sheets o contar con experiencia equivalente."
+      ],
+      [
+        "Basic Google Sheets skills: create sheets, format cells, use SUM and AVERAGE, filter and sort.",
+        "An active Google account; computer access is recommended.",
+        "A beginner Sheets course or equivalent experience is recommended."
+      ],
+      [
+        "Connaissances de base de Google Sheets : créer des feuilles, formater les cellules, utiliser SUM et AVERAGE, filtrer et trier.",
+        "Compte Google actif ; accès depuis un ordinateur recommandé.",
+        "Un cours débutant sur Sheets ou une expérience équivalente est recommandé."
+      ]
+    ],
+    "objectives": [
+      [
+        "Dominar funciones intermedias y avanzadas: SI anidado, BUSCARV/BUSCARX, SUMAR.SI.CONJUNTO, CONTAR.SI.CONJUNTO, TEXTO y FECHA.",
+        "Usar FILTER, UNIQUE, SORT y ARRAYFORMULA en rangos dinámicos.",
+        "Escribir consultas QUERY para filtrar, agrupar y resumir datos con una sola fórmula.",
+        "Crear y personalizar tablas dinámicas para explorar datos desde diferentes perspectivas.",
+        "Aplicar formato condicional avanzado, validación de datos y protección de rangos.",
+        "Construir dashboards sencillos con gráficos y tablas que se actualizan automáticamente.",
+        "Aplicar las técnicas a casos reales educativos, personales o profesionales."
+      ],
+      [
+        "Master intermediate and advanced functions: nested IF, VLOOKUP/XLOOKUP, SUMIFS, COUNTIFS, TEXT and DATE.",
+        "Use FILTER, UNIQUE, SORT and ARRAYFORMULA with dynamic ranges.",
+        "Write QUERY statements to filter, group and summarize data in a single formula.",
+        "Create and customize pivot tables to explore data from different perspectives.",
+        "Apply advanced conditional formatting, data validation and range protection.",
+        "Build simple dashboards with charts and tables that update automatically.",
+        "Apply the techniques to real educational, personal or professional cases."
+      ],
+      [
+        "Maîtriser les fonctions intermédiaires et avancées : IF imbriqué, VLOOKUP/XLOOKUP, SUMIFS, COUNTIFS, TEXT et DATE.",
+        "Utiliser FILTER, UNIQUE, SORT et ARRAYFORMULA avec des plages dynamiques.",
+        "Écrire des requêtes QUERY pour filtrer, regrouper et résumer les données dans une seule formule.",
+        "Créer et personnaliser des tableaux croisés dynamiques pour explorer les données sous différents angles.",
+        "Appliquer la mise en forme conditionnelle avancée, la validation des données et la protection des plages.",
+        "Construire des tableaux de bord simples avec des graphiques et tableaux qui se mettent à jour automatiquement.",
+        "Appliquer ces techniques à des cas éducatifs, personnels ou professionnels."
+      ]
+    ],
+    "modules": [
+      {
+        "title": [
+          "Repaso y funciones esenciales reforzadas",
+          "Review and reinforced core functions",
+          "Révision et consolidation des fonctions essentielles"
+        ],
+        "duration": [
+          "1 h",
+          "1 hr",
+          "1 h"
+        ],
+        "durationMinutes": 60,
+        "visual": "assets/img/sheets-formulas.svg",
+        "visualAlt": [
+          "Hoja de cálculo con celdas resaltadas y una fórmula.",
+          "Spreadsheet with highlighted cells and a formula.",
+          "Feuille de calcul avec cellules mises en évidence et une formule."
+        ],
+        "topics": [
+          [
+            "Referencias relativas, absolutas y mixtas; arrastrar fórmulas sin errores.",
+            "SUMA, PROMEDIO, MAX, MIN, CONTAR, CONTARA, CONTAR.SI y SUMAR.SI.",
+            "Función SI simple y anidada; combinación con Y / O.",
+            "Funciones de texto: CONCATENAR / &, IZQUIERDA, DERECHA, EXTRAE, MAYUSC, MINUSC y LARGO.",
+            "Funciones de fecha: HOY, AHORA, AÑO, MES, DIA, DIAS y SIFECHA.",
+            "Errores frecuentes y depuración con SI.ERROR y SI.ND."
+          ],
+          [
+            "Relative, absolute and mixed references; fill formulas without errors.",
+            "SUM, AVERAGE, MAX, MIN, COUNT, COUNTA, COUNTIF and SUMIF.",
+            "Simple and nested IF; combine with AND / OR.",
+            "Text functions: CONCATENATE / &, LEFT, RIGHT, MID, UPPER, LOWER and LEN.",
+            "Date functions: TODAY, NOW, YEAR, MONTH, DAY, DAYS and DATEDIF.",
+            "Common errors and debugging with IFERROR and IFNA."
+          ],
+          [
+            "Références relatives, absolues et mixtes ; recopier les formules sans erreur.",
+            "SUM, AVERAGE, MAX, MIN, COUNT, COUNTA, COUNTIF et SUMIF.",
+            "IF simple et imbriqué ; combiner avec AND / OR.",
+            "Fonctions texte : CONCATENATE / &, LEFT, RIGHT, MID, UPPER, LOWER et LEN.",
+            "Fonctions de date : TODAY, NOW, YEAR, MONTH, DAY, DAYS et DATEDIF.",
+            "Erreurs fréquentes et débogage avec IFERROR et IFNA."
+          ]
+        ]
+      },
+      {
+        "title": [
+          "Búsquedas y consolidación de datos",
+          "Lookups and data consolidation",
+          "Recherches et consolidation des données"
+        ],
+        "duration": [
+          "1 h 30 min",
+          "1 hr 30 min",
+          "1 h 30 min"
+        ],
+        "durationMinutes": 90,
+        "visual": "assets/img/sheets-lookup.svg",
+        "visualAlt": [
+          "Tabla de datos y lupa para localizar valores relacionados.",
+          "Data table and magnifier to locate matching values.",
+          "Table de données et loupe pour trouver des valeurs correspondantes."
+        ],
+        "topics": [
+          [
+            "BUSCARV como búsqueda vertical exacta o aproximada.",
+            "Limitaciones de BUSCARV y uso de BUSCARX o ÍNDICE + COINCIDIR.",
+            "SUMAR.SI.CONJUNTO y CONTAR.SI.CONJUNTO con múltiples criterios.",
+            "Importar y combinar datos de varias hojas o archivos con IMPORTRANGE básico.",
+            "Casos: encontrar calificaciones, consolidar asistencia por grupo y calcular gastos por categoría."
+          ],
+          [
+            "Use VLOOKUP for exact or approximate vertical lookups.",
+            "Understand VLOOKUP limitations and when to use XLOOKUP or INDEX + MATCH.",
+            "Use SUMIFS and COUNTIFS with multiple criteria.",
+            "Import and combine data from multiple sheets or files with basic IMPORTRANGE.",
+            "Cases: find a student's grade, consolidate attendance by group and calculate expenses by category."
+          ],
+          [
+            "Utiliser VLOOKUP pour une recherche verticale exacte ou approximative.",
+            "Comprendre les limites de VLOOKUP et choisir XLOOKUP ou INDEX + MATCH.",
+            "Utiliser SUMIFS et COUNTIFS avec plusieurs critères.",
+            "Importer et réunir des données de plusieurs feuilles ou fichiers avec IMPORTRANGE.",
+            "Cas : rechercher une note, consolider la présence par groupe et calculer les dépenses par catégorie."
+          ]
+        ]
+      },
+      {
+        "title": [
+          "Funciones de matriz y rangos dinámicos",
+          "Array functions and dynamic ranges",
+          "Fonctions matricielles et plages dynamiques"
+        ],
+        "duration": [
+          "1 h 30 min",
+          "1 hr 30 min",
+          "1 h 30 min"
+        ],
+        "durationMinutes": 90,
+        "visual": "assets/img/sheets-arrays.svg",
+        "visualAlt": [
+          "Rangos de celdas que producen resultados dinámicos.",
+          "Cell ranges producing dynamic results.",
+          "Plages de cellules produisant des résultats dynamiques."
+        ],
+        "topics": [
+          [
+            "ARRAYFORMULA para aplicar una fórmula a un rango sin arrastrarla.",
+            "FILTER para extraer filas que cumplen condiciones.",
+            "UNIQUE y SORT para crear listas de valores únicos y ordenados.",
+            "Combinar FILTER + SORT + UNIQUE para generar listas dinámicas.",
+            "Ejemplos: alumnos con entregas pendientes, ranking automático de calificaciones y categorías únicas de presupuesto."
+          ],
+          [
+            "Use ARRAYFORMULA to apply a formula to a range without dragging it.",
+            "Use FILTER to extract rows that meet conditions.",
+            "Use UNIQUE and SORT to create unique, sorted lists.",
+            "Combine FILTER + SORT + UNIQUE to generate dynamic lists.",
+            "Examples: students with missing submissions, automatic grade rankings and unique budget categories."
+          ],
+          [
+            "Utiliser ARRAYFORMULA pour appliquer une formule à une plage sans la recopier.",
+            "Utiliser FILTER pour extraire les lignes qui remplissent des conditions.",
+            "Utiliser UNIQUE et SORT pour créer des listes uniques et triées.",
+            "Combiner FILTER + SORT + UNIQUE pour créer des listes dynamiques.",
+            "Exemples : devoirs manquants, classement automatique des notes et catégories uniques d'un budget."
+          ]
+        ]
+      },
+      {
+        "title": [
+          "QUERY: el poder de consultar datos",
+          "QUERY: the power of querying data",
+          "QUERY : la puissance des requêtes de données"
+        ],
+        "duration": [
+          "1 h 30 min",
+          "1 hr 30 min",
+          "1 h 30 min"
+        ],
+        "durationMinutes": 90,
+        "visual": "assets/img/sheets-query.svg",
+        "visualAlt": [
+          "Consulta de datos y resultados tabulares.",
+          "Data query and tabular results.",
+          "Requête de données et résultats tabulaires."
+        ],
+        "topics": [
+          [
+            "Qué es QUERY y por qué permite consultar datos con flexibilidad.",
+            "Sintaxis básica: SELECT, WHERE, ORDER BY y LIMIT.",
+            "Agrupar y resumir con GROUP BY y SUM, AVG, COUNT, MAX y MIN.",
+            "Filtros AND / OR, fechas y búsquedas parciales con CONTAINS y STARTS WITH.",
+            "Etiquetar columnas con LABEL y dar formato a números y fechas.",
+            "Casos: calificaciones por grupo y materia, gastos por mes y categoría, o asistencia mensual en una fórmula."
+          ],
+          [
+            "Understand QUERY and why it supports flexible data analysis.",
+            "Basic syntax: SELECT, WHERE, ORDER BY and LIMIT.",
+            "Group and summarize with GROUP BY and SUM, AVG, COUNT, MAX and MIN.",
+            "Filter with AND / OR, dates and partial text using CONTAINS and STARTS WITH.",
+            "Label columns with LABEL and format numbers and dates.",
+            "Cases: grades by group and subject, monthly expenses by category, or monthly attendance in one formula."
+          ],
+          [
+            "Comprendre QUERY et sa souplesse pour l'analyse des données.",
+            "Syntaxe de base : SELECT, WHERE, ORDER BY et LIMIT.",
+            "Regrouper et résumer avec GROUP BY, SUM, AVG, COUNT, MAX et MIN.",
+            "Filtrer avec AND / OR, les dates et le texte partiel avec CONTAINS et STARTS WITH.",
+            "Nommer les colonnes avec LABEL et formater nombres et dates.",
+            "Cas : notes par groupe et matière, dépenses mensuelles par catégorie ou présence mensuelle en une formule."
+          ]
+        ]
+      },
+      {
+        "title": [
+          "Tablas dinámicas",
+          "Pivot tables",
+          "Tableaux croisés dynamiques"
+        ],
+        "duration": [
+          "1 h 30 min",
+          "1 hr 30 min",
+          "1 h 30 min"
+        ],
+        "durationMinutes": 90,
+        "visual": "assets/img/sheets-pivot.svg",
+        "visualAlt": [
+          "Tabla dinámica que resume datos por categorías.",
+          "Pivot table summarizing data by category.",
+          "Tableau croisé dynamique résumant les données par catégorie."
+        ],
+        "topics": [
+          [
+            "Crear una tabla dinámica a partir de datos limpios.",
+            "Organizar filas, columnas, valores y filtros.",
+            "Elegir funciones de resumen: suma, promedio, conteo, máximo, mínimo y mediana.",
+            "Agrupar fechas por mes, trimestre o año y números por rangos.",
+            "Dar formato y revisar la actualización cuando cambian los datos de origen.",
+            "Comparar tabla dinámica y QUERY para elegir la herramienta apropiada.",
+            "Práctica: panel de calificaciones, asistencia o presupuesto con varias tablas dinámicas."
+          ],
+          [
+            "Create a pivot table from clean source data.",
+            "Organize rows, columns, values and filters.",
+            "Choose summary functions: sum, average, count, max, min and median.",
+            "Group dates by month, quarter or year and numbers into ranges.",
+            "Format the pivot table and review updates when source data changes.",
+            "Compare pivot tables with QUERY and select the right tool.",
+            "Practice: build a grades, attendance or budget dashboard with multiple pivot tables."
+          ],
+          [
+            "Créer un tableau croisé dynamique à partir de données propres.",
+            "Organiser les lignes, colonnes, valeurs et filtres.",
+            "Choisir les fonctions de synthèse : somme, moyenne, nombre, maximum, minimum et médiane.",
+            "Regrouper les dates par mois, trimestre ou année et les nombres par plage.",
+            "Mettre en forme le tableau et vérifier les mises à jour lorsque la source change.",
+            "Comparer le tableau croisé dynamique à QUERY pour choisir le bon outil.",
+            "Pratique : créer un tableau de bord de notes, de présence ou de budget à l'aide de plusieurs tableaux croisés."
+          ]
+        ]
+      },
+      {
+        "title": [
+          "Visualización, dashboards y buenas prácticas",
+          "Visualization, dashboards and best practices",
+          "Visualisation, tableaux de bord et bonnes pratiques"
+        ],
+        "duration": [
+          "1 h",
+          "1 hr",
+          "1 h"
+        ],
+        "durationMinutes": 60,
+        "visual": "assets/img/sheets-dashboard.svg",
+        "visualAlt": [
+          "Gráficos de barras, líneas y un panel de indicadores.",
+          "Bar, line and dashboard charts.",
+          "Graphiques en barres, en courbes et tableau de bord."
+        ],
+        "topics": [
+          [
+            "Elegir gráficos de columnas, barras, líneas, pastel o combinados según los datos.",
+            "Aplicar formato condicional avanzado con escalas de color, barras de datos y fórmulas personalizadas.",
+            "Configurar validación de datos y listas desplegables dinámicas con UNIQUE o rangos nombrados.",
+            "Proteger celdas y rangos y compartir con los permisos adecuados.",
+            "Separar un archivo en hoja de datos, hoja de cálculos y hoja de dashboard.",
+            "Proyecto final: construir un sistema de análisis reutilizable adaptado al contexto de cada participante."
+          ],
+          [
+            "Choose column, bar, line, pie or combo charts based on the data.",
+            "Apply advanced conditional formatting with color scales, data bars and custom formulas.",
+            "Configure data validation and dynamic drop-down lists using UNIQUE or named ranges.",
+            "Protect cells and ranges and share with suitable permissions.",
+            "Separate a workbook into data, calculations and dashboard sheets.",
+            "Final project: build a reusable analysis system adapted to each learner's context."
+          ],
+          [
+            "Choisir des graphiques en colonnes, barres, lignes, secteurs ou combinés selon les données.",
+            "Appliquer une mise en forme conditionnelle avancée avec échelles de couleurs, barres de données et formules personnalisées.",
+            "Configurer la validation des données et des listes déroulantes dynamiques avec UNIQUE ou des plages nommées.",
+            "Protéger les cellules et les plages puis partager avec les autorisations adaptées.",
+            "Séparer le classeur en feuilles de données, de calculs et de tableau de bord.",
+            "Projet final : construire un système d'analyse réutilisable adapté au contexte de chaque participant."
+          ]
+        ]
+      }
+    ],
+    "methodology": [
+      "Curso 100 % práctico sobre conjuntos de datos reales: calificaciones, asistencia, gastos y respuestas de formularios. Cada bloque combina una explicación breve, una práctica guiada y un reto corto. El proyecto final se desarrolla a lo largo de las ocho horas para obtener un sistema funcional y reutilizable.",
+      "A fully practical course using real datasets such as grades, attendance, expenses and form responses. Each block combines a short explanation, guided practice and a short challenge. The final project is built across the eight hours to produce a functional, reusable system.",
+      "Un cours entièrement pratique utilisant des données réelles : notes, présence, dépenses et réponses aux formulaires. Chaque bloc combine une brève explication, une pratique guidée et un défi court. Le projet final se construit pendant les huit heures afin d'obtenir un système fonctionnel et réutilisable."
+    ],
+    "outcomes": [
+      [
+        "Dominio de funciones intermedias y de QUERY para analizar datos sin depender solo de filtros manuales.",
+        "Capacidad de crear tablas dinámicas y paneles sencillos que se actualizan automáticamente.",
+        "Un archivo de Sheets propio para calificaciones, asistencia, presupuestos u otro caso real.",
+        "Criterios para decidir cuándo usar fórmulas, QUERY o una tabla dinámica."
+      ],
+      [
+        "Confident use of intermediate functions and QUERY without relying only on manual filters.",
+        "Ability to create pivot tables and simple dashboards that update automatically.",
+        "A personal Sheets workbook for grades, attendance, budgets or another real case.",
+        "Criteria for deciding when to use formulas, QUERY or a pivot table."
+      ],
+      [
+        "Maîtrise des fonctions intermédiaires et de QUERY sans dépendre uniquement des filtres manuels.",
+        "Capacité à créer des tableaux croisés et des tableaux de bord simples qui se mettent à jour automatiquement.",
+        "Un fichier Sheets personnel pour les notes, la présence, les budgets ou un autre cas réel.",
+        "Critères permettant de choisir entre formules, QUERY et tableau croisé dynamique."
+      ]
+    ],
+    "materials": [
+      [
+        "Temario del curso en PDF.",
+        "Archivos de datos para practicar con calificaciones, asistencia, gastos y encuestas.",
+        "Lista de funciones y sintaxis QUERY más utilizadas.",
+        "Plantilla reutilizable de dashboard básico.",
+        "Lista de recursos y siguientes pasos, incluidos Apps Script básico y conexión con Forms."
+      ],
+      [
+        "Course syllabus PDF.",
+        "Practice datasets for grades, attendance, expenses and surveys.",
+        "Cheat sheet of commonly used functions and QUERY syntax.",
+        "Reusable basic dashboard template.",
+        "Resource list and next steps, including introductory Apps Script and Forms integration."
+      ],
+      [
+        "Programme du cours au format PDF.",
+        "Fichiers de données pour pratiquer avec les notes, la présence, les dépenses et les enquêtes.",
+        "Fiche des fonctions et de la syntaxe QUERY les plus utilisées.",
+        "Modèle réutilisable de tableau de bord de base.",
+        "Liste de ressources et étapes suivantes, dont une introduction à Apps Script et l'intégration de Forms."
+      ]
+    ],
+    "referenceTitle": [
+      "Funciones y herramientas clave",
+      "Key functions and tools",
+      "Fonctions et outils clés"
+    ],
+    "referenceColumns": [
+      [
+        "Herramienta",
+        "Uso",
+        "Nivel"
+      ],
+      [
+        "Tool",
+        "Use",
+        "Level"
+      ],
+      [
+        "Outil",
+        "Usage",
+        "Niveau"
+      ]
+    ],
+    "referenceRows": [
+      {
+        "cells": [
+          [
+            "SI / SI anidado + Y/O",
+            "IF / nested IF + AND/OR",
+            "IF / IF imbriqué + AND/OR"
+          ],
+          [
+            "Decisiones y criterios múltiples",
+            "Decisions and multiple criteria",
+            "Décisions et critères multiples"
+          ],
+          [
+            "Esencial",
+            "Essential",
+            "Essentiel"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          [
+            "BUSCARV / BUSCARX",
+            "VLOOKUP / XLOOKUP",
+            "VLOOKUP / XLOOKUP"
+          ],
+          [
+            "Buscar información en tablas",
+            "Look up information in tables",
+            "Rechercher des informations dans des tableaux"
+          ],
+          [
+            "Intermedio",
+            "Intermediate",
+            "Intermédiaire"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          [
+            "SUMAR.SI.CONJUNTO",
+            "SUMIFS",
+            "SUMIFS"
+          ],
+          [
+            "Sumar con varios criterios",
+            "Sum values with multiple criteria",
+            "Additionner avec plusieurs critères"
+          ],
+          [
+            "Intermedio",
+            "Intermediate",
+            "Intermédiaire"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          [
+            "FILTER + UNIQUE + SORT",
+            "FILTER + UNIQUE + SORT",
+            "FILTER + UNIQUE + SORT"
+          ],
+          [
+            "Listas dinámicas y extracción",
+            "Dynamic lists and extraction",
+            "Listes dynamiques et extraction"
+          ],
+          [
+            "Intermedio",
+            "Intermediate",
+            "Intermédiaire"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          [
+            "ARRAYFORMULA",
+            "ARRAYFORMULA",
+            "ARRAYFORMULA"
+          ],
+          [
+            "Fórmulas que se expanden automáticamente",
+            "Automatically expanding formulas",
+            "Formules qui se développent automatiquement"
+          ],
+          [
+            "Intermedio",
+            "Intermediate",
+            "Intermédiaire"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          [
+            "QUERY",
+            "QUERY",
+            "QUERY"
+          ],
+          [
+            "Consultas tipo SQL sobre los datos",
+            "SQL-like data queries",
+            "Requêtes de données de type SQL"
+          ],
+          [
+            "Avanzado",
+            "Advanced",
+            "Avancé"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          [
+            "Tablas dinámicas",
+            "Pivot tables",
+            "Tableaux croisés dynamiques"
+          ],
+          [
+            "Resúmenes interactivos y exploración",
+            "Interactive summaries and exploration",
+            "Synthèses interactives et exploration"
+          ],
+          [
+            "Intermedio",
+            "Intermediate",
+            "Intermédiaire"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          [
+            "Formato condicional",
+            "Conditional formatting",
+            "Mise en forme conditionnelle"
+          ],
+          [
+            "Resaltar automáticamente lo importante",
+            "Automatically highlight important values",
+            "Mettre automatiquement en évidence les éléments importants"
+          ],
+          [
+            "Intermedio",
+            "Intermediate",
+            "Intermédiaire"
+          ]
+        ]
+      }
+    ]
+  },
+  "docs-slides": {
+    "image": "assets/img/course-docs-slides.svg",
+    "imageAlt": [
+      "Ilustración de documentos, comentarios y diapositivas organizados en un espacio de trabajo.",
+      "Illustration of documents, comments and slides arranged in a workspace.",
+      "Illustration de documents, commentaires et diapositives organisés dans un espace de travail."
+    ],
+    "fullDescription": [
+      "Curso práctico para crear documentos claros y presentaciones coherentes con Google Docs y Google Slides. El recorrido propuesto aborda estilos, plantillas, colaboración mediante comentarios y sugerencias, diseño visual y presentación con notas del expositor.",
+      "A practical course on creating clear documents and consistent presentations with Google Docs and Google Slides. The proposed curriculum covers styles, templates, collaboration through comments and suggestions, visual design and presenting with speaker notes.",
+      "Un cours pratique pour créer des documents clairs et des présentations cohérentes avec Google Docs et Google Slides. Le programme proposé couvre les styles, les modèles, la collaboration par commentaires et suggestions, la conception visuelle et la présentation avec notes."
+    ],
+    "modality": [
+      "Práctica guiada con documentos y presentaciones",
+      "Guided practice with documents and presentations",
+      "Pratique guidée avec documents et présentations"
+    ],
+    "prerequisites": [
+      [
+        "Cuenta de Google activa y acceso a Docs y Slides.",
+        "Conocimientos básicos de navegación y edición de texto.",
+        "Acceso desde un ordenador recomendado para practicar la presentación."
+      ],
+      [
+        "An active Google account with access to Docs and Slides.",
+        "Basic navigation and text-editing skills.",
+        "Computer access is recommended for presentation practice."
+      ],
+      [
+        "Un compte Google actif avec accès à Docs et Slides.",
+        "Connaissances de base de la navigation et de la modification de texte.",
+        "Un ordinateur est recommandé pour pratiquer la présentation."
+      ]
+    ],
+    "objectives": [
+      [
+        "Aplicar estilos y plantillas para mantener documentos consistentes.",
+        "Colaborar con comentarios, sugerencias y revisión de cambios.",
+        "Organizar diapositivas con jerarquía visual y contenido legible.",
+        "Preparar una exposición utilizando notas del presentador.",
+        "Compartir documentos y presentaciones con permisos adecuados."
+      ],
+      [
+        "Apply styles and templates to keep documents consistent.",
+        "Collaborate using comments, suggestions and change review.",
+        "Organize slides with visual hierarchy and readable content.",
+        "Prepare a talk using speaker notes.",
+        "Share documents and presentations with appropriate permissions."
+      ],
+      [
+        "Appliquer des styles et des modèles pour garder des documents cohérents.",
+        "Collaborer à l’aide des commentaires, suggestions et révisions.",
+        "Organiser les diapositives avec une hiérarchie visuelle et un contenu lisible.",
+        "Préparer une présentation avec les notes du présentateur.",
+        "Partager les documents et présentations avec les autorisations appropriées."
+      ]
+    ],
+    "modules": [
+      {
+        "title": [
+          "Documentos, estructura y plantillas",
+          "Documents, structure and templates",
+          "Documents, structure et modèles"
+        ],
+        "duration": [
+          "45 min",
+          "45 min",
+          "45 min"
+        ],
+        "durationMinutes": 45,
+        "visual": "assets/img/docs-slides-module-1.svg",
+        "visualAlt": [
+          "Página y documento estructurados con estilos de título.",
+          "Page and document structured with heading styles.",
+          "Page et document structurés avec des styles de titre."
+        ],
+        "topics": [
+          [
+            "Diferencia entre formato manual y estilos del documento.",
+            "Aplicación de títulos, subtítulos, listas y jerarquías consistentes.",
+            "Uso de plantillas para reducir diferencias de formato.",
+            "Revisión de márgenes, espaciado y legibilidad."
+          ],
+          [
+            "Difference between manual formatting and document styles.",
+            "Apply headings, subheadings, lists and consistent hierarchy.",
+            "Use templates to reduce formatting inconsistencies.",
+            "Review margins, spacing and readability."
+          ],
+          [
+            "Différence entre mise en forme manuelle et styles du document.",
+            "Appliquer titres, sous-titres, listes et hiérarchie cohérente.",
+            "Utiliser des modèles pour limiter les écarts de mise en forme.",
+            "Vérifier marges, espacement et lisibilité."
+          ]
+        ]
+      },
+      {
+        "title": [
+          "Colaboración y revisión",
+          "Collaboration and review",
+          "Collaboration et révision"
+        ],
+        "duration": [
+          "45 min",
+          "45 min",
+          "45 min"
+        ],
+        "durationMinutes": 45,
+        "visual": "assets/img/docs-slides-module-2.svg",
+        "visualAlt": [
+          "Documento con comentarios y sugerencias de revisión.",
+          "Document with comments and revision suggestions.",
+          "Document avec commentaires et suggestions de révision."
+        ],
+        "topics": [
+          [
+            "Compartir un documento y revisar los niveles de acceso.",
+            "Añadir comentarios vinculados a fragmentos de texto.",
+            "Usar el modo de sugerencias y aceptar o rechazar cambios.",
+            "Resolver comentarios y conservar un historial de revisiones útil."
+          ],
+          [
+            "Share a document and review access levels.",
+            "Add comments linked to selected text.",
+            "Use suggestion mode and accept or reject changes.",
+            "Resolve comments and keep a useful revision history."
+          ],
+          [
+            "Partager un document et vérifier les niveaux d’accès.",
+            "Ajouter des commentaires liés à des passages du texte.",
+            "Utiliser le mode suggestion et accepter ou refuser les modifications.",
+            "Résoudre les commentaires et conserver un historique utile."
+          ]
+        ]
+      },
+      {
+        "title": [
+          "Diseño y narrativa de diapositivas",
+          "Slide design and narrative",
+          "Conception et narration des diapositives"
+        ],
+        "duration": [
+          "45 min",
+          "45 min",
+          "45 min"
+        ],
+        "durationMinutes": 45,
+        "visual": "assets/img/docs-slides-module-3.svg",
+        "visualAlt": [
+          "Diapositivas con estructura visual, texto y gráficos.",
+          "Slides with visual structure, text and charts.",
+          "Diapositives avec structure visuelle, texte et graphiques."
+        ],
+        "topics": [
+          [
+            "Definir el propósito y ordenar las ideas de una presentación.",
+            "Elegir tema, diseños y una jerarquía tipográfica consistente.",
+            "Usar imágenes, formas y gráficos sin saturar cada diapositiva.",
+            "Comprobar contraste, alineación y densidad del texto."
+          ],
+          [
+            "Define the purpose and order the ideas in a presentation.",
+            "Choose a theme, layouts and consistent typographic hierarchy.",
+            "Use images, shapes and charts without overcrowding slides.",
+            "Check contrast, alignment and text density."
+          ],
+          [
+            "Définir l’objectif et ordonner les idées d’une présentation.",
+            "Choisir un thème, des mises en page et une hiérarchie typographique cohérente.",
+            "Utiliser images, formes et graphiques sans surcharger les diapositives.",
+            "Vérifier le contraste, l’alignement et la densité du texte."
+          ]
+        ]
+      },
+      {
+        "title": [
+          "Presentación con notas y entrega",
+          "Presenting with notes and delivery",
+          "Présentation avec notes et remise"
+        ],
+        "duration": [
+          "45 min",
+          "45 min",
+          "45 min"
+        ],
+        "durationMinutes": 45,
+        "visual": "assets/img/docs-slides-module-4.svg",
+        "visualAlt": [
+          "Vista de presentación con notas del expositor.",
+          "Presentation view with speaker notes.",
+          "Vue de présentation avec notes du présentateur."
+        ],
+        "topics": [
+          [
+            "Redactar notas como guía, no como texto que se lee completo.",
+            "Ensayar el orden, duración y transiciones de las ideas.",
+            "Presentar desde el modo de diapositivas y comprobar la visualización.",
+            "Compartir o exportar el material de acuerdo con su audiencia."
+          ],
+          [
+            "Write notes as a guide rather than a script to read verbatim.",
+            "Rehearse the order, timing and transitions between ideas.",
+            "Present in slideshow mode and check the display.",
+            "Share or export the material for its intended audience."
+          ],
+          [
+            "Rédiger des notes comme guide plutôt que comme texte à lire intégralement.",
+            "Répéter l’ordre, la durée et les transitions entre les idées.",
+            "Présenter en mode diaporama et vérifier l’affichage.",
+            "Partager ou exporter le support selon le public visé."
+          ]
+        ]
+      }
+    ],
+    "methodology": [
+      "Cada bloque combina una demostración breve con una práctica en Docs o Slides. El ejercicio integrador consiste en producir un documento bien estructurado y una presentación breve, revisada y lista para compartir.",
+      "Each block combines a short demonstration with practice in Docs or Slides. The capstone exercise is to produce a well-structured document and a short, reviewed presentation ready to share.",
+      "Chaque bloc associe une courte démonstration à une pratique dans Docs ou Slides. L’exercice final consiste à produire un document bien structuré et une courte présentation révisée, prête à être partagée."
+    ],
+    "outcomes": [
+      [
+        "Documento con estilos y formato coherentes.",
+        "Uso funcional de comentarios y sugerencias para revisar contenido.",
+        "Presentación legible con diseño consistente y notas de apoyo.",
+        "Criterio para compartir los archivos con permisos adecuados."
+      ],
+      [
+        "A document with consistent styles and formatting.",
+        "Functional use of comments and suggestions to review content.",
+        "A readable presentation with consistent design and speaker notes.",
+        "Ability to share files using appropriate permissions."
+      ],
+      [
+        "Un document avec des styles et une mise en forme cohérents.",
+        "Utilisation fonctionnelle des commentaires et suggestions pour réviser le contenu.",
+        "Une présentation lisible avec un design cohérent et des notes.",
+        "Capacité à partager les fichiers avec les bonnes autorisations."
+      ]
+    ],
+    "materials": [
+      [
+        "Plantilla para documento estructurado.",
+        "Lista de revisión visual para diapositivas.",
+        "Documento de práctica para comentarios y sugerencias."
+      ],
+      [
+        "Structured-document template.",
+        "Visual slide-review checklist.",
+        "Practice document for comments and suggestions."
+      ],
+      [
+        "Modèle de document structuré.",
+        "Liste de contrôle visuelle pour les diapositives.",
+        "Document d’exercice pour commentaires et suggestions."
+      ]
+    ],
+    "referenceTitle": [
+      "Criterios de revisión",
+      "Review criteria",
+      "Critères de révision"
+    ],
+    "referenceColumns": [
+      [
+        "Elemento",
+        "Uso",
+        "Resultado esperado"
+      ],
+      [
+        "Element",
+        "Use",
+        "Expected result"
+      ],
+      [
+        "Élément",
+        "Usage",
+        "Résultat attendu"
+      ]
+    ],
+    "referenceRows": [
+      {
+        "cells": [
+          [
+            "Estilos",
+            "Styles",
+            "Styles"
+          ],
+          [
+            "Ordenar el documento",
+            "Structure the document",
+            "Structurer le document"
+          ],
+          [
+            "Jerarquía legible",
+            "Readable hierarchy",
+            "Hiérarchie lisible"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          [
+            "Comentarios",
+            "Comments",
+            "Commentaires"
+          ],
+          [
+            "Revisar contenido",
+            "Review content",
+            "Réviser le contenu"
+          ],
+          [
+            "Cambios trazables",
+            "Traceable changes",
+            "Modifications traçables"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          [
+            "Diseño de diapositiva",
+            "Slide layout",
+            "Mise en page"
+          ],
+          [
+            "Comunicar una idea",
+            "Communicate an idea",
+            "Communiquer une idée"
+          ],
+          [
+            "Mensaje claro",
+            "Clear message",
+            "Message clair"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          [
+            "Notas del presentador",
+            "Speaker notes",
+            "Notes du présentateur"
+          ],
+          [
+            "Guiar la exposición",
+            "Guide the talk",
+            "Guider la présentation"
+          ],
+          [
+            "Presentación fluida",
+            "Smooth delivery",
+            "Présentation fluide"
+          ]
+        ]
+      }
+    ]
+  },
+  "classroom": {
+    "image": "assets/img/course-classroom.svg",
+    "imageAlt": [
+      "Ilustración de un aula virtual con un tablero, materiales y participantes.",
+      "Illustration of a virtual classroom with a board, materials and participants.",
+      "Illustration d’une classe virtuelle avec tableau, supports et participants."
+    ],
+    "fullDescription": [
+      "Curso práctico para organizar un espacio de clase en Google Classroom. La propuesta recorre la creación de clases, la incorporación de participantes, la publicación de materiales y anuncios, la asignación de tareas y el seguimiento mediante calificaciones y retroalimentación.",
+      "A practical course on organizing a class space in Google Classroom. The proposed curriculum covers creating classes, adding participants, publishing materials and announcements, assigning work, and tracking progress through grades and feedback.",
+      "Un cours pratique pour organiser un espace de classe dans Google Classroom. Le programme proposé couvre la création de classes, l’ajout de participants, la publication de supports et d’annonces, l’attribution de devoirs et le suivi des résultats et retours."
+    ],
+    "modality": [
+      "Práctica guiada con una clase de ejemplo",
+      "Guided practice with a sample class",
+      "Pratique guidée avec une classe exemple"
+    ],
+    "prerequisites": [
+      [
+        "Cuenta de Google con acceso autorizado a Classroom.",
+        "Conocimientos básicos de navegación y manejo de archivos.",
+        "Para crear una clase docente, la cuenta debe tener permisos habilitados por la institución cuando corresponda."
+      ],
+      [
+        "A Google account with authorized access to Classroom.",
+        "Basic navigation and file-handling skills.",
+        "Creating a teacher class may require institution-enabled permissions."
+      ],
+      [
+        "Un compte Google avec accès autorisé à Classroom.",
+        "Connaissances de base de navigation et de gestion des fichiers.",
+        "La création d’une classe enseignante peut nécessiter des autorisations de l’établissement."
+      ]
+    ],
+    "objectives": [
+      [
+        "Crear una clase y configurar su información básica.",
+        "Invitar a alumnos y compartir el código o enlace permitido.",
+        "Publicar anuncios, materiales y tareas con instrucciones claras.",
+        "Organizar entregas y revisar el estado de las actividades.",
+        "Registrar calificaciones y proporcionar retroalimentación útil."
+      ],
+      [
+        "Create a class and configure its basic information.",
+        "Invite students and share the allowed code or link.",
+        "Publish announcements, materials and assignments with clear instructions.",
+        "Organize submissions and review activity status.",
+        "Record grades and provide useful feedback."
+      ],
+      [
+        "Créer une classe et configurer ses informations de base.",
+        "Inviter des élèves et partager le code ou lien autorisé.",
+        "Publier annonces, supports et devoirs avec des consignes claires.",
+        "Organiser les remises et vérifier l’état des activités.",
+        "Saisir les notes et fournir des retours utiles."
+      ]
+    ],
+    "modules": [
+      {
+        "title": [
+          "Preparar la clase virtual",
+          "Set up the virtual classroom",
+          "Préparer la classe virtuelle"
+        ],
+        "duration": [
+          "45 min",
+          "45 min",
+          "45 min"
+        ],
+        "durationMinutes": 45,
+        "visual": "assets/img/classroom-module-1.svg",
+        "visualAlt": [
+          "Clase configurada con participantes y datos de referencia.",
+          "Class configured with participants and reference details.",
+          "Classe configurée avec participants et informations de référence."
+        ],
+        "topics": [
+          [
+            "Reconocer el flujo de trabajo principal de Classroom.",
+            "Crear una clase y completar nombre, sección y descripción.",
+            "Distinguir las funciones generales de docentes y alumnos.",
+            "Invitar participantes según las opciones disponibles en la cuenta."
+          ],
+          [
+            "Identify the main Classroom workflow.",
+            "Create a class and fill in its name, section and description.",
+            "Distinguish general teacher and student roles.",
+            "Invite participants using the options available in the account."
+          ],
+          [
+            "Reconnaître le flux de travail principal de Classroom.",
+            "Créer une classe et renseigner nom, section et description.",
+            "Distinguer les rôles généraux des enseignants et des élèves.",
+            "Inviter les participants avec les options disponibles sur le compte."
+          ]
+        ]
+      },
+      {
+        "title": [
+          "Materiales, anuncios y tareas",
+          "Materials, announcements and assignments",
+          "Supports, annonces et devoirs"
+        ],
+        "duration": [
+          "1 h",
+          "1 hr",
+          "1 h"
+        ],
+        "durationMinutes": 60,
+        "visual": "assets/img/classroom-module-2.svg",
+        "visualAlt": [
+          "Tablero de clase con instrucciones, recursos y actividades.",
+          "Class stream with instructions, resources and activities.",
+          "Flux de classe avec consignes, ressources et activités."
+        ],
+        "topics": [
+          [
+            "Publicar anuncios para comunicar avisos y fechas importantes.",
+            "Adjuntar materiales y organizarlos por tema cuando esté disponible.",
+            "Crear tareas con instrucciones, fechas y archivos de apoyo.",
+            "Comprobar cómo se entrega y consulta una actividad desde la perspectiva del alumno."
+          ],
+          [
+            "Post announcements to communicate notices and important dates.",
+            "Attach materials and organize them by topic when available.",
+            "Create assignments with instructions, due dates and supporting files.",
+            "Check how an assignment is submitted and viewed from a student perspective."
+          ],
+          [
+            "Publier des annonces pour communiquer les avis et dates importantes.",
+            "Joindre des supports et les organiser par thème lorsque l’option est disponible.",
+            "Créer des devoirs avec consignes, échéances et fichiers d’appui.",
+            "Vérifier la remise et la consultation d’une activité du point de vue de l’élève."
+          ]
+        ]
+      },
+      {
+        "title": [
+          "Revisión, calificaciones y retroalimentación",
+          "Review, grading and feedback",
+          "Révision, notation et retours"
+        ],
+        "duration": [
+          "45 min",
+          "45 min",
+          "45 min"
+        ],
+        "durationMinutes": 45,
+        "visual": "assets/img/classroom-module-3.svg",
+        "visualAlt": [
+          "Tabla de revisión con estados de entrega y calificaciones.",
+          "Review table with submission statuses and grades.",
+          "Tableau de révision avec états de remise et notes."
+        ],
+        "topics": [
+          [
+            "Localizar entregas y distinguir estados de trabajo.",
+            "Revisar el contenido entregado y registrar una calificación.",
+            "Devolver una actividad con comentarios concretos.",
+            "Mantener criterios consistentes y comunicar qué debe mejorarse."
+          ],
+          [
+            "Locate submissions and distinguish work statuses.",
+            "Review submitted work and record a grade.",
+            "Return an assignment with specific comments.",
+            "Keep criteria consistent and communicate what should improve."
+          ],
+          [
+            "Repérer les remises et distinguer les états du travail.",
+            "Examiner le travail remis et enregistrer une note.",
+            "Rendre un devoir avec des commentaires précis.",
+            "Garder des critères cohérents et préciser les améliorations attendues."
+          ]
+        ]
+      },
+      {
+        "title": [
+          "Rutina de seguimiento y cierre",
+          "Follow-up routine and wrap-up",
+          "Routine de suivi et clôture"
+        ],
+        "duration": [
+          "30 min",
+          "30 min",
+          "30 min"
+        ],
+        "durationMinutes": 30,
+        "visual": "assets/img/classroom-module-4.svg",
+        "visualAlt": [
+          "Resumen de pendientes y tareas próximas.",
+          "Summary of pending and upcoming assignments.",
+          "Résumé des éléments en attente et des devoirs à venir."
+        ],
+        "topics": [
+          [
+            "Revisar tareas pendientes y actividades próximas.",
+            "Comprobar que los materiales y las fechas sean fáciles de localizar.",
+            "Definir una rutina breve para mantener la clase organizada."
+          ],
+          [
+            "Review pending work and upcoming activities.",
+            "Check that materials and due dates are easy to find.",
+            "Define a short routine for keeping the class organized."
+          ],
+          [
+            "Vérifier les travaux en attente et les activités à venir.",
+            "S’assurer que les supports et échéances sont faciles à trouver.",
+            "Définir une courte routine pour garder la classe organisée."
+          ]
+        ]
+      }
+    ],
+    "methodology": [
+      "La práctica se realiza con una clase de ejemplo o un espacio autorizado. Cada actividad se construye paso a paso y se revisa desde la perspectiva de quien publica y de quien entrega trabajos.",
+      "Practice is carried out in a sample class or an authorized space. Each activity is built step by step and reviewed from both the publisher and student-submission perspectives.",
+      "La pratique se déroule dans une classe exemple ou un espace autorisé. Chaque activité est créée étape par étape et examinée du point de vue de la personne qui publie et de celle qui remet le travail."
+    ],
+    "outcomes": [
+      [
+        "Clase con información y participantes organizados.",
+        "Anuncios, materiales y tareas con instrucciones claras.",
+        "Proceso básico para revisar entregas y registrar calificaciones.",
+        "Rutina de seguimiento de actividades y retroalimentación."
+      ],
+      [
+        "A class with organized information and participants.",
+        "Announcements, materials and assignments with clear instructions.",
+        "A basic process for reviewing submissions and recording grades.",
+        "A routine for tracking activities and providing feedback."
+      ],
+      [
+        "Une classe avec informations et participants organisés.",
+        "Annonces, supports et devoirs avec consignes claires.",
+        "Processus de base pour réviser les remises et saisir les notes.",
+        "Routine de suivi des activités et des retours."
+      ]
+    ],
+    "materials": [
+      [
+        "Lista de comprobación para crear una clase.",
+        "Plantilla de instrucciones para tareas.",
+        "Rúbrica breve de revisión y retroalimentación."
+      ],
+      [
+        "Class setup checklist.",
+        "Assignment-instructions template.",
+        "Short review and feedback rubric."
+      ],
+      [
+        "Liste de contrôle pour créer une classe.",
+        "Modèle de consignes pour les devoirs.",
+        "Grille courte de révision et de retours."
+      ]
+    ],
+    "referenceTitle": [
+      "Elementos del flujo de trabajo",
+      "Workflow elements",
+      "Éléments du flux de travail"
+    ],
+    "referenceColumns": [
+      [
+        "Elemento",
+        "Finalidad",
+        "Evidencia"
+      ],
+      [
+        "Element",
+        "Purpose",
+        "Evidence"
+      ],
+      [
+        "Élément",
+        "Objectif",
+        "Preuve"
+      ]
+    ],
+    "referenceRows": [
+      {
+        "cells": [
+          [
+            "Anuncio",
+            "Announcement",
+            "Annonce"
+          ],
+          [
+            "Comunicar novedades",
+            "Communicate updates",
+            "Communiquer les nouveautés"
+          ],
+          [
+            "Aviso publicado",
+            "Published notice",
+            "Avis publié"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          [
+            "Material",
+            "Material",
+            "Support"
+          ],
+          [
+            "Compartir recursos",
+            "Share resources",
+            "Partager des ressources"
+          ],
+          [
+            "Archivo o enlace accesible",
+            "Accessible file or link",
+            "Fichier ou lien accessible"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          [
+            "Tarea",
+            "Assignment",
+            "Devoir"
+          ],
+          [
+            "Solicitar una entrega",
+            "Request a submission",
+            "Demander un rendu"
+          ],
+          [
+            "Instrucciones y fecha",
+            "Instructions and due date",
+            "Consignes et échéance"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          [
+            "Retroalimentación",
+            "Feedback",
+            "Retour"
+          ],
+          [
+            "Orientar la mejora",
+            "Guide improvement",
+            "Guider l’amélioration"
+          ],
+          [
+            "Comentario accionable",
+            "Actionable comment",
+            "Commentaire exploitable"
+          ]
+        ]
+      }
+    ]
+  },
+  "calendar-meet": {
+    "image": "assets/img/course-calendar-meet.svg",
+    "imageAlt": [
+      "Ilustración de calendario, recordatorios y ventana de reunión virtual.",
+      "Illustration of a calendar, reminders and a virtual meeting window.",
+      "Illustration d’un agenda, de rappels et d’une fenêtre de réunion virtuelle."
+    ],
+    "fullDescription": [
+      "Curso de organización del tiempo con Google Calendar y Google Meet. La propuesta reúne la planificación de eventos y recordatorios, las invitaciones y los calendarios compartidos, y la preparación de reuniones virtuales con controles básicos de participación y pantalla compartida.",
+      "A time-management course using Google Calendar and Google Meet. The proposed curriculum combines event planning and reminders, invitations and shared calendars, and preparation of virtual meetings with basic participation controls and screen sharing.",
+      "Un cours de gestion du temps avec Google Calendar et Google Meet. Le programme proposé réunit la planification d’événements et de rappels, les invitations et agendas partagés, ainsi que la préparation de réunions virtuelles avec commandes de participation et partage d’écran."
+    ],
+    "modality": [
+      "Práctica guiada con agenda y reunión de prueba",
+      "Guided practice with a calendar and test meeting",
+      "Pratique guidée avec agenda et réunion test"
+    ],
+    "prerequisites": [
+      [
+        "Cuenta de Google activa.",
+        "Nociones básicas sobre fechas, eventos y correo electrónico.",
+        "Micrófono, cámara y navegador compatibles para probar Meet; la cámara puede permanecer apagada."
+      ],
+      [
+        "An active Google account.",
+        "Basic familiarity with dates, events and email.",
+        "A compatible microphone, camera and browser for testing Meet; the camera can remain off."
+      ],
+      [
+        "Un compte Google actif.",
+        "Connaissances de base des dates, événements et courriels.",
+        "Un microphone, une caméra et un navigateur compatibles pour tester Meet ; la caméra peut rester désactivée."
+      ]
+    ],
+    "objectives": [
+      [
+        "Crear eventos con fechas, ubicaciones, descripciones y recordatorios.",
+        "Invitar participantes y revisar respuestas a invitaciones.",
+        "Consultar calendarios compartidos y respetar permisos.",
+        "Organizar una reunión de Meet desde un evento o enlace disponible.",
+        "Usar controles básicos de reunión y compartir pantalla de forma intencional."
+      ],
+      [
+        "Create events with dates, locations, descriptions and reminders.",
+        "Invite participants and review invitation responses.",
+        "View shared calendars and respect permissions.",
+        "Organize a Meet session from an event or available link.",
+        "Use basic meeting controls and share the screen intentionally."
+      ],
+      [
+        "Créer des événements avec dates, lieux, descriptions et rappels.",
+        "Inviter des participants et vérifier les réponses aux invitations.",
+        "Consulter les agendas partagés et respecter les autorisations.",
+        "Organiser une réunion Meet à partir d’un événement ou d’un lien disponible.",
+        "Utiliser les commandes de base et partager l’écran de manière réfléchie."
+      ]
+    ],
+    "modules": [
+      {
+        "title": [
+          "Eventos, agenda y recordatorios",
+          "Events, calendar and reminders",
+          "Événements, agenda et rappels"
+        ],
+        "duration": [
+          "35 min",
+          "35 min",
+          "35 min"
+        ],
+        "durationMinutes": 35,
+        "visual": "assets/img/calendar-meet-module-1.svg",
+        "visualAlt": [
+          "Agenda con eventos y recordatorios configurados.",
+          "Calendar with configured events and reminders.",
+          "Agenda avec événements et rappels configurés."
+        ],
+        "topics": [
+          [
+            "Crear y editar eventos con título, fecha, hora y descripción.",
+            "Configurar repetición y recordatorios para compromisos recurrentes.",
+            "Evitar conflictos al revisar la disponibilidad de la agenda.",
+            "Distinguir la vista diaria, semanal y mensual."
+          ],
+          [
+            "Create and edit events with title, date, time and description.",
+            "Set recurrence and reminders for recurring commitments.",
+            "Avoid conflicts by checking calendar availability.",
+            "Distinguish daily, weekly and monthly views."
+          ],
+          [
+            "Créer et modifier des événements avec titre, date, heure et description.",
+            "Configurer répétitions et rappels pour les engagements récurrents.",
+            "Éviter les conflits en vérifiant les disponibilités.",
+            "Distinguer les vues jour, semaine et mois."
+          ]
+        ]
+      },
+      {
+        "title": [
+          "Invitaciones y calendarios compartidos",
+          "Invitations and shared calendars",
+          "Invitations et agendas partagés"
+        ],
+        "duration": [
+          "35 min",
+          "35 min",
+          "35 min"
+        ],
+        "durationMinutes": 35,
+        "visual": "assets/img/calendar-meet-module-2.svg",
+        "visualAlt": [
+          "Calendario compartido y participantes de un evento.",
+          "Shared calendar and event participants.",
+          "Agenda partagé et participants à un événement."
+        ],
+        "topics": [
+          [
+            "Invitar personas y revisar el estado de las respuestas.",
+            "Compartir un calendario con niveles de acceso adecuados.",
+            "Usar descripciones, ubicaciones y enlaces para reducir dudas.",
+            "Mantener separadas la información pública y la información privada."
+          ],
+          [
+            "Invite people and review response status.",
+            "Share a calendar using appropriate access levels.",
+            "Use descriptions, locations and links to reduce confusion.",
+            "Keep public and private information separate."
+          ],
+          [
+            "Inviter des personnes et vérifier l’état des réponses.",
+            "Partager un agenda avec des niveaux d’accès appropriés.",
+            "Utiliser descriptions, lieux et liens pour réduire les ambiguïtés.",
+            "Séparer les informations publiques et privées."
+          ]
+        ]
+      },
+      {
+        "title": [
+          "Preparar y dirigir reuniones con Meet",
+          "Prepare and host Meet sessions",
+          "Préparer et animer des réunions avec Meet"
+        ],
+        "duration": [
+          "50 min",
+          "50 min",
+          "50 min"
+        ],
+        "durationMinutes": 50,
+        "visual": "assets/img/calendar-meet-module-3.svg",
+        "visualAlt": [
+          "Ventana de videollamada con controles de reunión y pantalla compartida.",
+          "Video meeting window with controls and screen sharing.",
+          "Fenêtre de visioconférence avec commandes et partage d’écran."
+        ],
+        "topics": [
+          [
+            "Crear o abrir un enlace de reunión a partir de las opciones disponibles.",
+            "Comprobar micrófono, altavoces y permisos antes de entrar.",
+            "Usar controles de audio y participación durante la sesión.",
+            "Compartir una pestaña o pantalla y dejar de compartir al terminar.",
+            "Cerrar con acuerdos, tareas y seguimiento en Calendar."
+          ],
+          [
+            "Create or open a meeting link using available options.",
+            "Check microphone, speakers and permissions before joining.",
+            "Use audio and participation controls during the session.",
+            "Share a tab or screen and stop sharing when finished.",
+            "Close with action items and follow-up in Calendar."
+          ],
+          [
+            "Créer ou ouvrir un lien de réunion avec les options disponibles.",
+            "Vérifier microphone, haut-parleurs et autorisations avant d’entrer.",
+            "Utiliser les commandes audio et de participation pendant la session.",
+            "Partager un onglet ou écran et arrêter le partage à la fin.",
+            "Conclure avec des actions et un suivi dans Calendar."
+          ]
+        ]
+      }
+    ],
+    "methodology": [
+      "Se simula la planificación de una sesión y se crea un evento de práctica. La actividad final conecta agenda, invitaciones y una reunión de prueba con una breve rutina de seguimiento.",
+      "A session is planned and a practice event is created. The final activity connects the calendar, invitations and a test meeting with a short follow-up routine.",
+      "Une session est planifiée et un événement d’exercice est créé. L’activité finale relie agenda, invitations et réunion test à une courte routine de suivi."
+    ],
+    "outcomes": [
+      [
+        "Agenda con eventos y recordatorios configurados.",
+        "Invitaciones y permisos de calendario comprendidos.",
+        "Reunión de Meet preparada con controles básicos conocidos.",
+        "Rutina para registrar acuerdos y próximos pasos."
+      ],
+      [
+        "Calendar with configured events and reminders.",
+        "Understanding of invitations and calendar permissions.",
+        "A prepared Meet session with familiar basic controls.",
+        "A routine for recording decisions and next steps."
+      ],
+      [
+        "Agenda avec événements et rappels configurés.",
+        "Compréhension des invitations et autorisations d’agenda.",
+        "Réunion Meet préparée avec les commandes de base connues.",
+        "Routine pour enregistrer décisions et prochaines étapes."
+      ]
+    ],
+    "materials": [
+      [
+        "Lista de comprobación de una reunión.",
+        "Plantilla para descripción de evento.",
+        "Guía breve de controles y buenas prácticas de pantalla compartida."
+      ],
+      [
+        "Meeting checklist.",
+        "Event-description template.",
+        "Short guide to controls and screen-sharing practices."
+      ],
+      [
+        "Liste de contrôle pour une réunion.",
+        "Modèle de description d’événement.",
+        "Guide bref des commandes et bonnes pratiques de partage d’écran."
+      ]
+    ],
+    "referenceTitle": [
+      "Preparación de una reunión",
+      "Meeting preparation",
+      "Préparation d’une réunion"
+    ],
+    "referenceColumns": [
+      [
+        "Momento",
+        "Verificación",
+        "Objetivo"
+      ],
+      [
+        "Stage",
+        "Check",
+        "Goal"
+      ],
+      [
+        "Étape",
+        "Vérification",
+        "Objectif"
+      ]
+    ],
+    "referenceRows": [
+      {
+        "cells": [
+          [
+            "Antes",
+            "Before",
+            "Avant"
+          ],
+          [
+            "Fecha, asistentes y enlace",
+            "Date, attendees and link",
+            "Date, participants et lien"
+          ],
+          [
+            "Evitar confusiones",
+            "Avoid confusion",
+            "Éviter les confusions"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          [
+            "Inicio",
+            "Start",
+            "Début"
+          ],
+          [
+            "Audio y permisos",
+            "Audio and permissions",
+            "Audio et autorisations"
+          ],
+          [
+            "Participación clara",
+            "Clear participation",
+            "Participation claire"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          [
+            "Durante",
+            "During",
+            "Pendant"
+          ],
+          [
+            "Compartir solo la ventana necesaria",
+            "Share only the needed window",
+            "Partager uniquement la fenêtre nécessaire"
+          ],
+          [
+            "Proteger información",
+            "Protect information",
+            "Protéger les informations"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          [
+            "Cierre",
+            "Wrap-up",
+            "Clôture"
+          ],
+          [
+            "Acuerdos y próximos pasos",
+            "Decisions and next steps",
+            "Décisions et prochaines étapes"
+          ],
+          [
+            "Dar seguimiento",
+            "Follow up",
+            "Assurer le suivi"
+          ]
+        ]
+      }
+    ]
+  },
+  "forms": {
+    "image": "assets/img/course-forms.svg",
+    "imageAlt": [
+      "Ilustración de un formulario con preguntas, opciones seleccionables y resumen gráfico de respuestas.",
+      "Illustration of a form with questions, selectable options and a response chart.",
+      "Illustration d’un formulaire avec questions, options sélectionnables et graphique des réponses."
+    ],
+    "fullDescription": [
+      "Curso práctico para diseñar formularios y cuestionarios con Google Forms, recopilar respuestas y revisar resultados en Sheets. La propuesta cubre la selección de tipos de pregunta, la configuración de cuestionarios con calificación automática y el seguimiento de respuestas.",
+      "A practical course on building forms and quizzes with Google Forms, collecting responses and reviewing results in Sheets. The proposed curriculum covers choosing question types, configuring self-grading quizzes and tracking responses.",
+      "Un cours pratique pour créer des formulaires et quiz avec Google Forms, recueillir les réponses et examiner les résultats dans Sheets. Le programme proposé couvre le choix des types de questions, la configuration de quiz à correction automatique et le suivi des réponses."
+    ],
+    "modality": [
+      "Práctica guiada con formulario y cuestionario",
+      "Guided practice with a form and quiz",
+      "Pratique guidée avec formulaire et quiz"
+    ],
+    "prerequisites": [
+      [
+        "Cuenta de Google activa.",
+        "Conocimientos básicos para abrir hojas de cálculo y compartir enlaces.",
+        "Tener claro qué información se desea recopilar antes de diseñar las preguntas."
+      ],
+      [
+        "An active Google account.",
+        "Basic ability to open spreadsheets and share links.",
+        "Know what information should be collected before designing questions."
+      ],
+      [
+        "Un compte Google actif.",
+        "Capacité de base à ouvrir des feuilles de calcul et partager des liens.",
+        "Définir les informations à recueillir avant de rédiger les questions."
+      ]
+    ],
+    "objectives": [
+      [
+        "Elegir el tipo de pregunta de acuerdo con el dato que se necesita.",
+        "Configurar instrucciones, secciones y opciones de respuesta.",
+        "Crear un cuestionario y asignar respuestas correctas y puntuaciones cuando aplique.",
+        "Compartir un formulario con la audiencia adecuada.",
+        "Consultar respuestas y abrir los datos asociados en Sheets."
+      ],
+      [
+        "Choose question types according to the data needed.",
+        "Configure instructions, sections and answer options.",
+        "Create a quiz and assign correct answers and points when applicable.",
+        "Share a form with the intended audience.",
+        "Review responses and open associated data in Sheets."
+      ],
+      [
+        "Choisir le type de question selon les données nécessaires.",
+        "Configurer consignes, sections et options de réponse.",
+        "Créer un quiz et définir les bonnes réponses et points lorsque c’est pertinent.",
+        "Partager un formulaire avec le public visé.",
+        "Consulter les réponses et ouvrir les données associées dans Sheets."
+      ]
+    ],
+    "modules": [
+      {
+        "title": [
+          "Diseño del formulario y tipos de pregunta",
+          "Form design and question types",
+          "Conception du formulaire et types de questions"
+        ],
+        "duration": [
+          "30 min",
+          "30 min",
+          "30 min"
+        ],
+        "durationMinutes": 30,
+        "visual": "assets/img/forms-module-1.svg",
+        "visualAlt": [
+          "Formulario con campos, opciones y estructura clara.",
+          "Form with fields, options and a clear structure.",
+          "Formulaire avec champs, options et structure claire."
+        ],
+        "topics": [
+          [
+            "Definir el propósito del formulario y la información mínima necesaria.",
+            "Elegir entre respuesta corta, párrafo, selección, casillas y listas.",
+            "Redactar preguntas claras y evitar opciones ambiguas.",
+            "Organizar las preguntas en una secuencia comprensible."
+          ],
+          [
+            "Define the form purpose and the minimum information needed.",
+            "Choose among short answer, paragraph, multiple choice, checkboxes and dropdowns.",
+            "Write clear questions and avoid ambiguous options.",
+            "Organize questions in an understandable sequence."
+          ],
+          [
+            "Définir l’objectif du formulaire et les informations minimales nécessaires.",
+            "Choisir entre réponse courte, paragraphe, choix multiples, cases et listes.",
+            "Rédiger des questions claires et éviter les options ambiguës.",
+            "Organiser les questions dans une séquence compréhensible."
+          ]
+        ]
+      },
+      {
+        "title": [
+          "Cuestionarios y configuración de respuestas",
+          "Quizzes and response settings",
+          "Quiz et configuration des réponses"
+        ],
+        "duration": [
+          "45 min",
+          "45 min",
+          "45 min"
+        ],
+        "durationMinutes": 45,
+        "visual": "assets/img/forms-module-2.svg",
+        "visualAlt": [
+          "Cuestionario con opciones de respuesta y puntuación.",
+          "Quiz with answer options and scoring.",
+          "Quiz avec options de réponse et notation."
+        ],
+        "topics": [
+          [
+            "Activar el modo cuestionario cuando esté disponible.",
+            "Definir clave de respuestas, puntuación y comentarios para respuestas.",
+            "Revisar opciones de obligatoriedad y límites de respuesta.",
+            "Probar el formulario antes de compartirlo con participantes."
+          ],
+          [
+            "Enable quiz mode when available.",
+            "Set answer keys, point values and feedback for answers.",
+            "Review required-question settings and response limits.",
+            "Test the form before sharing it with participants."
+          ],
+          [
+            "Activer le mode quiz lorsqu’il est disponible.",
+            "Définir les bonnes réponses, les points et les retours associés.",
+            "Vérifier les questions obligatoires et les limites de réponse.",
+            "Tester le formulaire avant de le partager."
+          ]
+        ]
+      },
+      {
+        "title": [
+          "Recopilar respuestas y analizar resultados",
+          "Collect responses and analyze results",
+          "Recueillir les réponses et analyser les résultats"
+        ],
+        "duration": [
+          "45 min",
+          "45 min",
+          "45 min"
+        ],
+        "durationMinutes": 45,
+        "visual": "assets/img/forms-module-3.svg",
+        "visualAlt": [
+          "Resumen de respuestas con gráfico y tabla de datos.",
+          "Response summary with a chart and data table.",
+          "Résumé des réponses avec graphique et tableau de données."
+        ],
+        "topics": [
+          [
+            "Compartir por enlace y comprobar quién puede responder.",
+            "Leer el resumen automático y reconocer patrones iniciales.",
+            "Vincular respuestas con una hoja de cálculo de Sheets.",
+            "Revisar datos incompletos y proteger información sensible."
+          ],
+          [
+            "Share by link and check who can respond.",
+            "Read the automatic summary and identify initial patterns.",
+            "Link responses to a Google Sheets spreadsheet.",
+            "Review incomplete data and protect sensitive information."
+          ],
+          [
+            "Partager par lien et vérifier qui peut répondre.",
+            "Lire le résumé automatique et repérer les premières tendances.",
+            "Associer les réponses à une feuille Google Sheets.",
+            "Examiner les données incomplètes et protéger les informations sensibles."
+          ]
+        ]
+      }
+    ],
+    "methodology": [
+      "La actividad integra el diseño de un formulario, su prueba con respuestas de ejemplo y la revisión del resumen generado. En el cuestionario se comprueba el funcionamiento de la puntuación antes de compartirlo.",
+      "The activity combines form design, testing with sample responses and reviewing the generated summary. For a quiz, scoring is checked before sharing.",
+      "L’activité associe la conception d’un formulaire, son test avec des réponses d’exemple et l’examen du résumé généré. Pour un quiz, la notation est vérifiée avant le partage."
+    ],
+    "outcomes": [
+      [
+        "Formulario breve con preguntas coherentes y opciones adecuadas.",
+        "Cuestionario configurado y probado, cuando aplica.",
+        "Respuestas consultables y vinculadas a Sheets.",
+        "Criterios básicos de privacidad al recopilar información."
+      ],
+      [
+        "A short form with coherent questions and suitable options.",
+        "A configured and tested quiz where applicable.",
+        "Responses that can be reviewed and linked to Sheets.",
+        "Basic privacy principles for collecting information."
+      ],
+      [
+        "Un formulaire court avec questions cohérentes et options adaptées.",
+        "Un quiz configuré et testé lorsque c’est pertinent.",
+        "Des réponses consultables et reliées à Sheets.",
+        "Principes de base de confidentialité lors de la collecte d’informations."
+      ]
+    ],
+    "materials": [
+      [
+        "Plantilla para planificar preguntas.",
+        "Lista de revisión previa a compartir.",
+        "Hoja de respuestas para análisis posterior."
+      ],
+      [
+        "Question-planning template.",
+        "Pre-sharing review checklist.",
+        "Response sheet for later analysis."
+      ],
+      [
+        "Modèle de planification des questions.",
+        "Liste de contrôle avant partage.",
+        "Feuille de réponses pour analyse ultérieure."
+      ]
+    ],
+    "referenceTitle": [
+      "Elegir el tipo de pregunta",
+      "Choosing question types",
+      "Choisir le type de question"
+    ],
+    "referenceColumns": [
+      [
+        "Tipo",
+        "Cuándo usarlo",
+        "Precaución"
+      ],
+      [
+        "Type",
+        "When to use it",
+        "Caution"
+      ],
+      [
+        "Type",
+        "Quand l’utiliser",
+        "Précaution"
+      ]
+    ],
+    "referenceRows": [
+      {
+        "cells": [
+          [
+            "Respuesta corta",
+            "Short answer",
+            "Réponse courte"
+          ],
+          [
+            "Dato breve o identificador",
+            "Short value or identifier",
+            "Valeur courte ou identifiant"
+          ],
+          [
+            "Definir formato esperado",
+            "Specify expected format",
+            "Préciser le format attendu"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          [
+            "Párrafo",
+            "Paragraph",
+            "Paragraphe"
+          ],
+          [
+            "Respuesta abierta",
+            "Open-ended response",
+            "Réponse libre"
+          ],
+          [
+            "Requiere revisión manual",
+            "Requires manual review",
+            "Nécessite une révision manuelle"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          [
+            "Selección múltiple",
+            "Multiple choice",
+            "Choix multiple"
+          ],
+          [
+            "Una opción entre varias",
+            "One option among several",
+            "Une option parmi plusieurs"
+          ],
+          [
+            "Opciones no ambiguas",
+            "Unambiguous options",
+            "Options sans ambiguïté"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          [
+            "Casillas",
+            "Checkboxes",
+            "Cases à cocher"
+          ],
+          [
+            "Varias respuestas posibles",
+            "Several answers possible",
+            "Plusieurs réponses possibles"
+          ],
+          [
+            "Explicar si se permiten varias",
+            "Clarify multiple selections",
+            "Préciser les sélections multiples"
+          ]
+        ]
+      }
+    ]
+  },
+  "looker-studio": {
+    "image": "assets/img/course-looker-studio.svg",
+    "imageAlt": [
+      "Ilustración de un dashboard con gráficos, tablas y filtros de datos.",
+      "Illustration of a dashboard with charts, tables and data filters.",
+      "Illustration d’un tableau de bord avec graphiques, tableaux et filtres de données."
+    ],
+    "fullDescription": [
+      "Curso intermedio para construir tableros en Looker Studio a partir de fuentes de datos. La propuesta aborda la conexión de datos, la revisión de campos y tipos, la selección de gráficos, el uso de filtros y controles, y la distribución de informes para que otras personas puedan consultarlos.",
+      "An intermediate course on building Looker Studio dashboards from data sources. The proposed curriculum covers data connections, reviewing fields and types, selecting charts, using filters and controls, and sharing reports for others to explore.",
+      "Un cours intermédiaire pour créer des tableaux de bord Looker Studio à partir de sources de données. Le programme proposé couvre les connexions, la vérification des champs et types, le choix des graphiques, l’usage de filtres et contrôles, et le partage des rapports."
+    ],
+    "modality": [
+      "Práctica con un conjunto de datos de ejemplo",
+      "Hands-on practice with a sample dataset",
+      "Pratique avec un jeu de données exemple"
+    ],
+    "prerequisites": [
+      [
+        "Conocimientos básicos de hojas de cálculo y lectura de tablas.",
+        "Cuenta de Google con acceso a Looker Studio.",
+        "Un conjunto de datos limpio o una fuente de práctica disponible."
+      ],
+      [
+        "Basic spreadsheet skills and ability to read tables.",
+        "A Google account with access to Looker Studio.",
+        "A clean dataset or practice source."
+      ],
+      [
+        "Connaissances de base des feuilles de calcul et lecture de tableaux.",
+        "Un compte Google avec accès à Looker Studio.",
+        "Un jeu de données propre ou une source d’exercice disponible."
+      ]
+    ],
+    "objectives": [
+      [
+        "Conectar una fuente de datos y revisar el acceso.",
+        "Reconocer campos, dimensiones y métricas relevantes.",
+        "Elegir gráficos que representen correctamente las preguntas de análisis.",
+        "Añadir filtros y controles para explorar el informe.",
+        "Compartir el tablero revisando los permisos de acceso."
+      ],
+      [
+        "Connect a data source and review access.",
+        "Identify relevant fields, dimensions and metrics.",
+        "Choose charts that correctly represent analysis questions.",
+        "Add filters and controls to explore the report.",
+        "Share the dashboard after checking access permissions."
+      ],
+      [
+        "Connecter une source de données et vérifier l’accès.",
+        "Identifier les champs, dimensions et métriques pertinents.",
+        "Choisir des graphiques adaptés aux questions d’analyse.",
+        "Ajouter des filtres et contrôles pour explorer le rapport.",
+        "Partager le tableau de bord après vérification des autorisations."
+      ]
+    ],
+    "modules": [
+      {
+        "title": [
+          "Conectar y validar fuentes de datos",
+          "Connect and validate data sources",
+          "Connecter et valider les sources de données"
+        ],
+        "duration": [
+          "1 h",
+          "1 hr",
+          "1 h"
+        ],
+        "durationMinutes": 60,
+        "visual": "assets/img/looker-studio-module-1.svg",
+        "visualAlt": [
+          "Fuentes de datos conectadas a un informe.",
+          "Data sources connected to a report.",
+          "Sources de données connectées à un rapport."
+        ],
+        "topics": [
+          [
+            "Crear un informe y seleccionar una fuente disponible.",
+            "Revisar credenciales y permisos de acceso a los datos.",
+            "Comprobar la actualización y disponibilidad de la fuente.",
+            "Identificar limitaciones de datos faltantes o duplicados."
+          ],
+          [
+            "Create a report and select an available data source.",
+            "Review credentials and data access permissions.",
+            "Check source refresh and availability.",
+            "Identify limitations caused by missing or duplicate data."
+          ],
+          [
+            "Créer un rapport et sélectionner une source disponible.",
+            "Vérifier les identifiants et autorisations d’accès aux données.",
+            "Contrôler l’actualisation et la disponibilité de la source.",
+            "Repérer les limites liées aux données manquantes ou dupliquées."
+          ]
+        ]
+      },
+      {
+        "title": [
+          "Campos, dimensiones y métricas",
+          "Fields, dimensions and metrics",
+          "Champs, dimensions et métriques"
+        ],
+        "duration": [
+          "1 h 30 min",
+          "1 hr 30 min",
+          "1 h 30 min"
+        ],
+        "durationMinutes": 90,
+        "visual": "assets/img/looker-studio-module-2.svg",
+        "visualAlt": [
+          "Campos tabulares revisados y organizados para análisis.",
+          "Tabular fields reviewed and organized for analysis.",
+          "Champs tabulaires vérifiés et organisés pour l’analyse."
+        ],
+        "topics": [
+          [
+            "Distinguir dimensiones categóricas y métricas numéricas.",
+            "Revisar tipos de datos, nombres y agregaciones.",
+            "Crear campos calculados sencillos cuando sea necesario.",
+            "Establecer títulos y formatos comprensibles para el público."
+          ],
+          [
+            "Distinguish categorical dimensions from numeric metrics.",
+            "Review data types, names and aggregations.",
+            "Create simple calculated fields when needed.",
+            "Set titles and formats that are understandable to the audience."
+          ],
+          [
+            "Distinguer les dimensions catégorielles des métriques numériques.",
+            "Vérifier les types de données, noms et agrégations.",
+            "Créer des champs calculés simples si nécessaire.",
+            "Définir des titres et formats compréhensibles pour le public."
+          ]
+        ]
+      },
+      {
+        "title": [
+          "Gráficos, filtros e interacción",
+          "Charts, filters and interaction",
+          "Graphiques, filtres et interaction"
+        ],
+        "duration": [
+          "1 h 30 min",
+          "1 hr 30 min",
+          "1 h 30 min"
+        ],
+        "durationMinutes": 90,
+        "visual": "assets/img/looker-studio-module-3.svg",
+        "visualAlt": [
+          "Gráficos de barras y líneas junto a controles de filtrado.",
+          "Bar and line charts alongside filter controls.",
+          "Graphiques en barres et lignes avec contrôles de filtrage."
+        ],
+        "topics": [
+          [
+            "Seleccionar gráficos de acuerdo con la comparación deseada.",
+            "Configurar tablas, barras, series temporales y gráficos de proporciones.",
+            "Añadir filtros y controles para cambiar el conjunto mostrado.",
+            "Evitar escalas, colores o etiquetas que induzcan a una lectura equivocada."
+          ],
+          [
+            "Choose charts according to the comparison being made.",
+            "Configure tables, bars, time series and proportion charts.",
+            "Add filters and controls to change the displayed dataset.",
+            "Avoid scales, colors or labels that may mislead readers."
+          ],
+          [
+            "Choisir les graphiques selon la comparaison souhaitée.",
+            "Configurer tableaux, barres, séries temporelles et graphiques de proportions.",
+            "Ajouter filtres et contrôles pour modifier l’ensemble affiché.",
+            "Éviter les échelles, couleurs ou libellés susceptibles d’induire en erreur."
+          ]
+        ]
+      },
+      {
+        "title": [
+          "Diseño del tablero y publicación",
+          "Dashboard design and sharing",
+          "Conception du tableau de bord et partage"
+        ],
+        "duration": [
+          "1 h",
+          "1 hr",
+          "1 h"
+        ],
+        "durationMinutes": 60,
+        "visual": "assets/img/looker-studio-module-4.svg",
+        "visualAlt": [
+          "Dashboard con indicadores y secciones de análisis.",
+          "Dashboard with indicators and analysis sections.",
+          "Tableau de bord avec indicateurs et sections d’analyse."
+        ],
+        "topics": [
+          [
+            "Ordenar los componentes para contar una historia analítica.",
+            "Usar títulos, contexto y fechas para evitar ambigüedades.",
+            "Probar filtros y comprobar el resultado de las interacciones.",
+            "Compartir el informe con los permisos mínimos necesarios."
+          ],
+          [
+            "Arrange components to tell an analytical story.",
+            "Use titles, context and dates to avoid ambiguity.",
+            "Test filters and check interaction results.",
+            "Share the report using the minimum required permissions."
+          ],
+          [
+            "Organiser les composants pour raconter une histoire analytique.",
+            "Utiliser titres, contexte et dates pour éviter les ambiguïtés.",
+            "Tester les filtres et vérifier les interactions.",
+            "Partager le rapport avec les autorisations minimales nécessaires."
+          ]
+        ]
+      }
+    ],
+    "methodology": [
+      "Cada módulo parte de una pregunta concreta de análisis y la traduce en un tablero que se puede explorar. La práctica final reúne fuentes, métricas, gráficos y filtros, y termina con una revisión de permisos.",
+      "Each module starts from a specific analysis question and translates it into an explorable dashboard. The capstone combines sources, metrics, charts and filters, then reviews sharing permissions.",
+      "Chaque module part d’une question d’analyse précise et la traduit en un tableau de bord interactif. Le projet final réunit sources, métriques, graphiques et filtres, puis vérifie les autorisations de partage."
+    ],
+    "outcomes": [
+      [
+        "Informe conectado a una fuente de datos de práctica.",
+        "Gráficos y métricas coherentes con las preguntas de análisis.",
+        "Filtros funcionales y navegación comprensible.",
+        "Tablero compartido con acceso revisado."
+      ],
+      [
+        "A report connected to a practice data source.",
+        "Charts and metrics aligned with analysis questions.",
+        "Functional filters and understandable navigation.",
+        "A dashboard shared with reviewed access."
+      ],
+      [
+        "Un rapport connecté à une source de données d’exercice.",
+        "Des graphiques et métriques cohérents avec les questions d’analyse.",
+        "Des filtres fonctionnels et une navigation compréhensible.",
+        "Un tableau de bord partagé avec accès vérifié."
+      ]
+    ],
+    "materials": [
+      [
+        "Conjunto de datos para practicar.",
+        "Lista de selección de gráficos por objetivo.",
+        "Lista de comprobación para publicar un tablero."
+      ],
+      [
+        "Practice dataset.",
+        "Chart-selection checklist by analytical goal.",
+        "Dashboard publishing checklist."
+      ],
+      [
+        "Jeu de données d’exercice.",
+        "Liste de choix des graphiques selon l’objectif.",
+        "Liste de contrôle avant publication d’un tableau de bord."
+      ]
+    ],
+    "referenceTitle": [
+      "Relación entre pregunta y visualización",
+      "Question-to-visual mapping",
+      "Correspondance entre question et visualisation"
+    ],
+    "referenceColumns": [
+      [
+        "Pregunta",
+        "Visualización posible",
+        "Precaución"
+      ],
+      [
+        "Question",
+        "Possible visual",
+        "Caution"
+      ],
+      [
+        "Question",
+        "Visualisation possible",
+        "Précaution"
+      ]
+    ],
+    "referenceRows": [
+      {
+        "cells": [
+          [
+            "Comparar categorías",
+            "Compare categories",
+            "Comparer des catégories"
+          ],
+          [
+            "Barras o tabla",
+            "Bars or table",
+            "Barres ou tableau"
+          ],
+          [
+            "Ordenar con criterio consistente",
+            "Use consistent ordering",
+            "Utiliser un ordre cohérent"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          [
+            "Ver evolución temporal",
+            "View change over time",
+            "Voir l’évolution temporelle"
+          ],
+          [
+            "Línea",
+            "Line",
+            "Courbe"
+          ],
+          [
+            "Revisar fechas y granularidad",
+            "Check dates and granularity",
+            "Vérifier dates et granularité"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          [
+            "Mostrar proporciones",
+            "Show proportions",
+            "Montrer les proportions"
+          ],
+          [
+            "Barras apiladas o proporción",
+            "Stacked bars or proportion",
+            "Barres empilées ou proportion"
+          ],
+          [
+            "Evitar demasiadas categorías",
+            "Avoid too many categories",
+            "Éviter trop de catégories"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          [
+            "Explorar subconjuntos",
+            "Explore subsets",
+            "Explorer des sous-ensembles"
+          ],
+          [
+            "Filtros y controles",
+            "Filters and controls",
+            "Filtres et contrôles"
+          ],
+          [
+            "Explicar el alcance del filtro",
+            "Explain filter scope",
+            "Expliquer la portée du filtre"
+          ]
+        ]
+      }
+    ]
+  },
+  "apps-script": {
+    "image": "assets/img/course-apps-script.svg",
+    "imageAlt": [
+      "Ilustración de un editor de código, automatización y conexión entre servicios de Google.",
+      "Illustration of a code editor, automation and connections between Google services.",
+      "Illustration d’un éditeur de code, d’automatisation et de connexions entre services Google."
+    ],
+    "fullDescription": [
+      "Curso avanzado propuesto para automatizar tareas repetitivas en Google Workspace mediante Apps Script y JavaScript. Parte del primer script y avanza hacia la lectura y escritura de datos en Sheets, acciones con Gmail, ejecuciones programadas o por evento y una introducción a aplicaciones web sencillas.",
+      "A proposed advanced course on automating repetitive Google Workspace tasks with Apps Script and JavaScript. It starts with a first script and moves toward reading and writing Sheets data, Gmail actions, scheduled or event-driven executions, and an introduction to simple web apps.",
+      "Un cours avancé proposé pour automatiser des tâches répétitives dans Google Workspace avec Apps Script et JavaScript. Il commence par un premier script, puis aborde la lecture et l’écriture dans Sheets, les actions Gmail, les exécutions planifiées ou déclenchées par événement, et une introduction aux applications web simples."
+    ],
+    "modality": [
+      "Laboratorio práctico de programación",
+      "Hands-on programming lab",
+      "Atelier pratique de programmation"
+    ],
+    "prerequisites": [
+      [
+        "Experiencia básica usando Sheets y Gmail.",
+        "Comprensión de variables, funciones o estructuras básicas de programación recomendada.",
+        "Cuenta de Google con acceso a Apps Script; algunas acciones requieren autorización."
+      ],
+      [
+        "Basic experience using Sheets and Gmail.",
+        "Basic familiarity with programming variables, functions or structures is recommended.",
+        "A Google account with Apps Script access; some actions require authorization."
+      ],
+      [
+        "Expérience de base avec Sheets et Gmail.",
+        "Une connaissance des variables, fonctions ou structures de programmation est recommandée.",
+        "Un compte Google avec accès à Apps Script ; certaines actions nécessitent une autorisation."
+      ]
+    ],
+    "objectives": [
+      [
+        "Crear, ejecutar y depurar un script sencillo.",
+        "Usar variables, funciones y estructuras de control básicas de JavaScript.",
+        "Leer y modificar rangos en Sheets desde código.",
+        "Automatizar operaciones seleccionadas relacionadas con Gmail.",
+        "Configurar disparadores y comprender las autorizaciones y límites.",
+        "Reconocer el flujo básico para publicar una aplicación web sencilla."
+      ],
+      [
+        "Create, run and debug a simple script.",
+        "Use basic JavaScript variables, functions and control structures.",
+        "Read and modify Sheets ranges from code.",
+        "Automate selected Gmail-related operations.",
+        "Configure triggers and understand permissions and limits.",
+        "Recognize the basic flow for publishing a simple web app."
+      ],
+      [
+        "Créer, exécuter et déboguer un script simple.",
+        "Utiliser variables, fonctions et structures de contrôle JavaScript de base.",
+        "Lire et modifier des plages Sheets depuis le code.",
+        "Automatiser certaines opérations liées à Gmail.",
+        "Configurer des déclencheurs et comprendre autorisations et limites.",
+        "Reconnaître le flux de base pour publier une application web simple."
+      ]
+    ],
+    "modules": [
+      {
+        "title": [
+          "Entorno y primer script",
+          "Environment and first script",
+          "Environnement et premier script"
+        ],
+        "duration": [
+          "1 h",
+          "1 hr",
+          "1 h"
+        ],
+        "durationMinutes": 60,
+        "visual": "assets/img/apps-script-module-1.svg",
+        "visualAlt": [
+          "Editor de Apps Script con un primer bloque de código.",
+          "Apps Script editor with a first code block.",
+          "Éditeur Apps Script avec un premier bloc de code."
+        ],
+        "topics": [
+          [
+            "Abrir Apps Script desde un proyecto o desde una hoja.",
+            "Reconocer editor, archivos, funciones y registros de ejecución.",
+            "Declarar variables y crear funciones pequeñas.",
+            "Ejecutar una función y leer errores o mensajes de registro."
+          ],
+          [
+            "Open Apps Script from a project or spreadsheet.",
+            "Recognize the editor, files, functions and execution logs.",
+            "Declare variables and create small functions.",
+            "Run a function and read errors or log messages."
+          ],
+          [
+            "Ouvrir Apps Script depuis un projet ou une feuille.",
+            "Reconnaître l’éditeur, les fichiers, fonctions et journaux d’exécution.",
+            "Déclarer des variables et créer de petites fonctions.",
+            "Exécuter une fonction et lire les erreurs ou journaux."
+          ]
+        ]
+      },
+      {
+        "title": [
+          "JavaScript aplicado a tareas pequeñas",
+          "JavaScript for small tasks",
+          "JavaScript appliqué à de petites tâches"
+        ],
+        "duration": [
+          "1 h 30 min",
+          "1 hr 30 min",
+          "1 h 30 min"
+        ],
+        "durationMinutes": 90,
+        "visual": "assets/img/apps-script-module-2.svg",
+        "visualAlt": [
+          "Bloques de código con condiciones, bucles y funciones.",
+          "Code blocks with conditions, loops and functions.",
+          "Blocs de code avec conditions, boucles et fonctions."
+        ],
+        "topics": [
+          [
+            "Usar cadenas, números, booleanos y arreglos.",
+            "Aplicar condiciones y bucles a conjuntos de datos pequeños.",
+            "Separar lógica repetida en funciones reutilizables.",
+            "Mantener nombres descriptivos y comentar decisiones no obvias."
+          ],
+          [
+            "Use strings, numbers, booleans and arrays.",
+            "Apply conditions and loops to small datasets.",
+            "Separate repeated logic into reusable functions.",
+            "Use descriptive names and comment non-obvious decisions."
+          ],
+          [
+            "Utiliser chaînes, nombres, booléens et tableaux.",
+            "Appliquer conditions et boucles à de petits ensembles de données.",
+            "Séparer la logique répétée en fonctions réutilisables.",
+            "Choisir des noms descriptifs et commenter les décisions non évidentes."
+          ]
+        ]
+      },
+      {
+        "title": [
+          "Automatizar Sheets y Gmail",
+          "Automate Sheets and Gmail",
+          "Automatiser Sheets et Gmail"
+        ],
+        "duration": [
+          "1 h 30 min",
+          "1 hr 30 min",
+          "1 h 30 min"
+        ],
+        "durationMinutes": 90,
+        "visual": "assets/img/apps-script-module-3.svg",
+        "visualAlt": [
+          "Código que conecta una hoja de cálculo con una operación de correo.",
+          "Code linking a spreadsheet to an email operation.",
+          "Code reliant une feuille de calcul à une opération de courriel."
+        ],
+        "topics": [
+          [
+            "Leer rangos de Sheets y convertirlos en datos utilizables.",
+            "Escribir resultados en celdas sin alterar rangos ajenos al ejercicio.",
+            "Construir un mensaje de Gmail a partir de datos de una hoja.",
+            "Validar campos y probar con datos controlados antes de enviar mensajes."
+          ],
+          [
+            "Read Sheets ranges and turn them into usable data.",
+            "Write results to cells without affecting unrelated ranges.",
+            "Build a Gmail message from spreadsheet data.",
+            "Validate fields and test with controlled data before sending messages."
+          ],
+          [
+            "Lire des plages Sheets et les convertir en données exploitables.",
+            "Écrire des résultats dans les cellules sans modifier les plages hors exercice.",
+            "Construire un message Gmail à partir de données d’une feuille.",
+            "Valider les champs et tester avec des données contrôlées avant l’envoi."
+          ]
+        ]
+      },
+      {
+        "title": [
+          "Disparadores y automatización segura",
+          "Triggers and safe automation",
+          "Déclencheurs et automatisation sûre"
+        ],
+        "duration": [
+          "2 h",
+          "2 hrs",
+          "2 h"
+        ],
+        "durationMinutes": 120,
+        "visual": "assets/img/apps-script-module-4.svg",
+        "visualAlt": [
+          "Flujo automatizado con un disparador y pasos verificables.",
+          "Automated flow with a trigger and verifiable steps.",
+          "Flux automatisé avec déclencheur et étapes vérifiables."
+        ],
+        "topics": [
+          [
+            "Distinguir ejecución manual, por tiempo y por evento compatible.",
+            "Configurar un disparador instalable y comprobar la cuenta ejecutora.",
+            "Registrar resultados y manejar errores de forma controlada.",
+            "Reconocer cuotas, permisos y límites de ejecución.",
+            "Evitar envíos duplicados mediante validaciones o marcas de estado."
+          ],
+          [
+            "Distinguish manual, time-driven and supported event-driven executions.",
+            "Configure an installable trigger and check the executing account.",
+            "Log results and handle errors in a controlled way.",
+            "Recognize quotas, permissions and execution limits.",
+            "Avoid duplicate sends through validation or status markers."
+          ],
+          [
+            "Distinguer exécution manuelle, planifiée et déclenchée par événement pris en charge.",
+            "Configurer un déclencheur installable et vérifier le compte exécutant.",
+            "Enregistrer les résultats et gérer les erreurs de manière contrôlée.",
+            "Reconnaître quotas, autorisations et limites d’exécution.",
+            "Éviter les envois en double grâce à des validations ou marqueurs d’état."
+          ]
+        ]
+      },
+      {
+        "title": [
+          "Introducción a aplicaciones web",
+          "Introduction to web apps",
+          "Introduction aux applications web"
+        ],
+        "duration": [
+          "2 h",
+          "2 hrs",
+          "2 h"
+        ],
+        "durationMinutes": 120,
+        "visual": "assets/img/apps-script-module-5.svg",
+        "visualAlt": [
+          "Interfaz web sencilla conectada a una función del servidor.",
+          "Simple web interface connected to a server function.",
+          "Interface web simple reliée à une fonction serveur."
+        ],
+        "topics": [
+          [
+            "Reconocer el flujo básico de doGet o doPost en una web app.",
+            "Separar la interfaz HTML de las funciones del servidor.",
+            "Revisar las opciones de despliegue y quién puede acceder.",
+            "No publicar información personal ni credenciales en el código.",
+            "Documentar pruebas y pasos de reversión del despliegue."
+          ],
+          [
+            "Recognize the basic doGet or doPost flow in a web app.",
+            "Separate the HTML interface from server functions.",
+            "Review deployment options and who can access the app.",
+            "Do not publish personal information or credentials in code.",
+            "Document tests and deployment rollback steps."
+          ],
+          [
+            "Reconnaître le flux de base doGet ou doPost dans une application web.",
+            "Séparer l’interface HTML des fonctions du serveur.",
+            "Vérifier les options de déploiement et les personnes autorisées.",
+            "Ne pas publier d’informations personnelles ni d’identifiants dans le code.",
+            "Documenter les tests et les étapes de retour arrière du déploiement."
+          ]
+        ]
+      }
+    ],
+    "methodology": [
+      "Laboratorio incremental: cada ejercicio produce una función pequeña, se prueba con datos controlados y se documenta. Los ejemplos avanzan desde ejecuciones manuales hasta automatizaciones con activadores y una web app sencilla.",
+      "An incremental lab: each exercise produces a small function, tests it with controlled data and documents it. Examples progress from manual runs to triggered automation and a simple web app.",
+      "Atelier progressif : chaque exercice produit une petite fonction, la teste avec des données contrôlées et la documente. Les exemples évoluent des exécutions manuelles aux automatisations déclenchées et à une application web simple."
+    ],
+    "outcomes": [
+      [
+        "Script pequeño que se puede ejecutar y depurar.",
+        "Automatización de una lectura o escritura en Sheets.",
+        "Ejemplo controlado de operación relacionada con Gmail.",
+        "Disparador configurado con límites y autorizaciones comprendidos.",
+        "Prototipo o esquema de web app con criterios básicos de acceso."
+      ],
+      [
+        "A small script that can be run and debugged.",
+        "Automation of a Sheets read or write operation.",
+        "A controlled example of a Gmail-related operation.",
+        "A trigger configured with understood limits and permissions.",
+        "A web-app prototype or outline with basic access criteria."
+      ],
+      [
+        "Un petit script exécutable et débogable.",
+        "Automatisation d’une lecture ou écriture dans Sheets.",
+        "Exemple contrôlé d’opération liée à Gmail.",
+        "Déclencheur configuré avec limites et autorisations comprises.",
+        "Prototype ou schéma d’application web avec critères d’accès de base."
+      ]
+    ],
+    "materials": [
+      [
+        "Ejercicios guiados de JavaScript.",
+        "Hoja de cálculo de práctica con datos ficticios.",
+        "Lista de comprobación de permisos y cuotas.",
+        "Plantilla de registro de pruebas y errores."
+      ],
+      [
+        "Guided JavaScript exercises.",
+        "Practice spreadsheet with fictional data.",
+        "Permissions and quota checklist.",
+        "Test and error-log template."
+      ],
+      [
+        "Exercices guidés de JavaScript.",
+        "Feuille de calcul d’exercice avec données fictives.",
+        "Liste de contrôle des autorisations et quotas.",
+        "Modèle de journal de tests et d’erreurs."
+      ]
+    ],
+    "referenceTitle": [
+      "Ciclo básico de automatización",
+      "Basic automation cycle",
+      "Cycle de base d’automatisation"
+    ],
+    "referenceColumns": [
+      [
+        "Etapa",
+        "Responsabilidad",
+        "Control"
+      ],
+      [
+        "Stage",
+        "Responsibility",
+        "Control"
+      ],
+      [
+        "Étape",
+        "Responsabilité",
+        "Contrôle"
+      ]
+    ],
+    "referenceRows": [
+      {
+        "cells": [
+          [
+            "Entrada",
+            "Input",
+            "Entrée"
+          ],
+          [
+            "Leer datos o evento",
+            "Read data or event",
+            "Lire des données ou événement"
+          ],
+          [
+            "Validar valores",
+            "Validate values",
+            "Valider les valeurs"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          [
+            "Proceso",
+            "Process",
+            "Traitement"
+          ],
+          [
+            "Aplicar reglas",
+            "Apply rules",
+            "Appliquer les règles"
+          ],
+          [
+            "Registrar resultados",
+            "Log results",
+            "Consigner les résultats"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          [
+            "Salida",
+            "Output",
+            "Sortie"
+          ],
+          [
+            "Escribir o enviar",
+            "Write or send",
+            "Écrire ou envoyer"
+          ],
+          [
+            "Prevenir duplicados",
+            "Prevent duplicates",
+            "Éviter les doublons"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          [
+            "Mantenimiento",
+            "Maintenance",
+            "Maintenance"
+          ],
+          [
+            "Revisar ejecuciones",
+            "Review runs",
+            "Examiner les exécutions"
+          ],
+          [
+            "Vigilar permisos y cuotas",
+            "Monitor permissions and quotas",
+            "Surveiller autorisations et quotas"
+          ]
+        ]
+      }
+    ]
+  },
+  "colab": {
+    "image": "assets/img/course-colab.svg",
+    "imageAlt": [
+      "Ilustración de un notebook con celdas de código y resultados de análisis de datos.",
+      "Illustration of a notebook with code cells and data-analysis results.",
+      "Illustration d’un notebook avec cellules de code et résultats d’analyse de données."
+    ],
+    "fullDescription": [
+      "Curso intermedio propuesto para usar Google Colab desde el navegador sin instalar un entorno local. El recorrido incluye cuadernos y celdas, fundamentos de Python, lectura y exploración de datos con pandas, gráficos básicos y conexión con archivos de Google Drive.",
+      "A proposed intermediate course on using Google Colab in the browser without installing a local environment. It covers notebooks and cells, Python basics, data exploration with pandas, basic charts and access to Google Drive files.",
+      "Un cours intermédiaire proposé pour utiliser Google Colab dans le navigateur sans installer d’environnement local. Il couvre notebooks et cellules, bases de Python, exploration des données avec pandas, graphiques simples et accès aux fichiers Google Drive."
+    ],
+    "modality": [
+      "Laboratorio en notebook con ejercicios de datos",
+      "Notebook lab with data exercises",
+      "Atelier notebook avec exercices de données"
+    ],
+    "prerequisites": [
+      [
+        "Cuenta de Google y acceso a Colab.",
+        "Conocimientos básicos de archivos y carpetas.",
+        "No se requiere instalar Python localmente; se recomienda saber usar una hoja de cálculo."
+      ],
+      [
+        "A Google account and access to Colab.",
+        "Basic file and folder skills.",
+        "No local Python installation is required; spreadsheet familiarity is recommended."
+      ],
+      [
+        "Un compte Google avec accès à Colab.",
+        "Connaissances de base des fichiers et dossiers.",
+        "Aucune installation locale de Python n’est requise ; la maîtrise d’un tableur est recommandée."
+      ]
+    ],
+    "objectives": [
+      [
+        "Crear notebooks y ejecutar celdas en orden.",
+        "Usar variables, listas y operaciones básicas de Python.",
+        "Leer conjuntos de datos y explorar tablas con pandas.",
+        "Generar visualizaciones simples para observar patrones.",
+        "Conectar Drive y mantener organizado el notebook de análisis."
+      ],
+      [
+        "Create notebooks and run cells in order.",
+        "Use variables, lists and basic Python operations.",
+        "Load datasets and explore tables with pandas.",
+        "Generate simple visualizations to observe patterns.",
+        "Connect Drive and keep the analysis notebook organized."
+      ],
+      [
+        "Créer des notebooks et exécuter les cellules dans l’ordre.",
+        "Utiliser variables, listes et opérations Python de base.",
+        "Charger des jeux de données et explorer des tableaux avec pandas.",
+        "Générer des visualisations simples pour repérer des tendances.",
+        "Connecter Drive et organiser le notebook d’analyse."
+      ]
+    ],
+    "modules": [
+      {
+        "title": [
+          "Entorno de Colab y cuadernos",
+          "Colab environment and notebooks",
+          "Environnement Colab et notebooks"
+        ],
+        "duration": [
+          "1 h",
+          "1 hr",
+          "1 h"
+        ],
+        "durationMinutes": 60,
+        "visual": "assets/img/colab-module-1.svg",
+        "visualAlt": [
+          "Notebook con celdas de código y resultados separados.",
+          "Notebook with separate code and output cells.",
+          "Notebook avec cellules de code et résultats séparés."
+        ],
+        "topics": [
+          [
+            "Crear o abrir un notebook y comprender su estructura.",
+            "Distinguir celdas de código y texto.",
+            "Ejecutar, reiniciar y volver a ejecutar celdas cuando sea necesario.",
+            "Guardar, nombrar y organizar el notebook en Drive."
+          ],
+          [
+            "Create or open a notebook and understand its structure.",
+            "Distinguish code and text cells.",
+            "Run, restart and rerun cells when needed.",
+            "Save, name and organize the notebook in Drive."
+          ],
+          [
+            "Créer ou ouvrir un notebook et comprendre sa structure.",
+            "Distinguer cellules de code et de texte.",
+            "Exécuter, redémarrer et relancer les cellules si nécessaire.",
+            "Enregistrer, nommer et organiser le notebook dans Drive."
+          ]
+        ]
+      },
+      {
+        "title": [
+          "Fundamentos de Python para análisis",
+          "Python foundations for analysis",
+          "Bases de Python pour l’analyse"
+        ],
+        "duration": [
+          "1 h 30 min",
+          "1 hr 30 min",
+          "1 h 30 min"
+        ],
+        "durationMinutes": 90,
+        "visual": "assets/img/colab-module-2.svg",
+        "visualAlt": [
+          "Celdas de Python con variables, listas y operaciones.",
+          "Python cells with variables, lists and operations.",
+          "Cellules Python avec variables, listes et opérations."
+        ],
+        "topics": [
+          [
+            "Trabajar con números, cadenas, variables y listas.",
+            "Usar condiciones y bucles pequeños para transformar valores.",
+            "Leer errores sencillos y comprobar resultados por etapas.",
+            "Separar un problema en celdas legibles y reutilizables."
+          ],
+          [
+            "Work with numbers, strings, variables and lists.",
+            "Use small conditions and loops to transform values.",
+            "Read simple errors and verify results step by step.",
+            "Split a problem into readable and reusable cells."
+          ],
+          [
+            "Travailler avec nombres, chaînes, variables et listes.",
+            "Utiliser de petites conditions et boucles pour transformer des valeurs.",
+            "Lire des erreurs simples et vérifier les résultats étape par étape.",
+            "Découper un problème en cellules lisibles et réutilisables."
+          ]
+        ]
+      },
+      {
+        "title": [
+          "Lectura y exploración de datos con pandas",
+          "Read and explore data with pandas",
+          "Lire et explorer des données avec pandas"
+        ],
+        "duration": [
+          "1 h 30 min",
+          "1 hr 30 min",
+          "1 h 30 min"
+        ],
+        "durationMinutes": 90,
+        "visual": "assets/img/colab-module-3.svg",
+        "visualAlt": [
+          "Tabla de datos con columnas y registros revisados.",
+          "Data table with reviewed columns and records.",
+          "Tableau de données avec colonnes et enregistrements vérifiés."
+        ],
+        "topics": [
+          [
+            "Cargar datos tabulares desde archivo o fuente accesible.",
+            "Inspeccionar columnas, tipos, dimensiones y valores faltantes.",
+            "Filtrar filas y seleccionar columnas para responder preguntas.",
+            "Calcular resúmenes sencillos y documentar transformaciones."
+          ],
+          [
+            "Load tabular data from a file or accessible source.",
+            "Inspect columns, types, dimensions and missing values.",
+            "Filter rows and select columns to answer questions.",
+            "Calculate simple summaries and document transformations."
+          ],
+          [
+            "Charger des données tabulaires depuis un fichier ou une source accessible.",
+            "Examiner colonnes, types, dimensions et valeurs manquantes.",
+            "Filtrer les lignes et choisir des colonnes pour répondre aux questions.",
+            "Calculer des résumés simples et documenter les transformations."
+          ]
+        ]
+      },
+      {
+        "title": [
+          "Gráficos, Drive y entrega reproducible",
+          "Charts, Drive and reproducible delivery",
+          "Graphiques, Drive et rendu reproductible"
+        ],
+        "duration": [
+          "1 h",
+          "1 hr",
+          "1 h"
+        ],
+        "durationMinutes": 60,
+        "visual": "assets/img/colab-module-4.svg",
+        "visualAlt": [
+          "Notebook con gráficos y archivo asociado en Drive.",
+          "Notebook with charts and an associated Drive file.",
+          "Notebook avec graphiques et fichier associé dans Drive."
+        ],
+        "topics": [
+          [
+            "Crear gráficos básicos para comparar categorías o evolución temporal.",
+            "Etiquetar ejes, títulos y unidades con claridad.",
+            "Conectar Drive y acceder a archivos respetando permisos.",
+            "Añadir contexto y ejecutar el notebook desde el inicio para revisar reproducibilidad."
+          ],
+          [
+            "Create basic charts to compare categories or time trends.",
+            "Label axes, titles and units clearly.",
+            "Connect Drive and access files while respecting permissions.",
+            "Add context and run the notebook from the start to check reproducibility."
+          ],
+          [
+            "Créer des graphiques de base pour comparer des catégories ou une évolution temporelle.",
+            "Étiqueter clairement axes, titres et unités.",
+            "Connecter Drive et accéder aux fichiers en respectant les autorisations.",
+            "Ajouter du contexte et exécuter le notebook depuis le début pour vérifier sa reproductibilité."
+          ]
+        ]
+      }
+    ],
+    "methodology": [
+      "El aprendizaje se construye mediante celdas pequeñas y un conjunto de datos de práctica. Cada transformación se acompaña de una comprobación visible; el cierre consiste en un notebook documentado que puede ejecutarse en orden.",
+      "Learning is built through small cells and a practice dataset. Each transformation has a visible check; the final deliverable is a documented notebook that can be run in order.",
+      "L’apprentissage se construit au moyen de petites cellules et d’un jeu de données d’exercice. Chaque transformation est accompagnée d’une vérification visible ; le livrable final est un notebook documenté exécutable dans l’ordre."
+    ],
+    "outcomes": [
+      [
+        "Notebook ordenado con celdas de código y explicación.",
+        "Conjunto de datos cargado y explorado con pandas.",
+        "Gráficos básicos con títulos y etiquetas.",
+        "Archivos gestionados mediante Drive y un procedimiento reproducible."
+      ],
+      [
+        "An organized notebook with code and explanation cells.",
+        "A dataset loaded and explored with pandas.",
+        "Basic charts with titles and labels.",
+        "Files managed through Drive and a reproducible procedure."
+      ],
+      [
+        "Un notebook organisé avec cellules de code et d’explication.",
+        "Un jeu de données chargé et exploré avec pandas.",
+        "Des graphiques simples avec titres et libellés.",
+        "Des fichiers gérés via Drive avec une procédure reproductible."
+      ]
+    ],
+    "materials": [
+      [
+        "Notebook base para ejercicios.",
+        "Conjunto de datos de práctica no sensible.",
+        "Lista de comprobación para documentar análisis."
+      ],
+      [
+        "Starter notebook for exercises.",
+        "Non-sensitive practice dataset.",
+        "Analysis documentation checklist."
+      ],
+      [
+        "Notebook de départ pour les exercices.",
+        "Jeu de données d’exercice non sensible.",
+        "Liste de contrôle pour documenter l’analyse."
+      ]
+    ],
+    "referenceTitle": [
+      "Estructura recomendada del notebook",
+      "Recommended notebook structure",
+      "Structure recommandée du notebook"
+    ],
+    "referenceColumns": [
+      [
+        "Sección",
+        "Contenido",
+        "Finalidad"
+      ],
+      [
+        "Section",
+        "Content",
+        "Purpose"
+      ],
+      [
+        "Section",
+        "Contenu",
+        "Objectif"
+      ]
+    ],
+    "referenceRows": [
+      {
+        "cells": [
+          [
+            "Contexto",
+            "Context",
+            "Contexte"
+          ],
+          [
+            "Pregunta y fuente",
+            "Question and source",
+            "Question et source"
+          ],
+          [
+            "Entender el objetivo",
+            "Understand the goal",
+            "Comprendre l’objectif"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          [
+            "Carga",
+            "Loading",
+            "Chargement"
+          ],
+          [
+            "Lectura de los datos",
+            "Read the data",
+            "Lire les données"
+          ],
+          [
+            "Revisar estructura",
+            "Review structure",
+            "Vérifier la structure"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          [
+            "Análisis",
+            "Analysis",
+            "Analyse"
+          ],
+          [
+            "Filtros y cálculos",
+            "Filters and calculations",
+            "Filtres et calculs"
+          ],
+          [
+            "Responder preguntas",
+            "Answer questions",
+            "Répondre aux questions"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          [
+            "Resultados",
+            "Results",
+            "Résultats"
+          ],
+          [
+            "Gráficos e interpretación",
+            "Charts and interpretation",
+            "Graphiques et interprétation"
+          ],
+          [
+            "Comunicar hallazgos",
+            "Communicate findings",
+            "Communiquer les résultats"
+          ]
+        ]
+      }
+    ]
+  },
+  "notebooklm": {
+    "image": "assets/img/course-notebooklm.svg",
+    "imageAlt": [
+      "Ilustración de fuentes documentales y una guía de estudio con notas.",
+      "Illustration of document sources and a study guide with notes.",
+      "Illustration de sources documentaires et d’un guide d’étude annoté."
+    ],
+    "fullDescription": [
+      "Curso introductorio propuesto para organizar fuentes propias en NotebookLM y trabajar a partir de ellas. Se practican la carga y revisión de materiales, la formulación de preguntas basadas en las fuentes y la creación de resúmenes y guías de estudio que deben verificarse contra los documentos de origen.",
+      "A proposed introductory course on organizing personal sources in NotebookLM and working from them. It covers adding and reviewing materials, asking questions grounded in those sources, and creating summaries and study guides that should be checked against the original documents.",
+      "Un cours d’introduction proposé pour organiser ses propres sources dans NotebookLM et travailler à partir de celles-ci. Il aborde l’ajout et la vérification des documents, les questions fondées sur les sources et la création de résumés et guides d’étude à vérifier par rapport aux documents d’origine."
+    ],
+    "modality": [
+      "Práctica guiada con fuentes de ejemplo",
+      "Guided practice with sample sources",
+      "Pratique guidée avec des sources exemples"
+    ],
+    "prerequisites": [
+      [
+        "Cuenta de Google con acceso al servicio.",
+        "Documentos propios o materiales de práctica que se puedan utilizar.",
+        "Conocimientos básicos para evaluar la fiabilidad de una fuente."
+      ],
+      [
+        "A Google account with access to the service.",
+        "Personal documents or practice materials that may be used.",
+        "Basic ability to assess source reliability."
+      ],
+      [
+        "Un compte Google avec accès au service.",
+        "Documents personnels ou supports d’exercice pouvant être utilisés.",
+        "Capacité de base à évaluer la fiabilité d’une source."
+      ]
+    ],
+    "objectives": [
+      [
+        "Crear un cuaderno de trabajo y añadir fuentes compatibles.",
+        "Organizar materiales para mantener claro su origen.",
+        "Formular preguntas específicas que puedan responderse con las fuentes cargadas.",
+        "Revisar las citas y comprobar la respuesta en el documento original.",
+        "Generar resúmenes, preguntas y guías como apoyo al estudio."
+      ],
+      [
+        "Create a notebook and add supported sources.",
+        "Organize materials while keeping their origin clear.",
+        "Ask specific questions that can be answered from the uploaded sources.",
+        "Review citations and verify answers in the original document.",
+        "Generate summaries, questions and guides to support study."
+      ],
+      [
+        "Créer un carnet et ajouter des sources compatibles.",
+        "Organiser les supports en gardant leur origine claire.",
+        "Formuler des questions précises auxquelles les sources ajoutées peuvent répondre.",
+        "Vérifier les citations et contrôler la réponse dans le document original.",
+        "Générer des résumés, questions et guides pour soutenir l’étude."
+      ]
+    ],
+    "modules": [
+      {
+        "title": [
+          "Fuentes y organización del cuaderno",
+          "Sources and notebook organization",
+          "Sources et organisation du carnet"
+        ],
+        "duration": [
+          "30 min",
+          "30 min",
+          "30 min"
+        ],
+        "durationMinutes": 30,
+        "visual": "assets/img/notebooklm-module-1.svg",
+        "visualAlt": [
+          "Documentos de distintas fuentes organizados en un cuaderno.",
+          "Documents from different sources organized in a notebook.",
+          "Documents de différentes sources organisés dans un carnet."
+        ],
+        "topics": [
+          [
+            "Crear un cuaderno para un tema o proyecto concreto.",
+            "Añadir fuentes permitidas y revisar si se procesaron correctamente.",
+            "Distinguir la fuente original de los resúmenes derivados.",
+            "Evitar cargar datos confidenciales sin autorización."
+          ],
+          [
+            "Create a notebook for a specific topic or project.",
+            "Add supported sources and check whether they processed correctly.",
+            "Distinguish original sources from derived summaries.",
+            "Avoid uploading confidential data without authorization."
+          ],
+          [
+            "Créer un carnet pour un sujet ou projet précis.",
+            "Ajouter des sources prises en charge et vérifier leur traitement.",
+            "Distinguer les sources originales des résumés dérivés.",
+            "Éviter de charger des données confidentielles sans autorisation."
+          ]
+        ]
+      },
+      {
+        "title": [
+          "Preguntas basadas en fuentes y citas",
+          "Source-grounded questions and citations",
+          "Questions fondées sur les sources et citations"
+        ],
+        "duration": [
+          "45 min",
+          "45 min",
+          "45 min"
+        ],
+        "durationMinutes": 45,
+        "visual": "assets/img/notebooklm-module-2.svg",
+        "visualAlt": [
+          "Consulta sobre fuentes con fragmentos y referencias de apoyo.",
+          "Source-based query with supporting passages and references.",
+          "Question sur les sources avec passages et références à l’appui."
+        ],
+        "topics": [
+          [
+            "Convertir una necesidad de estudio en preguntas concretas.",
+            "Comparar información entre varias fuentes cargadas.",
+            "Abrir y revisar las citas antes de reutilizar una respuesta.",
+            "Distinguir una respuesta apoyada por la fuente de una inferencia no confirmada."
+          ],
+          [
+            "Turn a study need into specific questions.",
+            "Compare information across several uploaded sources.",
+            "Open and review citations before reusing an answer.",
+            "Distinguish a source-supported answer from an unverified inference."
+          ],
+          [
+            "Transformer un besoin d’étude en questions précises.",
+            "Comparer des informations entre plusieurs sources importées.",
+            "Ouvrir et vérifier les citations avant de réutiliser une réponse.",
+            "Distinguer une réponse appuyée par une source d’une inférence non confirmée."
+          ]
+        ]
+      },
+      {
+        "title": [
+          "Resúmenes y guías de estudio",
+          "Summaries and study guides",
+          "Résumés et guides d’étude"
+        ],
+        "duration": [
+          "45 min",
+          "45 min",
+          "45 min"
+        ],
+        "durationMinutes": 45,
+        "visual": "assets/img/notebooklm-module-3.svg",
+        "visualAlt": [
+          "Guía de estudio con secciones, preguntas y conceptos clave.",
+          "Study guide with sections, questions and key concepts.",
+          "Guide d’étude avec sections, questions et concepts clés."
+        ],
+        "topics": [
+          [
+            "Generar y revisar un resumen adaptado al objetivo.",
+            "Crear preguntas de repaso y una estructura de estudio.",
+            "Comparar los resultados con las fuentes originales para detectar omisiones.",
+            "Organizar los materiales finales y registrar sus referencias."
+          ],
+          [
+            "Generate and review a summary tailored to the goal.",
+            "Create review questions and a study structure.",
+            "Compare output with original sources to detect omissions.",
+            "Organize final materials and record their references."
+          ],
+          [
+            "Générer et réviser un résumé adapté à l’objectif.",
+            "Créer des questions de révision et une structure d’étude.",
+            "Comparer les résultats aux sources originales pour repérer les omissions.",
+            "Organiser les supports finaux et enregistrer leurs références."
+          ]
+        ]
+      }
+    ],
+    "methodology": [
+      "Se trabaja con un conjunto limitado de documentos de ejemplo. Las respuestas y resúmenes se validan regresando a la fuente original; el uso de la herramienta no sustituye la lectura crítica ni la verificación.",
+      "Practice uses a limited set of sample documents. Answers and summaries are validated against the original source; using the tool does not replace critical reading or verification.",
+      "La pratique utilise un ensemble limité de documents exemples. Les réponses et résumés sont validés à partir des sources originales ; l’outil ne remplace ni la lecture critique ni la vérification."
+    ],
+    "outcomes": [
+      [
+        "Cuaderno organizado por tema y fuentes identificables.",
+        "Preguntas precisas con citas revisadas.",
+        "Resumen y guía de estudio contrastados con los documentos fuente.",
+        "Criterios de uso responsable para materiales privados o sensibles."
+      ],
+      [
+        "A topic-organized notebook with identifiable sources.",
+        "Specific questions with reviewed citations.",
+        "A summary and study guide checked against source documents.",
+        "Responsible-use criteria for private or sensitive materials."
+      ],
+      [
+        "Un carnet organisé par thème avec des sources identifiables.",
+        "Des questions précises avec citations vérifiées.",
+        "Un résumé et un guide d’étude comparés aux documents sources.",
+        "Des critères d’utilisation responsable pour les supports privés ou sensibles."
+      ]
+    ],
+    "materials": [
+      [
+        "Conjunto de lecturas de práctica autorizadas.",
+        "Plantilla de preguntas de estudio.",
+        "Lista de comprobación para verificar citas y afirmaciones."
+      ],
+      [
+        "Authorized practice readings.",
+        "Study-question template.",
+        "Checklist for verifying citations and claims."
+      ],
+      [
+        "Lectures d’exercice autorisées.",
+        "Modèle de questions d’étude.",
+        "Liste de contrôle pour vérifier citations et affirmations."
+      ]
+    ],
+    "referenceTitle": [
+      "Verificación de respuestas",
+      "Answer verification",
+      "Vérification des réponses"
+    ],
+    "referenceColumns": [
+      [
+        "Paso",
+        "Acción",
+        "Criterio"
+      ],
+      [
+        "Step",
+        "Action",
+        "Criterion"
+      ],
+      [
+        "Étape",
+        "Action",
+        "Critère"
+      ]
+    ],
+    "referenceRows": [
+      {
+        "cells": [
+          [
+            "Formular",
+            "Ask",
+            "Formuler"
+          ],
+          [
+            "Pregunta concreta",
+            "Specific question",
+            "Question précise"
+          ],
+          [
+            "Se puede contrastar",
+            "Can be checked",
+            "Peut être vérifiée"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          [
+            "Revisar cita",
+            "Review citation",
+            "Vérifier la citation"
+          ],
+          [
+            "Abrir el fragmento fuente",
+            "Open source passage",
+            "Ouvrir le passage source"
+          ],
+          [
+            "Contexto suficiente",
+            "Sufficient context",
+            "Contexte suffisant"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          [
+            "Contrastar",
+            "Cross-check",
+            "Comparer"
+          ],
+          [
+            "Leer el documento original",
+            "Read original document",
+            "Lire le document original"
+          ],
+          [
+            "Sin contradicciones omitidas",
+            "No omitted contradictions",
+            "Aucune contradiction omise"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          [
+            "Reutilizar",
+            "Reuse",
+            "Réutiliser"
+          ],
+          [
+            "Resumir con referencia",
+            "Summarize with reference",
+            "Résumer avec référence"
+          ],
+          [
+            "Mantener trazabilidad",
+            "Maintain traceability",
+            "Garder la traçabilité"
+          ]
+        ]
+      }
+    ]
+  },
+  "scholar-trends": {
+    "image": "assets/img/course-scholar-trends.svg",
+    "imageAlt": [
+      "Ilustración de un libro abierto, una búsqueda académica y una gráfica de tendencias.",
+      "Illustration of an open book, academic search and a trend chart.",
+      "Illustration d’un livre ouvert, d’une recherche académique et d’un graphique de tendances."
+    ],
+    "fullDescription": [
+      "Curso introductorio propuesto para localizar literatura académica con Google Scholar y observar la evolución temporal de temas mediante Google Trends. La propuesta incluye consultas y citas, alertas y biblioteca personal, además de una lectura prudente de tendencias de búsqueda.",
+      "A proposed introductory course on finding academic literature with Google Scholar and observing topic interest over time with Google Trends. It covers search queries and citations, alerts and personal library, and cautious interpretation of search trends.",
+      "Un cours d’introduction proposé pour trouver de la littérature académique avec Google Scholar et observer l’évolution de l’intérêt pour des sujets avec Google Trends. Il couvre requêtes et citations, alertes et bibliothèque personnelle, ainsi qu’une interprétation prudente des tendances de recherche."
+    ],
+    "modality": [
+      "Práctica guiada de búsqueda y exploración",
+      "Guided search and exploration practice",
+      "Pratique guidée de recherche et d’exploration"
+    ],
+    "prerequisites": [
+      [
+        "Acceso a internet y navegador actualizado.",
+        "Un tema de interés con palabras clave iniciales.",
+        "Conocimientos básicos para distinguir una publicación académica de una página general."
+      ],
+      [
+        "Internet access and an up-to-date browser.",
+        "An area of interest with initial keywords.",
+        "Basic ability to distinguish academic publications from general webpages."
+      ],
+      [
+        "Accès à Internet et navigateur à jour.",
+        "Un sujet d’intérêt avec des mots-clés initiaux.",
+        "Capacité de base à distinguer une publication académique d’une page généraliste."
+      ]
+    ],
+    "objectives": [
+      [
+        "Construir consultas de búsqueda con palabras clave y filtros disponibles.",
+        "Revisar autores, publicación, fecha y referencias antes de seleccionar un resultado.",
+        "Guardar fuentes de interés y configurar alertas cuando la función esté disponible.",
+        "Reconocer qué información muestran las citas y sus límites.",
+        "Explorar Trends por periodo y región sin confundir interés relativo con volumen absoluto."
+      ],
+      [
+        "Build searches with keywords and available filters.",
+        "Review authors, publication, date and references before selecting a result.",
+        "Save useful sources and configure alerts when available.",
+        "Understand what citation information shows and its limits.",
+        "Explore Trends by time period and region without confusing relative interest with absolute volume."
+      ],
+      [
+        "Construire des recherches avec mots-clés et filtres disponibles.",
+        "Vérifier auteurs, publication, date et références avant de choisir un résultat.",
+        "Enregistrer des sources utiles et configurer des alertes lorsque l’option existe.",
+        "Comprendre ce que montrent les citations et leurs limites.",
+        "Explorer Trends par période et région sans confondre intérêt relatif et volume absolu."
+      ]
+    ],
+    "modules": [
+      {
+        "title": [
+          "Buscar literatura académica",
+          "Search academic literature",
+          "Rechercher de la littérature académique"
+        ],
+        "duration": [
+          "40 min",
+          "40 min",
+          "40 min"
+        ],
+        "durationMinutes": 40,
+        "visual": "assets/img/scholar-trends-module-1.svg",
+        "visualAlt": [
+          "Búsqueda académica con resultados y datos bibliográficos.",
+          "Academic search with results and bibliographic details.",
+          "Recherche académique avec résultats et références bibliographiques."
+        ],
+        "topics": [
+          [
+            "Traducir un tema en términos de búsqueda y sinónimos.",
+            "Comparar consultas amplias y específicas.",
+            "Revisar título, autores, año, publicación y acceso al texto.",
+            "Valorar si el resultado responde a la pregunta de investigación."
+          ],
+          [
+            "Turn a topic into search terms and synonyms.",
+            "Compare broad and specific queries.",
+            "Review title, authors, year, publication and access to the text.",
+            "Assess whether a result answers the research question."
+          ],
+          [
+            "Transformer un sujet en termes de recherche et synonymes.",
+            "Comparer les requêtes larges et précises.",
+            "Vérifier titre, auteurs, année, publication et accès au texte.",
+            "Évaluer si un résultat répond à la question de recherche."
+          ]
+        ]
+      },
+      {
+        "title": [
+          "Citas, alertas y biblioteca personal",
+          "Citations, alerts and personal library",
+          "Citations, alertes et bibliothèque personnelle"
+        ],
+        "duration": [
+          "40 min",
+          "40 min",
+          "40 min"
+        ],
+        "durationMinutes": 40,
+        "visual": "assets/img/scholar-trends-module-2.svg",
+        "visualAlt": [
+          "Referencias organizadas para consulta posterior.",
+          "References organized for later review.",
+          "Références organisées pour une consultation ultérieure."
+        ],
+        "topics": [
+          [
+            "Usar las opciones de cita como punto de partida y verificar el formato requerido.",
+            "Explorar trabajos relacionados y publicaciones que citan una obra.",
+            "Guardar resultados en una biblioteca personal si la función está disponible.",
+            "Crear alertas para seguir nuevas publicaciones sobre una búsqueda."
+          ],
+          [
+            "Use citation options as a starting point and verify the required style.",
+            "Explore related works and publications that cite a paper.",
+            "Save results in a personal library if available.",
+            "Create alerts to track new publications for a query."
+          ],
+          [
+            "Utiliser les options de citation comme point de départ et vérifier le style requis.",
+            "Explorer les travaux liés et les publications qui citent un article.",
+            "Enregistrer des résultats dans une bibliothèque personnelle si l’option existe.",
+            "Créer des alertes pour suivre de nouvelles publications sur une recherche."
+          ]
+        ]
+      },
+      {
+        "title": [
+          "Explorar tendencias con Google Trends",
+          "Explore trends with Google Trends",
+          "Explorer les tendances avec Google Trends"
+        ],
+        "duration": [
+          "40 min",
+          "40 min",
+          "40 min"
+        ],
+        "durationMinutes": 40,
+        "visual": "assets/img/scholar-trends-module-3.svg",
+        "visualAlt": [
+          "Gráfica de interés a lo largo del tiempo para comparar términos.",
+          "Time-series interest chart for comparing terms.",
+          "Graphique d’intérêt dans le temps pour comparer des termes."
+        ],
+        "topics": [
+          [
+            "Seleccionar términos, periodo y región para una comparación.",
+            "Leer índices relativos y reconocer que no representan necesariamente volumen absoluto.",
+            "Comparar temas y observar picos o estacionalidad.",
+            "Registrar límites de la búsqueda y evitar conclusiones causales sin evidencia adicional."
+          ],
+          [
+            "Select terms, time period and region for a comparison.",
+            "Read relative indices and recognize they do not necessarily represent absolute volume.",
+            "Compare topics and observe peaks or seasonality.",
+            "Record search limitations and avoid causal conclusions without additional evidence."
+          ],
+          [
+            "Choisir termes, période et région pour une comparaison.",
+            "Lire les indices relatifs et reconnaître qu’ils ne représentent pas nécessairement un volume absolu.",
+            "Comparer les sujets et repérer pics ou saisonnalité.",
+            "Consigner les limites et éviter les conclusions causales sans preuves supplémentaires."
+          ]
+        ]
+      }
+    ],
+    "methodology": [
+      "Cada participante define una pregunta sencilla, reúne fuentes académicas y registra criterios de selección. Luego explora un término en Trends y compara la señal temporal con sus límites metodológicos, sin tratarla como prueba suficiente por sí sola.",
+      "Each participant defines a simple question, gathers academic sources and records selection criteria. They then explore a term in Trends and compare the time signal with its methodological limits, without treating it as sufficient evidence on its own.",
+      "Chaque participant définit une question simple, rassemble des sources académiques et consigne les critères de sélection. Il explore ensuite un terme dans Trends et compare le signal temporel à ses limites méthodologiques, sans le considérer comme une preuve suffisante à lui seul."
+    ],
+    "outcomes": [
+      [
+        "Lista breve de fuentes académicas con datos bibliográficos revisados.",
+        "Consultas guardadas o alertas configuradas cuando estén disponibles.",
+        "Comparación sencilla de términos en Trends.",
+        "Nota que diferencia evidencia académica, citas e interés de búsqueda."
+      ],
+      [
+        "A short list of academic sources with checked bibliographic details.",
+        "Saved searches or configured alerts when available.",
+        "A simple comparison of terms in Trends.",
+        "A note distinguishing academic evidence, citations and search interest."
+      ],
+      [
+        "Une courte liste de sources académiques avec données bibliographiques vérifiées.",
+        "Recherches enregistrées ou alertes configurées lorsque l’option existe.",
+        "Une comparaison simple de termes dans Trends.",
+        "Une note distinguant preuves académiques, citations et intérêt de recherche."
+      ]
+    ],
+    "materials": [
+      [
+        "Ficha de evaluación de fuentes.",
+        "Plantilla de registro de palabras clave y criterios.",
+        "Lista de comprobación para interpretar tendencias."
+      ],
+      [
+        "Source-evaluation worksheet.",
+        "Keyword and criteria log template.",
+        "Trend-interpretation checklist."
+      ],
+      [
+        "Fiche d’évaluation des sources.",
+        "Modèle de suivi des mots-clés et critères.",
+        "Liste de contrôle pour interpréter les tendances."
+      ]
+    ],
+    "referenceTitle": [
+      "Criterios básicos de investigación",
+      "Basic research criteria",
+      "Critères de base pour la recherche"
+    ],
+    "referenceColumns": [
+      [
+        "Herramienta",
+        "Aporta",
+        "No sustituye"
+      ],
+      [
+        "Tool",
+        "Provides",
+        "Does not replace"
+      ],
+      [
+        "Outil",
+        "Apporte",
+        "Ne remplace pas"
+      ]
+    ],
+    "referenceRows": [
+      {
+        "cells": [
+          [
+            "Google Scholar",
+            "Google Scholar",
+            "Google Scholar"
+          ],
+          [
+            "Referencias y metadatos académicos",
+            "Academic references and metadata",
+            "Références et métadonnées académiques"
+          ],
+          [
+            "Lectura crítica del artículo",
+            "Critical reading of the paper",
+            "Lecture critique de l’article"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          [
+            "Citas",
+            "Citations",
+            "Citations"
+          ],
+          [
+            "Señales de relación e impacto",
+            "Signals of relation and impact",
+            "Indices de relation et d’impact"
+          ],
+          [
+            "Calidad metodológica",
+            "Methodological quality",
+            "Qualité méthodologique"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          [
+            "Google Trends",
+            "Google Trends",
+            "Google Trends"
+          ],
+          [
+            "Interés relativo en búsquedas",
+            "Relative search interest",
+            "Intérêt relatif de recherche"
+          ],
+          [
+            "Prueba causal o volumen absoluto",
+            "Causal proof or absolute volume",
+            "Preuve causale ou volume absolu"
+          ]
+        ]
+      },
+      {
+        "cells": [
+          [
+            "Alertas",
+            "Alerts",
+            "Alertes"
+          ],
+          [
+            "Novedades sobre consultas",
+            "Updates for queries",
+            "Nouveautés sur des requêtes"
+          ],
+          [
+            "Evaluación de cada fuente",
+            "Evaluation of each source",
+            "Évaluation de chaque source"
+          ]
+        ]
+      }
+    ]
+  }
+}

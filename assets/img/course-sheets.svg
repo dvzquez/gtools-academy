@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 430" role="img" aria-hidden="true">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0E2859"/><stop offset="60%" stop-color="#173D7A"/><stop offset="100%" stop-color="#215EBB"/></linearGradient><radialGradient id="glow"><stop offset="0%" stop-color="#AFCEE3" stop-opacity=".34"/><stop offset="100%" stop-color="#AFCEE3" stop-opacity="0"/></radialGradient></defs>
+<rect width="720" height="430" rx="28" fill="url(#bg)"/><circle cx="620" cy="52" r="220" fill="url(#glow)"/><circle cx="100" cy="365" r="180" fill="url(#glow)"/><g fill="none" stroke="#AFCEE3" stroke-opacity=".12" stroke-width="2"><path d="M0 340C150 260 260 470 440 350S620 230 720 300"/><path d="M0 370C150 290 260 500 440 380S620 260 720 330"/></g>
+<g transform="translate(66 72)">
+  <rect x="0" y="0" width="360" height="272" rx="20" fill="#EAF3FA"/>
+  <rect x="0" y="0" width="360" height="46" rx="20" fill="#215EBB"/>
+  <path d="M0 28h360v18H0z" fill="#215EBB"/>
+  <g stroke="#AFCEE3" stroke-width="2">
+    <path d="M0 92h360M0 138h360M0 184h360M0 230h360M72 46v226M144 46v226M216 46v226M288 46v226"/>
+  </g>
+  <rect x="75" y="95" width="65" height="39" rx="5" fill="#C3B692"/>
+  <rect x="147" y="141" width="65" height="39" rx="5" fill="#CE6C37"/>
+  <rect x="219" y="187" width="65" height="39" rx="5" fill="#215EBB"/>
+</g>
+<g transform="translate(395 97)">
+  <rect x="24" y="0" width="200" height="62" rx="17" fill="#0E2859" stroke="#AFCEE3" stroke-width="2"/>
+  <text x="47" y="40" fill="#AFCEE3" font-family="sans-serif" font-size="29" font-weight="700">ƒx</text>
+  <path d="M101 24h96M101 39h64" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" opacity=".75"/>
+  <path d="M42 207l44-52 40 24 42-68 42 39" stroke="#C3B692" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="84" cy="155" r="8" fill="#CE6C37"/><circle cx="126" cy="179" r="8" fill="#CE6C37"/><circle cx="168" cy="111" r="8" fill="#CE6C37"/><circle cx="210" cy="150" r="8" fill="#CE6C37"/>
+</g></svg>
