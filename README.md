@@ -33,4 +33,4 @@ Tablas `users`, `enrollments` y `messages` en `database/schema.sql`, con claves 
 ## Roadmap
 - [x] Fase 1: HTML, CSS y JavaScript
 - [x] Fase 2: PHP + SQL, sitio de varias páginas, tres idiomas y dos temas
-- [ ] Fase 3: TypeScript, React, Node.js y Python (cuando se indique)
+- [ ] Fase 3: TypeScript, React y Python (cuando se indique)
